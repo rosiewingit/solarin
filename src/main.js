@@ -2,6 +2,7 @@ let body = null;
 let mainContainer = null;
 
 const mainBgUrl = "../resources/index-bg.jpg";
+const productsBgUrl = "../resources/products-bg.jpg";
 const sustainabilityBgUrl = "../resources/sustainability-bg.jpg";
 
 window.onload = () => {
@@ -33,6 +34,25 @@ const createMainPage = () => {
 
 const createAboutUsPage = () => {};
 
+const loadProductsPage = () => {
+  body.css("background-image", `url(${productsBgUrl})`);
+  mainContainer.html(createProductsPage());
+};
+
+const createProductsPage = () => {
+  return `
+  <div class="index-text">
+    <div class="index-title">Technology for Humans</div>
+    <div class="index-subtitle">인간을 위한 기술.</div>
+  </div>
+  <div class="arrow-button-container">
+    <span class="arrow-button-text">learn more</span>
+    <span class="arrow-button">
+      <a href="#"></a>
+    </span>
+  </div>`;
+};
+
 const loadSustainabilityPage = () => {
   body.css("background-image", `url(${sustainabilityBgUrl})`);
   mainContainer.html(createSustainabilityPage());
@@ -62,6 +82,7 @@ const clickNav2Page = () => {
 
 const clickNav3Page = () => {
   console.log("Nav3");
+  loadProductsPage();
 };
 
 const clickNav4Page = () => {
