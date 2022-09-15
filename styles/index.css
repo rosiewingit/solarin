@@ -64,7 +64,7 @@ header {
 
 .index-title {
     font-size: 3em;
-    font-weight: 500;
+    font-weight: 550;
 }
 
 .index-subtitle {
@@ -72,12 +72,30 @@ header {
     font-weight: 350;
 }
 
-.index-more-button {
+.arrow-button-container {
+    width: 100%;
     font-size: 1.1em;
     margin-top: 8%;
     margin-left: 70%;
+    float: left;
 }
 
-.index-more-button span {
-    margin: 5%;
+.arrow-button-text {
+    display: block;
+    float: left;
+    margin-right: 1.5%;
+}
+
+.arrow-button {
+    display: block;
+    float: left;
+    width: 28px;
+    height: 28px;
+    background-image: url('../resources/index-arrow.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.arrow-button:hover {
+    scale: 1.05;
 }
