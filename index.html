@@ -1,45 +1,70 @@
 <!DOCTYPE html>
 <head>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  <link href="styles/index.css" rel="stylesheet">
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+    crossorigin="anonymous"
+  />
+  <link href="styles/index.css" rel="stylesheet" />
+  <script
+    src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+    integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA="
+    crossorigin="anonymous"
+  ></script>
+  <script type="text/javascript" src="src/main.js"></script>
 </head>
 <body>
   <header>
     <nav id="navMain" class="navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand" href="index.html">
-        <img class="brand-logo" src="resources/logo.png">
+        <img class="brand-logo" src="resources/logo.png" />
       </a>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul id="navList" class="navbar-nav">
-          <li class="nav-child nav-item active">
-            <a class="nav-link nav-highlight" href="pages/menu1-aboutus.html">ABOUT US</a>
+          <li class="nav-child nav-item">
+            <a
+              id="nav1"
+              class="nav-link nav-highlight"
+              onclick="clickNav1Page()"
+              >ABOUT US</a
+            >
           </li>
           <li class="nav-child nav-item">
-            <a class="nav-link nav-highlight" href="pages/menu2-science.html">SCIENCE</a>
+            <a
+              id="nav2"
+              class="nav-link nav-highlight"
+              onclick="clickNav2Page()"
+              >SCIENCE</a
+            >
           </li>
           <li class="nav-child nav-item">
-            <a class="nav-link nav-highlight" href="pages/menu3-products.html">PRODUCTS</a>
+            <a
+              id="nav3"
+              class="nav-link nav-highlight"
+              onclick="clickNav3Page()"
+              >PRODUCTS</a
+            >
           </li>
           <li class="nav-child nav-item">
-            <a class="nav-link nav-highlight" href="pages/menu4-sustainability.html">SUSTAINABILITY</a>
+            <a
+              id="nav4"
+              class="nav-link nav-highlight"
+              onclick="clickNav4Page()"
+              >SUSTAINABILITY</a
+            >
           </li>
           <li class="nav-child nav-item">
-            <a class="nav-link nav-highlight" href="pages/menu5-recruit.html">RECRUIT</a>
+            <a
+              id="nav5"
+              class="nav-link nav-highlight"
+              onclick="clickNav5Page()"
+              >RECRUIT</a
+            >
           </li>
         </ul>
       </div>
     </nav>
-    </header>
-    <div id="mainContainer">
-      <div class="index-text">
-        <div class="index-title">Make convenient with new ideas.</div>
-        <div class="index-subtitle">새로운 생각, 편리한 생활</div>
-      </div>
-      <div class="arrow-button-container">
-        <span class="arrow-button-text">learn more</span>
-        <span class="arrow-button">
-          <a href="#"></a>
-        </span>
-      </div>
-    </div>
+  </header>
+  <div id="mainContainer"></div>
 </body>

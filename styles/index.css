@@ -1,101 +1,105 @@
 body {
-    background-image: url('../resources/index-bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header {
-    background-color: #ffffff;
-    width: 100%;
-    height: 100px;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100px;
 }
 
 .brand-logo {
-    margin-left: 30px;
-    height: 70px;
-    align-self: center;
+  margin-left: 30px;
+  height: 70px;
+  align-self: center;
 }
 
 #navMain {
 }
 
 #navbarNavDropdown {
-    height: 91px;
+  height: 91px;
 }
 
 #navList {
-    margin-left: 5%;
-    width: 80%;
-    height: 100%;
-    text-align: center;
-    align-items: center;
-    color: #545454;
+  margin-left: 5%;
+  width: 80%;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  color: #545454;
 }
 
 .nav-child {
-    width: 20%;
-    height: 100%;
-    font-size: 18px;
-    padding-top: 20px;
+  width: 20%;
+  height: 100%;
+  font-size: 18px;
+  padding-top: 20px;
+  cursor: pointer;
 }
 
 .nav-highlight {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .nav-highlight:hover {
-    border-bottom: solid 3px #00a634;
+  border-bottom: solid 3px #00a634;
 }
 
 #mainContainer {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 #mainContainer div {
-    color: #ffffff;
+  color: #ffffff;
 }
 
+/* Main Page Style */
+
 .index-text {
-    margin-top: 15%;
-    margin-left: 15%;
+  margin-top: 15%;
+  margin-left: 15%;
 }
 
 .index-title {
-    font-size: 3em;
-    font-weight: 550;
+  font-size: 3em;
+  font-weight: 550;
 }
 
 .index-subtitle {
-    font-size: 1.2em;
-    font-weight: 350;
+  font-size: 1.2em;
+  font-weight: 350;
 }
 
 .arrow-button-container {
-    width: 100%;
-    font-size: 1.1em;
-    margin-top: 8%;
-    margin-left: 70%;
-    float: left;
+  width: 100%;
+  font-size: 1.1em;
+  margin-top: 8%;
+  margin-left: 70%;
+  float: left;
 }
 
 .arrow-button-text {
-    display: block;
-    float: left;
-    margin-right: 1.5%;
+  display: block;
+  float: left;
+  margin-right: 1.5%;
 }
 
 .arrow-button {
-    display: block;
-    float: left;
-    width: 28px;
-    height: 28px;
-    background-image: url('../resources/index-arrow.png');
-    background-size: cover;
-    background-position: center;
+  display: block;
+  float: left;
+  width: 28px;
+  height: 28px;
+  background-image: url("../resources/index-arrow.png");
+  background-size: cover;
+  background-position: center;
 }
 
 .arrow-button:hover {
-    scale: 1.05;
+  scale: 1.05;
 }
+
+/* AboutUS Page Style */
