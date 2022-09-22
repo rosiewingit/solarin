@@ -1,4 +1,4 @@
-let body = null;
+let root = null;
 let mainContainer = null;
 
 const mainBgUrl = "../resources/index-bg.jpg";
@@ -8,13 +8,13 @@ const sustainabilityBgUrl = "../resources/sustainability-bg.jpg";
 window.onload = () => {
   console.log("ONLOAD");
 
-  body = $("body");
+  root = $("#root");
   mainContainer = $("#mainContainer");
   // loadMainPage();
 };
 
 const loadMainPage = () => {
-  body.css("background-image", `url(${mainBgUrl})`);
+  root.css("background-image", `url(${mainBgUrl})`);
   mainContainer.html(createMainPage());
 };
 
@@ -35,7 +35,7 @@ const createMainPage = () => {
 const createAboutUsPage = () => {};
 
 const loadProductsPage = () => {
-  body.css("background-image", `url(${productsBgUrl})`);
+  root.css("background-image", `url(${productsBgUrl})`);
   mainContainer.html(createProductsPage());
 };
 
@@ -54,7 +54,7 @@ const createProductsPage = () => {
 };
 
 const loadSustainabilityPage = () => {
-  body.css("background-image", `url(${sustainabilityBgUrl})`);
+  root.css("background-image", `url(${sustainabilityBgUrl})`);
   mainContainer.html(createSustainabilityPage());
 };
 
