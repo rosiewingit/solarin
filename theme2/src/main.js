@@ -22,14 +22,10 @@ const createMainPage = () => {
   return `
   <div class="index-text">
     <div class="index-title">Make convenient with new ideas.</div>
-    <div class="index-subtitle">새로운 생각, 편리한 생활</div>
+    <div class="index-subtitle">새로운 생각으로 일상을 더 편리하게.</div>
+    <div class="index-subtitle">아이디어를 현실로 만드는 기업 솔라인.</div>
   </div>
-  <div class="arrow-button-container">
-    <span class="arrow-button-text">learn more</span>
-    <span class="arrow-button">
-      <a href="#"></a>
-    </span>
-  </div>`;
+`;
 };
 
 const createAboutUsPage = () => {};
