@@ -10,7 +10,7 @@ window.onload = () => {
 
   body = $("body");
   mainContainer = $("#mainContainer");
-  loadMainPage();
+  // loadMainPage();
 };
 
 const loadMainPage = () => {

@@ -102,4 +102,73 @@ header {
   scale: 1.05;
 }
 
-/* AboutUS Page Style */
+.left-container {
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 50%;
+  height: inherit;
+  background-image: url("../resources/science-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.right-container {
+  position: absolute;
+  right: 0;
+  display: block;
+  width: 50%;
+  height: inherit;
+  background-color: #ffffff;
+}
+
+.index-text-black {
+  width: 100%;
+  height: 200px;
+  color: black;
+  margin-top: 15%;
+  margin-left: 15%;
+}
+
+.index-title-black {
+  color: black;
+  font-size: 3em;
+  font-weight: 550;
+}
+
+.index-subtitle-black {
+  color: black;
+  font-size: 1.2em;
+  font-weight: 350;
+}
+
+.arrow-button-container-black {
+  color: black;
+  width: 100%;
+  font-size: 1.1em;
+  margin-top: 30%;
+  margin-left: 50%;
+  float: left;
+}
+
+.arrow-button-text-black {
+  color: black;
+  display: block;
+  float: left;
+  margin-right: 1.5%;
+}
+
+.arrow-button-black {
+  color: black;
+  display: block;
+  float: left;
+  width: 28px;
+  height: 28px;
+  background-image: url("../resources/index-arrow.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.arrow-button-black:hover {
+  scale: 1.05;
+}
