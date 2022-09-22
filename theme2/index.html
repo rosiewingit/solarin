@@ -15,55 +15,62 @@
   <script type="text/javascript" src="src/main.js"></script>
 </head>
 <body>
+  <header>
+    <nav id="navMain" class="navbar navbar-expand-lg navbar-light">
+      <div class="nav-left">
+        <a class="navbar-brand" href="index.html">
+          <img class="brand-logo" src="resources/logo.png" />
+        </a>
+      </div>
+      <div class="nav-right">
+        <div id="navbarNavDropdown">
+          <ul id="navList" class="navbar-nav">
+            <li class="nav-child nav-item">
+              <a
+                id="nav1"
+                class="nav-link nav-highlight"
+                onclick="clickNav1Page()"
+                >ABOUT US</a
+              >
+            </li>
+            <li class="nav-child nav-item">
+              <a
+                id="nav2"
+                class="nav-link nav-highlight"
+                onclick="clickNav2Page()"
+                >SCIENCE</a
+              >
+            </li>
+            <li class="nav-child nav-item">
+              <a
+                id="nav3"
+                class="nav-link nav-highlight"
+                onclick="clickNav3Page()"
+                >PRODUCTS</a
+              >
+            </li>
+            <li class="nav-child nav-item">
+              <a
+                id="nav4"
+                class="nav-link nav-highlight"
+                onclick="clickNav4Page()"
+                >SUSTAINABILITY</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
   <div class="container-fluid" id="root">
-    <header>
-      <nav id="navMain" class="navbar navbar-expand-lg navbar-light">
-        <div class="nav-left">
-          <a class="navbar-brand" href="index.html">
-            <img class="brand-logo" src="resources/logo.png" />
-          </a>
-        </div>
-        <div class="nav-right">
-          <div id="navbarNavDropdown">
-            <ul id="navList" class="navbar-nav">
-              <li class="nav-child nav-item">
-                <a
-                  id="nav1"
-                  class="nav-link nav-highlight"
-                  onclick="clickNav1Page()"
-                  >ABOUT US</a
-                >
-              </li>
-              <li class="nav-child nav-item">
-                <a
-                  id="nav2"
-                  class="nav-link nav-highlight"
-                  onclick="clickNav2Page()"
-                  >SCIENCE</a
-                >
-              </li>
-              <li class="nav-child nav-item">
-                <a
-                  id="nav3"
-                  class="nav-link nav-highlight"
-                  onclick="clickNav3Page()"
-                  >PRODUCTS</a
-                >
-              </li>
-              <li class="nav-child nav-item">
-                <a
-                  id="nav4"
-                  class="nav-link nav-highlight"
-                  onclick="clickNav4Page()"
-                  >SUSTAINABILITY</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <div id="mainContainer">
+    <div class="main-container">
+      <div class="index-text">
+        <div class="index-title">Make convenient with new ideas.</div>
+        <div class="index-subtitle">새로운 생각으로 일상을 더 편리하게.</div>
+        <div class="index-subtitle">아이디어를 현실로 만드는 기업 솔라인.</div>
+      </div>
+    </div>
+    <div class="main-container">
       <div class="index-text">
         <div class="index-title">Make convenient with new ideas.</div>
         <div class="index-subtitle">새로운 생각으로 일상을 더 편리하게.</div>
