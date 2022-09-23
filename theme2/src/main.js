@@ -11,7 +11,7 @@ window.onload = () => {
 
   body = $("body");
   root = $("#root");
-  loadMainPage();
+  // loadMainPage();
 };
 
 const loadMainPage = () => {
