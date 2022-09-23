@@ -1,21 +1,22 @@
+let body = null;
 let root = null;
-let mainContainer = null;
 
-const mainBgUrl = "../resources/index-bg.jpg";
-const productsBgUrl = "../resources/products-bg.jpg";
-const sustainabilityBgUrl = "../resources/sustainability-bg.jpg";
+const host = "https://rosiewingit.github.io/solarin/theme2/resources/";
+const mainBgUrl = `${host}index-bg.jpg`;
+const productsBgUrl = `${host}products-bg.jpg`;
+const sustainabilityBgUrl = `${host}sustainability-bg.jpg`;
 
 window.onload = () => {
   console.log("ONLOAD");
 
+  body = $("body");
   root = $("#root");
-  mainContainer = $("#mainContainer");
-  // loadMainPage();
+  loadMainPage();
 };
 
 const loadMainPage = () => {
-  root.css("background-image", `url(${mainBgUrl})`);
-  mainContainer.html(createMainPage());
+  body.css("background-image", `url(${mainBgUrl})`);
+  root.html(createMainPage());
 };
 
 const createMainPage = () => {
@@ -31,8 +32,8 @@ const createMainPage = () => {
 const createAboutUsPage = () => {};
 
 const loadProductsPage = () => {
-  root.css("background-image", `url(${productsBgUrl})`);
-  mainContainer.html(createProductsPage());
+  body.css("background-image", `url(${productsBgUrl})`);
+  root.html(createProductsPage());
 };
 
 const createProductsPage = () => {
@@ -50,8 +51,8 @@ const createProductsPage = () => {
 };
 
 const loadSustainabilityPage = () => {
-  root.css("background-image", `url(${sustainabilityBgUrl})`);
-  mainContainer.html(createSustainabilityPage());
+  body.css("background-image", `url(${sustainabilityBgUrl})`);
+  root.html(createSustainabilityPage());
 };
 
 const createSustainabilityPage = () => {
