@@ -51,8 +51,6 @@ header {
 }
 
 #navDropdown {
-  opacity: 0;
-  transition: 0.2s all;
   visibility: hidden;
 }
 
