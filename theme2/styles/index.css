@@ -18,7 +18,7 @@ header {
   line-height: 150px;
   position: fixed;
   top: 0;
-  /* background-color: black; */
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 #navMain {
@@ -56,9 +56,9 @@ header {
 }
 
 .nav-child {
-  width: 100px;
+  width: 120px;
   height: 100%;
-  font-size: 15px;
+  font-size: 16px;
   text-align: center;
   cursor: pointer;
 }
