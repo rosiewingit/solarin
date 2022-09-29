@@ -12,6 +12,15 @@ window.onload = () => {
   body = $("body");
   root = $("#root");
   loadMainPage();
+
+  $("#navMain").hover(
+    () => {
+      $("#navDropdown").css("visibility", "visible");
+    },
+    () => {
+      $("#navDropdown").css("visibility", "hidden");
+    }
+  );
 };
 
 const loadMainPage = () => {
