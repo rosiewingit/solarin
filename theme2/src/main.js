@@ -12,12 +12,19 @@ window.onload = () => {
   body = $("body");
   root = $("#root");
   loadMainPage();
+  addHeaderAnimation();
+};
 
+const addHeaderAnimation = () => {
   $("#navMain").hover(
     () => {
+      $("#navDropdown").css("opacity", "1");
+      $("#navDropdown").css("transition", "0.4s all");
       $("#navDropdown").css("visibility", "visible");
     },
     () => {
+      $("#navDropdown").css("opacity", "0");
+      $("#navDropdown").css("transition", "0.2s all");
       $("#navDropdown").css("visibility", "hidden");
     }
   );
