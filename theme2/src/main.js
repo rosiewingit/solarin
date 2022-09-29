@@ -50,6 +50,7 @@ const createAboutUsPage = () => {};
 const loadProductsPage = () => {
   body.css("background-image", `url(${productsBgUrl})`);
   root.html(createProductsPage());
+  changeHeaderOpacity(1);
 };
 
 const createProductsPage = () => {
@@ -93,8 +94,8 @@ const clickNav2Page = () => {
   console.log("Nav2");
 };
 
-const clickNav3Page = () => {
-  console.log("Nav3");
+const clickProductsPage = () => {
+  console.log("Products Page");
   loadProductsPage();
 };
 
@@ -105,4 +106,9 @@ const clickNav4Page = () => {
 
 const clickNav5Page = () => {
   console.log("Nav5");
+};
+
+const changeHeaderOpacity = (opacity) => {
+  $("header").css("background-color", `rgba(0,0,0,${opacity})`);
+  $("#navDropdown").css("background-color", `rgba(0,0,0,${opacity})`);
 };
