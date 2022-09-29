@@ -1,0 +1,99 @@
+.products-page {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.ppt-page {
+  display: block;
+  position: relative;
+  padding: 0 12.5%;
+  padding-top: 120px;
+  width: 100%;
+  height: 100%;
+}
+
+.ppt-body {
+  display: block;
+  position: relative;
+  padding-top: 80px;
+  width: 85%;
+  height: 100%;
+}
+
+.ppt-hr {
+  width: inherit;
+  color: #d9d9d9;
+  opacity: 0.7;
+}
+
+.ppt-navigator {
+  position: fixed;
+  padding-top: 30px;
+  top: 25%;
+  right: 12.5%;
+  width: 250px;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 200;
+}
+
+.nav-ppt-child {
+  font-size: 18px;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: 350;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.nav-ppt-highlight {
+  width: 100%;
+  height: 100%;
+}
+
+.nav-ppt-highlight:hover {
+  font-weight: 500;
+  color: #01cf42;
+  border-bottom: solid 3px #01cf42;
+}
+
+.ppt-title {
+  color: #545454;
+}
+
+.ppt-contents {
+  position: relative;
+  vertical-align: middle;
+  padding-top: 8%;
+  width: 100%;
+  height: 100%;
+}
+
+.ppt-image {
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 100%;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-image: url("../resources/ppt-image-1.png");
+}
+
+.ppt-path {
+  width: 85%;
+  text-align: right;
+  font-size: 20px;
+  font-weight: 300;
+  color: #9ca1a2;
+}
+
+.ppt-description {
+  position: relative;
+  float: left;
+  font-size: 17px;
+  width: 50%;
+  height: 100%;
+}
