@@ -55,6 +55,7 @@ header {
 #navDropdown {
   visibility: hidden;
   background-color: rgba(0, 0, 0, 0.5);
+  padding-left: 10px;
 }
 
 .nav-dropdown {
@@ -68,10 +69,10 @@ header {
 }
 
 .nav-child {
-  width: 150px;
+  width: 160px;
   font-size: 16px;
   padding-left: 0%;
-  text-indent: 20px;
+  text-indent: 10px;
   cursor: pointer;
 }
 
@@ -92,6 +93,7 @@ header {
 
 .navbar-vertical {
   float: left;
+  padding-top: 10px;
   width: 25%;
   height: 100%;
   list-style-type: none;
