@@ -40,7 +40,7 @@ const addHeaderAnimation = () => {
 };
 
 const initScroll = () => {
-  html.animate({ scrollTop: 0 }, 10);
+  html.animate({ scrollTop: 0 }, 0);
 };
 
 const setScrollAnimation = () => {
