@@ -2,7 +2,12 @@ let body = null;
 let root = null;
 
 const host = "https://rosiewingit.github.io/solarin/theme2/resources/";
-const mainBgUrl = `${host}index-bg.jpg`;
+const mainBgImages = [
+  `${host}main1-bg.jpg`,
+  `${host}main2-bg.png`,
+  `${host}main3-bg.png`,
+  `${host}main4-bg.png`,
+];
 const productsBgUrl = `${host}products-bg.jpg`;
 const sustainabilityBgUrl = `${host}sustainability-bg.jpg`;
 
@@ -31,16 +36,50 @@ const addHeaderAnimation = () => {
 };
 
 const loadMainPage = () => {
-  body.css("background-image", `url(${mainBgUrl})`);
-  root.html(createMainPage());
+  const main1Text = {
+    title: "Make convenient with new ideas.",
+    subtitle1: "새로운 생각으로 일상을 더 편리하게.",
+    subtitle2: "아이디어를 현실로 만드는 기업 솔라인.",
+  };
+  root.append(createMainPage("mainPage1", main1Text));
+
+  const main2Text = {
+    title: "Technology for humans.",
+    subtitle1: "자연 친화적인 태양광부터 구난 방재 장치까지,",
+    subtitle2: "솔라인은 인간을 위한 기술을 만듭니다.",
+  };
+  root.append(createMainPage("mainPage2", main2Text));
+
+  const main3Text = {
+    title: "Ideas come true.",
+    subtitle1: "당신의 아이디어를 현실로 만들어 드립니다.",
+    subtitle2: "",
+  };
+  root.append(createMainPage("mainPage3", main3Text));
+
+  const main4Text = {
+    title: "New Challenge for the future.",
+    subtitle1: "미래를 위한 새로운 도전.",
+    subtitle2: "",
+  };
+  root.append(createMainPage("mainPage4", main4Text));
+
+  mainBgImages.forEach((value, index) => {
+    $(`#mainPage${index + 1}`).css(
+      "background-image",
+      `url(${mainBgImages[index]})`
+    );
+  });
 };
 
-const createMainPage = () => {
+const createMainPage = (id, text) => {
   return `
+  <div class="main-container" id="${id}">
   <div class="index-text">
-    <div class="index-title">Make convenient with new ideas.</div>
-    <div class="index-subtitle">새로운 생각으로 일상을 더 편리하게.</div>
-    <div class="index-subtitle">아이디어를 현실로 만드는 기업 솔라인.</div>
+    <div class="index-title">${text.title}</div>
+    <div class="index-subtitle">${text.subtitle1}</div>
+    <div class="index-subtitle">${text.subtitle2}</div>
+  </div>
   </div>
 `;
 };
