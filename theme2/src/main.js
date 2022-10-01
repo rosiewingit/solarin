@@ -1,5 +1,7 @@
+let html = null;
 let body = null;
 let root = null;
+let mainPageNum = 1;
 
 const host = "https://rosiewingit.github.io/solarin/theme2/resources/";
 const mainBgImages = [
@@ -14,10 +16,12 @@ const sustainabilityBgUrl = `${host}sustainability-bg.jpg`;
 window.onload = () => {
   console.log("ONLOAD");
 
+  html = $("html");
   body = $("body");
   root = $("#root");
   loadMainPage();
   addHeaderAnimation();
+  setScrollAnimation();
 };
 
 const addHeaderAnimation = () => {
@@ -33,6 +37,39 @@ const addHeaderAnimation = () => {
       $("#navDropdown").css("visibility", "hidden");
     }
   );
+};
+
+const initScroll = () => {
+  html.animate({ scrollTop: 0 }, 10);
+};
+
+const setScrollAnimation = () => {
+  window.addEventListener(
+    "wheel",
+    (e) => {
+      e.preventDefault();
+    },
+    { passive: false }
+  );
+
+  initScroll();
+
+  $(window).on("wheel", (e) => {
+    if (html.is(":animated")) return;
+
+    const errorRange = 10;
+    const deltaY = e.originalEvent.deltaY;
+    if (deltaY > errorRange) {
+      if (mainPageNum === 4) return;
+      mainPageNum++;
+    } else if (deltaY < -errorRange) {
+      if (mainPageNum === 1) return;
+      mainPageNum--;
+    }
+
+    const posTop = (mainPageNum - 1) * $(window).height();
+    html.animate({ scrollTop: posTop });
+  });
 };
 
 const loadMainPage = () => {
@@ -90,6 +127,7 @@ const loadProductsPage = () => {
   body.css("background-image", `url('')`);
   root.html(createProductsPage());
   changeHeaderOpacity(1);
+  initScroll();
 };
 
 const createProductsPage = () => {
