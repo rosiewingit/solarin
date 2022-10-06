@@ -15,12 +15,13 @@ window.onload = () => {
 
 class mainContent {
   constructor(id) {
-    this.id;
+    this.id = id;
     this.imageUrl = `${host}${id}.png`;
   }
 
   init() {
     root.append(this.createSection());
+    this.setBackground();
   }
 
   createSection() {
