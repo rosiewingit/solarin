@@ -38,3 +38,23 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
 }
+
+.main-navbar {
+  width: 100%;
+  height: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.nav-left {
+  width: auto;
+  height: 100%;
+}
+
+.brand-logo {
+  position: relative;
+  float: left;
+  width: auto;
+  height: 50%;
+  margin-top: 35%;
+}
