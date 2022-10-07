@@ -246,3 +246,11 @@ textarea {
   border: 1px solid #d9d9d9;
   margin-top: 2%;
 }
+
+.main-terms-checkbox {
+  border: 1px solid #d9d9d9;
+  width: 5%;
+  height: auto;
+  margin-right: 2%;
+  vertical-align: sub;
+}
