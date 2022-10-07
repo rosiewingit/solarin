@@ -117,8 +117,8 @@ body {
 
 .nav-highlight:hover {
   font-weight: 700;
-  color: #00a634;
-  border-bottom: solid 2px #00a634;
+  color: #01cf42;
+  border-bottom: solid 2px #01cf42;
 }
 
 .main-footer-top {
@@ -126,6 +126,13 @@ body {
   height: 25%;
   margin-left: 15%;
   margin-right: 15%;
+}
+
+.brand-logo-color {
+  width: auto;
+  height: 45%;
+  text-align: left;
+  margin-top: 4%;
 }
 
 .main-footer-mid {
@@ -139,9 +146,34 @@ body {
 
 .main-footer-mid-item {
   float: left;
-  border: 0.2px solid;
   width: 25%;
   height: 100%;
+}
+
+.main-footer-mid-item p {
+  font-size: 0.75vmax;
+}
+
+.main-footer-button {
+  background-color: #00a634;
+  color: #ffffff;
+  line-height: 10%;
+  font-size: 0.8vmax;
+  font-weight: bolder;
+  border-radius: 0;
+}
+
+#mainLearnMoreBtn:hover {
+  background-color: #00a634;
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+#mainLearnMoreBtn {
+  width: 50%;
+  height: 8%;
+  margin-top: 5%;
+  text-align: left;
 }
 
 .main-footer-bottom {
