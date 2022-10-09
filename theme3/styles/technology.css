@@ -19,6 +19,11 @@
   width: 100%;
   text-align: left;
   font-size: 0.5vmax;
-  font-weight: 300;
   color: #9ca1a2;
+}
+
+.patent-page-1-article {
+  width: 100%;
+  height: 100%;
+  background-color: aquamarine;
 }

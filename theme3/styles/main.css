@@ -7,6 +7,10 @@ body {
   font-family: "Noto Sans";
 }
 
+b {
+  font-weight: 900;
+}
+
 .main-header {
   position: fixed;
   width: 100%;
