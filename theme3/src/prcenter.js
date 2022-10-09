@@ -1,8 +1,5 @@
 const clickCertification = () => {
-  $("#root").addClass("hidden");
-  $(`${patentPageId}`).addClass("hidden");
-  $(`${rndcenterPageId}`).addClass("hidden");
-  $(`${certificationPageId}`).removeClass("hidden");
+  showPage(certificationPageId);
   setHeaderOpacity(1);
   setNavDropdownOpacity(0.7);
 

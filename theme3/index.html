@@ -8,6 +8,7 @@
   />
   <link href="styles/main.css" rel="stylesheet" />
   <link href="styles/technology.css" rel="stylesheet" />
+  <link href="styles/products.css" rel="stylesheet" />
   <link href="styles/prcenter.css" rel="stylesheet" />
   <link
     href="https://fonts.googleapis.com/css?family=Noto+Sans:wght@100;300;400;500;700;900&display=swap"
@@ -24,7 +25,9 @@
     crossorigin="anonymous"
   ></script>
   <script type="text/javascript" src="./src/main.js"></script>
+  <script type="text/javascript" src="./src/pageManager.js"></script>
   <script type="text/javascript" src="./src/technology.js"></script>
+  <script type="text/javascript" src="./src/products.js"></script>
   <script type="text/javascript" src="./src/prcenter.js"></script>
 </head>
 <body>
@@ -57,7 +60,9 @@
             </ul>
           </li>
           <li class="nav-child nav-item">
-            <a class="nav-link nav-highlight">PRODUCTS</a>
+            <a class="nav-link nav-highlight" onclick="clickProducts()"
+              >PRODUCTS</a
+            >
           </li>
           <li id="navMenu3" class="nav-child nav-item">
             <a class="nav-link nav-highlight">PR CENTER</a>
@@ -118,6 +123,7 @@
   <div id="rndcenterPage" class="main-body hidden"></div>
   <div id="patentPage" class="main-body hidden"></div>
   <div id="certificationPage" class="main-body hidden"></div>
+  <div id="productsPage" class="main-body hidden"></div>
   <footer class="main-footer">
     <div class="main-footer-top">
       <img class="brand-logo-color" src="./resources/logo-color.png" />

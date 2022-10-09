@@ -130,6 +130,14 @@ b {
   visibility: hidden;
 }
 
+.body-content {
+  float: left;
+  width: 100%;
+  height: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
 .nav-dropdown-menu {
   padding-top: 10px;
   padding-bottom: 10px;
