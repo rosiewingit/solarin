@@ -39,6 +39,8 @@ window.onload = () => {
     content.setTextContents(page.title, page.subtitle);
   });
 
+  addHeaderHover();
+
   // initScroll();
   // startSlideShow();
 };
@@ -68,6 +70,47 @@ const setHeaderOpacity = (opacity) => {
 
 const setNavDropdownOpacity = (opacity) => {
   $(".nav-dropdown-menu").css("background-color", `rgba(0,0,0,${opacity})`);
+};
+
+const addHeaderHover = () => {
+  $("#navMenu1").hover(
+    () => {
+      $("#navMenuDrop1").css("opacity", "1");
+      $("#navMenuDrop1").css("transition", "0.4s all");
+      $("#navMenuDrop1").css("visibility", "visible");
+    },
+    () => {
+      $("#navMenuDrop1").css("opacity", "0");
+      $("#navMenuDrop1").css("transition", "0.2s all");
+      $("#navMenuDrop1").css("visibility", "hidden");
+    }
+  );
+
+  $("#navMenu3").hover(
+    () => {
+      $("#navMenuDrop3").css("opacity", "1");
+      $("#navMenuDrop3").css("transition", "0.4s all");
+      $("#navMenuDrop3").css("visibility", "visible");
+    },
+    () => {
+      $("#navMenuDrop3").css("opacity", "0");
+      $("#navMenuDrop3").css("transition", "0.2s all");
+      $("#navMenuDrop3").css("visibility", "hidden");
+    }
+  );
+
+  $("#navMenu4").hover(
+    () => {
+      $("#navMenuDrop4").css("opacity", "1");
+      $("#navMenuDrop4").css("transition", "0.4s all");
+      $("#navMenuDrop4").css("visibility", "visible");
+    },
+    () => {
+      $("#navMenuDrop4").css("opacity", "0");
+      $("#navMenuDrop4").css("transition", "0.2s all");
+      $("#navMenuDrop4").css("visibility", "hidden");
+    }
+  );
 };
 
 // $(window).on("wheel", (e) => {

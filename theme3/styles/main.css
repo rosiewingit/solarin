@@ -143,6 +143,7 @@ b {
   vertical-align: middle;
   line-height: 30px;
   padding-left: 20px;
+  visibility: hidden;
 }
 
 .nav-dropdown-child {
