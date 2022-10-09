@@ -89,7 +89,7 @@ class PPTContent {
 
   createProductsSection() {
     return `
-      <section id="${this.id}" class="body-content products-body-content">
+      <section id="${this.id}" class="body-content">
         <div class="ppt-path"></div>
         <hr class="ppt-hr" />
         <article id="${this.id}-article" class="page-article">
