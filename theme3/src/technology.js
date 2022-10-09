@@ -1,10 +1,12 @@
 const rndcenterPageId = "#rndcenterPage";
 const patentPageId = "#patentPage";
+const certificationPageId = "#certificationPage";
 
 const clickRndCenter = () => {
   $("#root").addClass("hidden");
-  $("#patentPage").addClass("hidden");
-  $("#rndcenterPage").removeClass("hidden");
+  $(`${patentPageId}`).addClass("hidden");
+  $(`${certificationPageId}`).addClass("hidden");
+  $(`${rndcenterPageId}`).removeClass("hidden");
   setHeaderOpacity(1);
   setNavDropdownOpacity(0.7);
 
@@ -15,8 +17,9 @@ const clickRndCenter = () => {
 
 const clickPatent = () => {
   $("#root").addClass("hidden");
-  $("#rndcenterPage").addClass("hidden");
-  $("#patentPage").removeClass("hidden");
+  $(`${certificationPageId}`).addClass("hidden");
+  $(`${rndcenterPageId}`).addClass("hidden");
+  $(`${patentPageId}`).removeClass("hidden");
   setHeaderOpacity(1);
   setNavDropdownOpacity(0.7);
 
@@ -40,6 +43,9 @@ class PPTContent {
       case patentPageId:
         $(this.page).append(this.createPatentSection());
         break;
+      case certificationPageId:
+        $(this.page).append(this.createCertificationSection());
+        break;
       case rndcenterPageId:
         $(this.page).append(this.createRndSection());
       default:
@@ -58,6 +64,33 @@ class PPTContent {
   }
 
   createPatentSection() {
+    return `<section id="${this.id}" class="technology-body-content">
+    <div class="ppt-path">Home > Technology > <b>R&D Center</b></div>
+    <hr class="ppt-hr" />
+    <article id="${this.id}-article">
+      <div class="patent-item">
+        <div class="row patent-item-row">
+          <div class="col-md-2"><img class="patent-img" src="./resources/patent1.png" /></div>
+          <div class="col-md-2"><img class="patent-img" src="./resources/patent1.png" /></div>
+          <div class="col-md-2"><img class="patent-img" src="./resources/patent1.png" /></div>
+          <div class="col-md-2"><img class="patent-img" src="./resources/patent1.png" /></div>
+          <div class="col-md-2"><img class="patent-img" src="./resources/patent1.png" /></div>
+          <div class="col-md-2"><img class="patent-img" src="./resources/patent1.png" /></div>
+        </div>
+        <div class="row patent-item-row">
+          <div class="col-md-2"><img class="patent-img" src="./resources/patent1.png" /></div>
+          <div class="col-md-2"><img class="patent-img" src="./resources/patent1.png" /></div>
+          <div class="col-md-2"><img class="patent-img" src="./resources/patent1.png" /></div>
+          <div class="col-md-2"><img class="patent-img" src="./resources/patent1.png" /></div>
+          <div class="col-md-2"><img class="patent-img" src="./resources/patent1.png" /></div>
+          <div class="col-md-2"><img class="patent-img" src="./resources/patent1.png" /></div>
+        </div>
+      </div>
+    </article>
+  </section>`;
+  }
+
+  createCertificationSection() {
     return `<section id="${this.id}" class="technology-body-content">
     <div class="ppt-path">Home > Technology > <b>R&D Center</b></div>
     <hr class="ppt-hr" />
