@@ -1,4 +1,7 @@
+let html = null;
 let root = null;
+let currentPage = 1;
+let maxPage = 4;
 
 const host = "https://rosiewingit.github.io/solarin/theme3/resources/";
 const mainPageItems = [
@@ -31,6 +34,7 @@ const mainPageItems = [
 window.onload = () => {
   console.log("ONLOAD");
 
+  html = $("html");
   root = $("#root");
   mainPageItems.forEach((page) => {
     const content = new mainContent(page.id);
@@ -38,6 +42,28 @@ window.onload = () => {
     content.setBackground();
     content.setTextContents(page.title, page.subtitle);
   });
+
+  initScroll();
+  startSlideShow();
+};
+
+const initScroll = () => {
+  html.animate({ scrollTop: 0 }, 0);
+};
+
+const startSlideShow = () => {
+  if (html.is(":animated")) return;
+
+  setInterval(() => {
+    if (currentPage === maxPage) {
+      currentPage = 1;
+    } else if (currentPage < maxPage) {
+      currentPage++;
+    }
+
+    const posTop = (currentPage - 1) * $(window).height();
+    html.animate({ scrollTop: posTop });
+  }, 3000);
 };
 
 class mainContent {
