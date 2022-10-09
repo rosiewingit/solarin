@@ -36,6 +36,7 @@ window.onload = () => {
 
   html = $("html");
   root = $("#root");
+
   mainPageItems.forEach((page) => {
     const content = new mainContent(page.id);
     content.init();
@@ -43,8 +44,8 @@ window.onload = () => {
     content.setTextContents(page.title, page.subtitle);
   });
 
-  initScroll();
-  startSlideShow();
+  // initScroll();
+  // startSlideShow();
 };
 
 const initScroll = () => {
@@ -66,22 +67,22 @@ const startSlideShow = () => {
   }, 3000);
 };
 
-$(window).on("wheel", (e) => {
-  if (html.is(":animated")) return;
+// $(window).on("wheel", (e) => {
+//   if (html.is(":animated")) return;
 
-  const errorRange = 10;
-  const deltaY = e.originalEvent.deltaY;
-  if (deltaY > errorRange) {
-    if (mainPageNum === 4) return;
-    mainPageNum++;
-  } else if (deltaY < -errorRange) {
-    if (mainPageNum === 1) return;
-    mainPageNum--;
-  }
+//   const errorRange = 10;
+//   const deltaY = e.originalEvent.deltaY;
+//   if (deltaY > errorRange) {
+//     if (mainPageNum === 4) return;
+//     mainPageNum++;
+//   } else if (deltaY < -errorRange) {
+//     if (mainPageNum === 1) return;
+//     mainPageNum--;
+//   }
 
-  const posTop = (mainPageNum - 1) * $(window).height();
-  html.animate({ scrollTop: posTop });
-});
+//   const posTop = (mainPageNum - 1) * $(window).height();
+//   html.animate({ scrollTop: posTop });
+// });
 
 class mainContent {
   constructor(id) {
