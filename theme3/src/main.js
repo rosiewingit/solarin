@@ -66,6 +66,10 @@ const setHeaderOpacity = (opacity) => {
   $("header").css("background-color", `rgba(0,0,0,${opacity})`);
 };
 
+const setNavDropdownOpacity = (opacity) => {
+  $(".nav-dropdown-menu").css("background-color", `rgba(0,0,0,${opacity})`);
+};
+
 // $(window).on("wheel", (e) => {
 //   if ($("html").is(":animated")) return;
 

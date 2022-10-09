@@ -2,6 +2,7 @@ const clickRndCenter = () => {
   $("#root").addClass("hidden");
   $("#technologyPage").removeClass("hidden");
   setHeaderOpacity(1);
+  setNavDropdownOpacity(0.7);
 
   const content = new PPTContent("rnd-page-1");
   content.init();
