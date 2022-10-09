@@ -1,3 +1,6 @@
+const rndcenterPageId = "#rndcenterPage";
+const patentPageId = "#patentPage";
+
 const clickRndCenter = () => {
   $("#root").addClass("hidden");
   $("#patentPage").addClass("hidden");
@@ -5,7 +8,6 @@ const clickRndCenter = () => {
   setHeaderOpacity(1);
   setNavDropdownOpacity(0.7);
 
-  const rndcenterPageId = "#rndcenterPage";
   const content = new PPTContent(rndcenterPageId, "rnd-page-1");
   content.init();
   content.setPath("Home > Technology > <b>R&D Center</b>");
@@ -15,9 +17,10 @@ const clickPatent = () => {
   $("#root").addClass("hidden");
   $("#rndcenterPage").addClass("hidden");
   $("#patentPage").removeClass("hidden");
+  setHeaderOpacity(1);
+  setNavDropdownOpacity(0.7);
 
-  const rndcenterPageId = "#patentPage";
-  const content = new PPTContent(rndcenterPageId, "patent-page-1");
+  const content = new PPTContent(patentPageId, "patent-page-1");
   content.init();
   content.setPath("Home > Technology > <b>Patent</b>");
 };
@@ -32,10 +35,19 @@ class PPTContent {
     if ($(`#${this.id}`).length > 0) {
       return;
     }
-    $(this.page).append(this.createSection());
+
+    switch (this.page) {
+      case patentPageId:
+        $(this.page).append(this.createPatentSection());
+        break;
+      case rndcenterPageId:
+        $(this.page).append(this.createRndSection());
+      default:
+        break;
+    }
   }
 
-  createSection() {
+  createRndSection() {
     return `
     <section id="${this.id}" class="technology-body-content">
       <div class="ppt-path">Home > Technology > <b>R&D Center</b></div>
@@ -43,6 +55,33 @@ class PPTContent {
       <article id="${this.id}-article"></article>
     </section>
     `;
+  }
+
+  createPatentSection() {
+    return `<section id="${this.id}" class="technology-body-content">
+    <div class="ppt-path">Home > Technology > <b>R&D Center</b></div>
+    <hr class="ppt-hr" />
+    <article id="${this.id}-article">
+      <div class="patent-item">
+        <div class="row patent-item-row">
+          <div class="col-md-2"><img class="patent-img" src="./resources/patent1.png" /></div>
+          <div class="col-md-2"><img class="patent-img" src="./resources/patent1.png" /></div>
+          <div class="col-md-2"><img class="patent-img" src="./resources/patent1.png" /></div>
+          <div class="col-md-2"><img class="patent-img" src="./resources/patent1.png" /></div>
+          <div class="col-md-2"><img class="patent-img" src="./resources/patent1.png" /></div>
+          <div class="col-md-2"><img class="patent-img" src="./resources/patent1.png" /></div>
+        </div>
+        <div class="row patent-item-row">
+          <div class="col-md-2"><img class="patent-img" src="./resources/patent1.png" /></div>
+          <div class="col-md-2"><img class="patent-img" src="./resources/patent1.png" /></div>
+          <div class="col-md-2"><img class="patent-img" src="./resources/patent1.png" /></div>
+          <div class="col-md-2"><img class="patent-img" src="./resources/patent1.png" /></div>
+          <div class="col-md-2"><img class="patent-img" src="./resources/patent1.png" /></div>
+          <div class="col-md-2"><img class="patent-img" src="./resources/patent1.png" /></div>
+        </div>
+      </div>
+    </article>
+  </section>`;
   }
 
   setPath(path) {
