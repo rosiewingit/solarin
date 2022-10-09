@@ -1,5 +1,3 @@
-let html = null;
-let root = null;
 let currentPage = 1;
 let maxPage = 4;
 
@@ -34,9 +32,6 @@ const mainPageItems = [
 window.onload = () => {
   console.log("ONLOAD");
 
-  html = $("html");
-  root = $("#root");
-
   mainPageItems.forEach((page) => {
     const content = new mainContent(page.id);
     content.init();
@@ -49,11 +44,11 @@ window.onload = () => {
 };
 
 const initScroll = () => {
-  html.animate({ scrollTop: 0 }, 0);
+  $("html").animate({ scrollTop: 0 }, 0);
 };
 
 const startSlideShow = () => {
-  if (html.is(":animated")) return;
+  if ($("html").is(":animated")) return;
 
   setInterval(() => {
     if (currentPage === maxPage) {
@@ -63,12 +58,16 @@ const startSlideShow = () => {
     }
 
     const posTop = (currentPage - 1) * $(window).height();
-    html.animate({ scrollTop: posTop });
+    $("html").animate({ scrollTop: posTop });
   }, 3000);
 };
 
+const setHeaderOpacity = (opacity) => {
+  $("header").css("background-color", `rgba(0,0,0,${opacity})`);
+};
+
 // $(window).on("wheel", (e) => {
-//   if (html.is(":animated")) return;
+//   if ($("html").is(":animated")) return;
 
 //   const errorRange = 10;
 //   const deltaY = e.originalEvent.deltaY;
@@ -81,7 +80,7 @@ const startSlideShow = () => {
 //   }
 
 //   const posTop = (mainPageNum - 1) * $(window).height();
-//   html.animate({ scrollTop: posTop });
+//   $("html").animate({ scrollTop: posTop });
 // });
 
 class mainContent {
@@ -91,7 +90,7 @@ class mainContent {
   }
 
   init() {
-    root.append(this.createSection());
+    $("#root").append(this.createSection());
   }
 
   createSection() {

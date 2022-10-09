@@ -1,8 +1,9 @@
 const clickRndCenter = () => {
   $("#root").addClass("hidden");
   $("#technologyPage").removeClass("hidden");
+  setHeaderOpacity(1);
 
-  const content = new PPTContent(page.id);
+  const content = new PPTContent("rnd-page-1");
   content.init();
 };
 
@@ -12,12 +13,14 @@ class PPTContent {
   }
 
   init() {
-    root.append(this.createSection());
+    $("#technologyPage").append(this.createSection());
   }
 
   createSection() {
     return `
     <section id="${this.id}" class="technology-body-content">
+      <div class="ppt-path">Home > Technology > R&D Center</div>
+      <hr class="ppt-hr" />
     </section>
     `;
   }
