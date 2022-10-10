@@ -32,6 +32,8 @@ const mainPageItems = [
 window.onload = () => {
   console.log("ONLOAD");
 
+  showPage(rootPageId);
+
   mainPageItems.forEach((page) => {
     const content = new mainContent(page.id);
     content.init();
