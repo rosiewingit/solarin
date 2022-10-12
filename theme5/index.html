@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<head>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+    crossorigin="anonymous"
+  />
+  <link href="styles/main.css" rel="stylesheet" />
+  <link href="styles/technology.css" rel="stylesheet" />
+  <link href="styles/products.css" rel="stylesheet" />
+  <link href="styles/prcenter.css" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Noto+Sans:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet"
+  />
+  <script
+    src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"
+  ></script>
+  <script type="text/javascript" src="./src/pageManager.js"></script>
+  <script type="text/javascript" src="./src/main.js"></script>
+  <script type="text/javascript" src="./src/technology.js"></script>
+  <script type="text/javascript" src="./src/products.js"></script>
+  <script type="text/javascript" src="./src/prcenter.js"></script>
+</head>
+<body>
+  <header class="main-header">
+    <nav class="navbar navbar-expand-lg navbar-light main-navbar">
+      <div class="nav-left">
+        <a href="index.html">
+          <img class="brand-logo" src="./resources/logo.png" />
+        </a>
+      </div>
+      <div class="nav-right">
+        <div class="nav-margin"></div>
+        <ul class="nav-container navbar-nav">
+          <li id="navMenu1" class="nav-child nav-item">
+            <a class="nav-link nav-highlight">TECHNOLOGY</a>
+            <ul id="navMenuDrop1" class="nav-dropdown-menu">
+              <li class="nav-dropdown-child nav-item">
+                <a
+                  class="nav-dropdown-link nav-highlight"
+                  onclick="clickRndCenter()"
+                  >R&D Center</a
+                >
+              </li>
+              <li class="nav-dropdown-child nav-item">
+                <a
+                  class="nav-dropdown-link nav-highlight"
+                  onclick="clickPatent()"
+                  >Patent</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-child nav-item">
+            <a class="nav-link nav-highlight" onclick="clickProducts()"
+              >PRODUCTS</a
+            >
+          </li>
+          <li id="navMenu3" class="nav-child nav-item">
+            <a class="nav-link nav-highlight">PR CENTER</a>
+            <ul id="navMenuDrop3" class="nav-dropdown-menu">
+              <li class="nav-dropdown-child nav-item">
+                <a class="nav-dropdown-link nav-highlight" onclick="clickNews()"
+                  >News</a
+                >
+              </li>
+              <li class="nav-dropdown-child nav-item">
+                <a
+                  class="nav-dropdown-link nav-highlight"
+                  onclick="clickCertification()"
+                  >Certification</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li id="navMenu4" class="nav-child nav-item">
+            <a class="nav-link nav-highlight">ABOUT US</a>
+            <ul id="navMenuDrop4" class="nav-dropdown-menu">
+              <li class="nav-dropdown-child nav-item">
+                <a class="nav-dropdown-link nav-highlight">Overview</a>
+              </li>
+              <li class="nav-dropdown-child nav-item">
+                <a class="nav-dropdown-link nav-highlight">CEO Message</a>
+              </li>
+              <li class="nav-dropdown-child nav-item">
+                <a class="nav-dropdown-link nav-highlight">ESG</a>
+              </li>
+              <li class="nav-dropdown-child nav-item">
+                <a class="nav-dropdown-link nav-highlight">Access</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-child nav-item dropdown">
+            <a
+              id="dropdownMenu"
+              class="nav-link dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              KOR
+            </a>
+            <ul
+              id="dropdownLang"
+              class="dropdown-menu"
+              aria-labelledby="dropdownMenu"
+            >
+              <li><a id="dropdownLangText" class="dropdown-item">ENG</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div id="root" class="main-body hidden"></div>
+  <div id="rndcenterPage" class="main-body hidden"></div>
+  <div id="patentPage" class="main-body hidden"></div>
+  <div id="productsPage" class="main-body hidden"></div>
+  <div id="newsPage" class="main-body news-body hidden"></div>
+  <div id="certificationPage" class="main-body hidden"></div>
+  <footer class="main-footer">
+    <div class="main-footer-top">
+      <img class="brand-logo-color" src="./resources/logo-color.png" />
+    </div>
+    <div class="main-footer-mid">
+      <div class="main-footer-mid-item">
+        <p>
+          솔라인은 2019년 설립된 국내 유일의 아이디어<br />
+          제작 업체로서, 국무총리 또는 행정각부의 장은<br />
+          소관사무에 관하여 법률이나 대통령령의 위임<br />
+          또는 직권으로 총리령 또는 부령을 발할 수 있다.<br /><br />
+          국가는 재해를 예방하고 그 위험으로부터 국민을<br />
+          보호하기 위하여 노력하여야 한다.<br /><br />
+          모든 국민은 신속한 재판을 받을 권리를 가진다.<br />
+          형사피고인은 상당한 이유가 없는 한 지체없이<br />
+          공개재판을 받을 권리를 가진다. 국가는 균형있는<br />
+          국민경제의 성장 및 안정과 적정한 소득의 분배를<br />
+          유지하고, 시장의 지배와 경제력의 남용을 방지하며,<br />
+          경제주체간의 조화를 통한 경제의 민주화를 위하여<br />
+          경제에 관한 규제와 조정을 할 수 있다.
+        </p>
+        <button
+          type="button"
+          id="mainLearnMoreBtn"
+          class="btn main-footer-button"
+        >
+          Learn more
+        </button>
+      </div>
+      <div class="main-footer-mid-item">
+        <p><span class="text-bold-title">대표명</span><span>김재술</span></p>
+        <p>
+          <span class="text-bold-title">사업자등록번호</span
+          ><span>710-31-00611</span>
+        </p>
+        <p>
+          <span class="text-bold-title">대표 전화</span
+          ><span>070-1111-1111</span>
+        </p>
+        <p>
+          <span class="text-bold-title">주소</span><br /><span
+            >경기도 성남시 중원구 사기막골로 45번길 14</span
+          >
+        </p>
+        <button
+          type="button"
+          id="mainContactBtn"
+          class="btn main-footer-button"
+        >
+          Contact us
+        </button>
+      </div>
+      <div class="main-footer-mid-item">
+        <p>
+          <span class="text-bold-title">사이트맵</span>
+        </p>
+        <hr />
+        <p>내부정보관리규정</p>
+        <p>공생기술센터</p>
+      </div>
+      <div class="main-footer-mid-item">
+        <p>
+          <span class="text-bold-title">문의하기</span>
+        </p>
+        <hr />
+        <p><span>이름</span><br /><input /></p>
+        <p><span>연락처</span><br /><input /></p>
+        <p><span>문의내용</span><br /><textarea></textarea></p>
+        <p class="main-terms">
+          <input type="checkbox" class="main-terms-checkbox" />
+          <span class="text-bold-title"
+            >개인정보수집 및 약관에 동의합니다.</span
+          >
+        </p>
+        <button type="button" id="mainSubmitBtn" class="btn main-footer-button">
+          Submit
+        </button>
+      </div>
+    </div>
+    <div class="main-footer-bottom">
+      <p>Copyright 2022 Solarin Co. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
