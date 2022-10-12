@@ -1,7 +1,7 @@
 let currentPage = 1;
 let maxPage = 4;
 
-const host = "https://rosiewingit.github.io/solarin/theme3/resources/";
+const host = "https://rosiewingit.github.io/solarin/latest/resources/";
 const mainPageItems = [
   {
     id: "main-page-1",
