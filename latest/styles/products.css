@@ -37,41 +37,42 @@
 }
 
 .products-item-description {
-  font-size: 0.8vmax;
+  font-size: 0.75vmax;
 }
 
 .ppt-navigator {
   position: fixed;
   margin-top: 50px;
-  width: 175px;
-  height: 430px;
+  padding-top: 1%;
+  width: 12%;
+  height: 45%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 200;
-  padding: 20px 25px;
 }
 
 .nav-ppt-child {
   font-size: 0.9vmax;
-  width: 100%;
+  width: auto;
+  height: 40px;
   font-weight: 350;
   text-align: left;
+  margin: 2% 8%;
 }
 
 .nav-ppt-child a {
-  margin-top: 0;
   padding-top: 20px;
+  line-height: 10px;
 }
 
 .nav-ppt-highlight:hover {
-  width: 70%;
   font-weight: 500;
   color: #01cf42;
   border-bottom: solid 2px #01cf42;
 }
 
 .navbar-vertical {
-  width: inherit;
-  height: inherit;
+  width: 100%;
+  height: 50px;
   list-style-type: none;
   margin-block-start: 0;
   padding-inline-start: 0;

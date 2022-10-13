@@ -32,7 +32,9 @@ const mainPageItems = [
 window.onload = () => {
   console.log("ONLOAD");
 
-  showPage(rootPageId);
+  // showPage(rootPageId);
+  clickProducts();
+  showPage(productsPageId);
 
   mainPageItems.forEach((page) => {
     const content = new mainContent(page.id);
