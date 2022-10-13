@@ -89,7 +89,7 @@ b {
 }
 
 .nav-right {
-  position:relative;
+  position: relative;
   float: right;
   width: 60%;
   margin-left: 32%;
@@ -155,7 +155,6 @@ b {
   list-style: none;
   padding-inline-start: 0;
   text-align: center;
-  line-height: 30px;
   padding-left: 20px;
   visibility: hidden;
 }
@@ -167,12 +166,13 @@ b {
   height: auto;
   min-height: 30px;
   width: 100%;
+  padding: 5px 0;
 }
 
 .nav-dropdown-link {
   color: #ffffff;
   width: 100%;
-  height: 50px;
+  height: auto;
   text-decoration: none;
 }
 
