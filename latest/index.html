@@ -10,6 +10,7 @@
   <link href="styles/technology.css" rel="stylesheet" />
   <link href="styles/products.css" rel="stylesheet" />
   <link href="styles/prcenter.css" rel="stylesheet" />
+  <link href="styles/aboutus.css" rel="stylesheet" />
   <link
     href="https://fonts.googleapis.com/css?family=Noto+Sans:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet"
@@ -29,6 +30,7 @@
   <script type="text/javascript" src="./src/technology.js"></script>
   <script type="text/javascript" src="./src/products.js"></script>
   <script type="text/javascript" src="./src/prcenter.js"></script>
+  <script type="text/javascript" src="./src/aboutus.js"></script>
 </head>
 <body>
   <header class="main-header">
@@ -86,16 +88,30 @@
             <a class="nav-link nav-highlight">ABOUT US</a>
             <ul id="navMenuDrop4" class="nav-dropdown-menu">
               <li class="nav-dropdown-child nav-item">
-                <a class="nav-dropdown-link nav-highlight">Overview</a>
+                <a
+                  class="nav-dropdown-link nav-highlight"
+                  onclick="clickOverview()"
+                  >Overview</a
+                >
               </li>
               <li class="nav-dropdown-child nav-item">
-                <a class="nav-dropdown-link nav-highlight">CEO Message</a>
+                <a
+                  class="nav-dropdown-link nav-highlight"
+                  onclick="clickCeoMessage()"
+                  >CEO Message</a
+                >
               </li>
               <li class="nav-dropdown-child nav-item">
-                <a class="nav-dropdown-link nav-highlight">ESG</a>
+                <a class="nav-dropdown-link nav-highlight" onclick="clickEsg()"
+                  >ESG</a
+                >
               </li>
               <li class="nav-dropdown-child nav-item">
-                <a class="nav-dropdown-link nav-highlight">Access</a>
+                <a
+                  class="nav-dropdown-link nav-highlight"
+                  onclick="clickAccess()"
+                  >Access</a
+                >
               </li>
             </ul>
           </li>
@@ -261,6 +277,10 @@
     </section>
   </div>
   <div id="certificationPage" class="main-body hidden"></div>
+  <div id="overviewPage" class="main-body hidden"></div>
+  <div id="ceoMessagePage" class="main-body hidden"></div>
+  <div id="esgPage" class="main-body hidden"></div>
+  <div id="accessPage" class="main-body hidden"></div>
   <footer class="main-footer">
     <div class="main-footer-top">
       <img class="brand-logo-color" src="./resources/logo-color.png" />
