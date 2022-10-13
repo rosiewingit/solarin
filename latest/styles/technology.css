@@ -14,6 +14,19 @@
   color: #9ca1a2;
 }
 
+.ppt-title {
+  padding: 2.5% 0;
+  font-weight: 900;
+  font-size: 1.5vmax;
+  color: #545454;
+}
+
+.ppt-title::before {
+  content: "";
+  border-left: 3.5pt solid #00a634;
+  margin-right: 10px;
+}
+
 .patent-item {
 }
 

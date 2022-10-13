@@ -60,7 +60,9 @@ class PPTContent {
       <section id="${this.id}" class="body-content">
         <div class="ppt-path"></div>
         <hr class="ppt-hr" />
-        <article id="${this.id}-article" class="page-article"></article>
+        <article id="${this.id}-article" class="page-article">
+          <h1 class="ppt-title">Head Office</h1>
+        </article>
       </section>
       `;
   }
