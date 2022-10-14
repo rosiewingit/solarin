@@ -33,6 +33,7 @@ window.onload = () => {
   console.log("ONLOAD");
 
   showPage(rootPageId);
+  // clickOverview();
 
   mainPageItems.forEach((page) => {
     const content = new mainContent(page.id);
