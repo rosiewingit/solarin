@@ -261,12 +261,33 @@ class PPTContent {
 
   createOverviewSection() {
     return `
-      <section id="${this.id}" class="body-content">
-        <div class="ppt-path"></div>
-        <hr class="ppt-hr" />
-        <article id="${this.id}-article" class="page-article">
-        </article>
-      </section>
+    <section id="${this.id}" class="body-content">
+    <div class="ppt-path">Home > About Us > <b>Overview</b></div>
+    <hr class="ppt-hr" />
+    <article class="page-article">
+      <div class="overview-first-left">
+        <div class="overview-first-image"></div>
+      </div>
+      <div class="overview-first-right">
+        <div class="overview-first-right-top">
+          <img
+            class="brand-logo-color overview-logo"
+            src="./resources/logo-color.png"
+          />
+        </div>
+        <div class="overview-first-right-mid">
+          <h1 class="overview-first-title">"Company Slogan"</h1>
+        </div>
+        <div class="overview-first-right-bottom"></div>
+      </div>
+    </article>
+  </section>
+  <section class="body-content">
+    <article class="page-article"></article>
+  </section>
+  <section class="body-content">
+    <article class="page-article"></article>
+  </section>
       `;
   }
 
