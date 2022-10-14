@@ -73,6 +73,12 @@ class PPTContent {
       default:
         break;
     }
+
+    this.initScroll();
+  }
+
+  initScroll() {
+    $("html").animate({ scrollTop: 0 }, 0);
   }
 
   createRndSection() {
