@@ -1,46 +1,18 @@
-let currentPage = 1;
-let maxPage = 4;
-
-const host = "https://rosiewingit.github.io/solarin/latest/resources/";
-const mainPageItems = [
-  {
-    id: "main-page-1",
-    title: "Make convenient with new ideas.",
-    subtitle:
-      "새로운 생각으로 일상을 더 편리하게, 아이디어를 현실로 만드는 기업 솔라인.",
-  },
-  {
-    id: "main-page-2",
-    title: "Technology for Human.",
-    subtitle:
-      "새로운 생각으로 일상을 더 편리하게, 아이디어를 현실로 만드는 기업 솔라인.",
-  },
-  {
-    id: "main-page-3",
-    title: "Idea Design & Manufacturing",
-    subtitle:
-      "새로운 생각으로 일상을 더 편리하게, 아이디어를 현실로 만드는 기업 솔라인.",
-  },
-  {
-    id: "main-page-4",
-    title: "New Challenge for Future.",
-    subtitle:
-      "새로운 생각으로 일상을 더 편리하게, 아이디어를 현실로 만드는 기업 솔라인.",
-  },
-];
-
 window.onload = () => {
   console.log("ONLOAD");
 
   showPage(rootPageId);
-  // clickOverview();
 
-  mainPageItems.forEach((page) => {
-    const content = new mainContent(page.id);
-    content.init();
-    content.setBackground();
-    content.setTextContents(page.title, page.subtitle);
-  });
+  const mainContent = new MainContent();
+  mainContent.init();
+  mainContent.startSlide();
+
+  // mainPageItems.forEach((page) => {
+  //   const content = new mainContent(page.id);
+  //   content.init();
+  //   content.setBackground();
+  //   content.setTextContents(page.title, page.subtitle);
+  // });
 
   addHeaderHover();
 
@@ -132,6 +104,97 @@ const addHeaderHover = () => {
 //   const posTop = (mainPageNum - 1) * $(window).height();
 //   $("html").animate({ scrollTop: posTop });
 // });
+
+class MainContent {
+  id = "mainSection";
+  items = [
+    {
+      id: "main-page-1",
+      imageUrl: "",
+      title: "Make convenient with new ideas.",
+      subtitle:
+        "새로운 생각으로 일상을 더 편리하게, 아이디어를 현실로 만드는 기업 솔라인.",
+    },
+    {
+      id: "main-page-2",
+      imageUrl: "",
+      title: "Technology for Human.",
+      subtitle:
+        "새로운 생각으로 일상을 더 편리하게, 아이디어를 현실로 만드는 기업 솔라인.",
+    },
+    {
+      id: "main-page-3",
+      imageUrl: "",
+      title: "Idea Design & Manufacturing",
+      subtitle:
+        "새로운 생각으로 일상을 더 편리하게, 아이디어를 현실로 만드는 기업 솔라인.",
+    },
+    {
+      id: "main-page-4",
+      imageUrl: "",
+      title: "New Challenge for Future.",
+      subtitle:
+        "새로운 생각으로 일상을 더 편리하게, 아이디어를 현실로 만드는 기업 솔라인.",
+    },
+  ];
+  host = "https://rosiewingit.github.io/solarin/latest/resources/";
+  index = 0;
+  maxPage = 4;
+  duration = 5000;
+  slider = null;
+
+  constructor() {}
+
+  init() {
+    $("#root").append(this.createSection());
+    this.initImageUrl();
+    this.maxPage = this.items.length - 1;
+  }
+
+  initImageUrl() {
+    this.items.forEach((item) => {
+      item.imageUrl = `${this.host}${item.id}.png`;
+    });
+  }
+
+  createSection() {
+    return `
+    <section id=${this.id} class="main-body-content">
+      <article id="mainArticle" class="main-body-item">
+        <h1 class="main-body-item-title">Make convenient with new ideas.</h1>
+        <p class="main-body-item-subtitle">새로운 생각으로 일상을 더 편리하게, 아이디어를 현실로 만드는 기업 솔라인</p>
+      </article>
+    </section>
+    `;
+  }
+
+  setBackground(imageUrl) {
+    $(`#${this.id}`).css("background-image", `url(${imageUrl})`);
+  }
+
+  setTextContents(title, subtitle) {
+    const article = $(`#${this.id}-article`);
+    article.find("h1").text(title);
+    article.find("p").text(subtitle);
+  }
+
+  startSlide() {
+    this.slider = setInterval(() => {
+      if (this.index === this.maxPage) {
+        this.index = 1;
+      } else if (this.index < this.maxPage) {
+        this.index++;
+      }
+      this.setBackground(this.items[this.index].imageUrl);
+    }, this.duration);
+  }
+
+  endSlide() {
+    if (this.slider) {
+      clearInterval(this.slider);
+    }
+  }
+}
 
 class mainContent {
   constructor(id) {
