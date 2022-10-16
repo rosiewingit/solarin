@@ -390,13 +390,80 @@ class PPTContent {
 
   createEsgSection() {
     return `
-      <section id="${this.id}" class="body-content">
-        <div class="ppt-path"></div>
-        <hr class="ppt-hr" />
-        <article id="${this.id}-article" class="page-article">
-          <h1 class="ppt-title">ESG 경영이란?</h1>
-        </article>
-      </section>
+    <section class="body-content">
+    <div class="ppt-path">Home > About Us > <b>ESG</b></div>
+    <hr class="ppt-hr" />
+    <article class="page-article">
+      <h1 class="ppt-title">ESG 경영이란?</h1>
+      <p class="esg-main-text">
+        ‘ESG’란 기업의 비재무적 요소인 환경(Environment), 사회(Social),
+        지배구조(Governance)를 뜻하는 것으로, ‘ESG 경영’이란 장기적인 관점에서
+        친환경 및 사회적 책임경영과 투명경영을 통해 지속가능한 발전을 추구하는
+        것이라고 할 수 있습니다.
+      </p>
+      <div class="esg-main-image">
+        <img src="./resources/esg-main-image.png" />
+      </div>
+    </article>
+  </section>
+  <section class="body-content">
+    <article class="page-article">
+      <h1 class="ppt-title">솔라인의 ESG 주요 실천 과제</h1>
+      <div class="row esg-task-cards">
+        <div class="col-md-4 esg-card">
+          <main class="esg-card-image">
+            <div class="esg-card-title">
+              <div class="esg-card-title-item"></div>
+              <div class="esg-card-title-item">친환경 경영, Environment</div>
+            </div>
+          </main>
+          <ul class="esg-card-list">
+            <li>친환경 경영///</li>
+            <li>친환경, 기후변화, 대응에너지 절약, 재활용</li>
+            <li>녹색제품 구매 비율 확대</li>
+            <li>탄소 온실가스 등 독성물질 절감</li>
+            <li>에너지 사용량 감소 및 효율 개선</li>
+            <li>행사 폐기물 감소 노력</li>
+            <li>Earth Check(친환경관광인증) 취득</li>
+          </ul>
+        </div>
+        <div class="col-md-4 esg-card">
+          <main class="esg-card-image">
+            <div class="esg-card-title">
+              <div class="esg-card-title-item"></div>
+              <div class="esg-card-title-item">사회적 책임 경영, Social</div>
+            </div>
+          </main>
+          <ul class="esg-card-list">
+            <li>친환경 경영///</li>
+            <li>친환경, 기후변화, 대응에너지 절약, 재활용</li>
+            <li>녹색제품 구매 비율 확대</li>
+            <li>탄소 온실가스 등 독성물질 절감</li>
+            <li>에너지 사용량 감소 및 효율 개선</li>
+            <li>행사 폐기물 감소 노력</li>
+            <li>Earth Check(친환경관광인증) 취득</li>
+          </ul>
+        </div>
+        <div class="col-md-4 esg-card">
+          <main class="esg-card-image">
+            <div class="esg-card-title">
+              <div class="esg-card-title-item"></div>
+              <div class="esg-card-title-item">투명 경영, Governance</div>
+            </div>
+          </main>
+          <ul class="esg-card-list">
+            <li>친환경 경영///</li>
+            <li>친환경, 기후변화, 대응에너지 절약, 재활용</li>
+            <li>녹색제품 구매 비율 확대</li>
+            <li>탄소 온실가스 등 독성물질 절감</li>
+            <li>에너지 사용량 감소 및 효율 개선</li>
+            <li>행사 폐기물 감소 노력</li>
+            <li>Earth Check(친환경관광인증) 취득</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+  </section>
       `;
   }
 
