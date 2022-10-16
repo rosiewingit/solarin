@@ -355,12 +355,36 @@ class PPTContent {
 
   createCeoMessageSection() {
     return `
-      <section id="${this.id}" class="body-content">
-        <div class="ppt-path"></div>
-        <hr class="ppt-hr" />
-        <article id="${this.id}-article" class="page-article">
-        </article>
-      </section>
+    <section id="${this.id}" class="body-content">
+      <div class="ppt-path">Home > About Us > <b>CEO Message</b></div>
+      <hr class="ppt-hr" />
+      <article id="${this.id}-article" class="page-article">
+        <div class="ceo-message-left">
+          <img src="./resources/ceo-image.png" />
+        </div>
+        <div class="ceo-message-right">
+          <h1 class="ceo-message-title">Make convenient with new ideas.</h1>
+          <p class="ceo-message-text">
+            솔라인은 ‘새로운 생각, 편리한 생활’이라는 설립 이념 아래 ‘아이디어
+            설계 및 제조’, ‘기술 개발 컨설팅’, ‘신기술 연구 개발’ 분야에
+            영위하고 있는 기업으로서, 2019년 창립 이래 끊임없는 도전과 혁신으로
+            지속적인 성장을 이루어 왔습니다.<br /><br />인간을 위한 기술로 고객
+            만족을 실천하는 솔라인은 국제 특허 2건, 국내 특허 4건, 출원 4건의
+            특허를 보유하고 있으며, 해양 경찰청 연구 센터의 의뢰를 받아 어망
+            절단기, 갯벌구조장치, 함정용 자동 사다리, 인양 크레인, 어망 절단기
+            등 다양한 구난-구조 장치를 개발해 왔습니다.<br /><br />국내 매출
+            규모가 성장세를 이룸에 따라, 생산 설비 투자를 비롯한 기술 발전을
+            위한 연구 개발, 인적 자원 양성 등 지속 가능한 개발을 통해 성장
+            기반을 갖춰 나가고 있습니다. 또한 다양한 분야의 기업과 파트너쉽을
+            구축하여 고객의 요구를 충족할 수 있는 품질과 서비스를 제공하고
+            있습니다.<br /><br />고객에게 새로운 가치를 제공하는 일류 기업이
+            되겠습니다. 감사합니다.
+          </p>
+          <span class="ceo-message-name">솔라인 대표 김재술</span>
+          <img class="ceo-message-sign" src="./resources/ceo-sign.png" />
+        </div>
+      </article>
+    </section>
       `;
   }
 
