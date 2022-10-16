@@ -1,8 +1,3 @@
-let currentPage = 1;
-let maxPage = 4;
-
-let slideIndex = 0;
-
 const host = "https://rosiewingit.github.io/solarin/latest/resources/";
 const mainPageItems = [
   {
