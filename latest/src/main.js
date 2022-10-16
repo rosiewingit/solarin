@@ -1,6 +1,8 @@
 let currentPage = 1;
 let maxPage = 4;
 
+let slideIndex = 0;
+
 const host = "https://rosiewingit.github.io/solarin/latest/resources/";
 const mainPageItems = [
   {
@@ -33,38 +35,17 @@ window.onload = () => {
   console.log("ONLOAD");
 
   showPage(rootPageId);
-  // clickOverview();
 
   mainPageItems.forEach((page) => {
-    const content = new mainContent(page.id);
+    const content = new MainContent(page.id);
     content.init();
     content.setBackground();
     content.setTextContents(page.title, page.subtitle);
   });
 
   addHeaderHover();
-
-  // initScroll();
-  // startSlideShow();
-};
-
-const initScroll = () => {
-  $("html").animate({ scrollTop: 0 }, 0);
-};
-
-const startSlideShow = () => {
-  if ($("html").is(":animated")) return;
-
-  setInterval(() => {
-    if (currentPage === maxPage) {
-      currentPage = 1;
-    } else if (currentPage < maxPage) {
-      currentPage++;
-    }
-
-    const posTop = (currentPage - 1) * $(window).height();
-    $("html").animate({ scrollTop: posTop });
-  }, 3000);
+  const slideShow = new SlideShow();
+  slideShow.start();
 };
 
 const setHeaderOpacity = (opacity) => {
@@ -116,24 +97,7 @@ const addHeaderHover = () => {
   );
 };
 
-// $(window).on("wheel", (e) => {
-//   if ($("html").is(":animated")) return;
-
-//   const errorRange = 10;
-//   const deltaY = e.originalEvent.deltaY;
-//   if (deltaY > errorRange) {
-//     if (mainPageNum === 4) return;
-//     mainPageNum++;
-//   } else if (deltaY < -errorRange) {
-//     if (mainPageNum === 1) return;
-//     mainPageNum--;
-//   }
-
-//   const posTop = (mainPageNum - 1) * $(window).height();
-//   $("html").animate({ scrollTop: posTop });
-// });
-
-class mainContent {
+class MainContent {
   constructor(id) {
     this.id = id;
     this.imageUrl = `${host}${id}.png`;
@@ -145,7 +109,7 @@ class mainContent {
 
   createSection() {
     return `
-    <section id="${this.id}" class="main-body-content">
+    <section id="${this.id}" class="main-body-content fade-in">
       <article id="${this.id}-article" class="main-body-item">
         <h1 class="main-body-item-title">Make convenient with new ideas.</h1>
         <p class="main-body-item-subtitle">새로운 생각으로 일상을 더 편리하게, 아이디어를 현실로 만드는 기업 솔라인</p>
@@ -162,5 +126,44 @@ class mainContent {
     const article = $(`#${this.id}-article`);
     article.find("h1").text(title);
     article.find("p").text(subtitle);
+  }
+}
+
+class SlideShow {
+  pages = [];
+  index = 0;
+  max = 4;
+  slider = null;
+  duration = 5000;
+
+  constructor() {
+    this.pages = $(".main-body-content");
+    this.max = this.pages.length;
+  }
+
+  start() {
+    this.slider = setInterval(() => {
+      this.index++;
+      if (this.index > this.max - 1) {
+        this.index = 0;
+      }
+
+      for (let i = 0; i < this.max; i++) {
+        if (i === this.index) {
+          this.pages[i].style.display = "block";
+          this.pages[i].classList.add("fade-in");
+        } else {
+          this.pages[i].style.display = "none";
+          this.pages[i].classList.add("fade-out");
+        }
+      }
+    }, this.duration);
+  }
+
+  stop() {
+    if (this.slider == null) {
+      return;
+    }
+    clearInterval(this.slider);
   }
 }
