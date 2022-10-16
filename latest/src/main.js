@@ -41,6 +41,14 @@ window.onload = () => {
   addHeaderHover();
   const slideShow = new SlideShow();
   slideShow.start();
+
+  $(window).scroll(function () {
+    if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+      slideShow.stop();
+    } else {
+      slideShow.start();
+    }
+  });
 };
 
 const setHeaderOpacity = (opacity) => {
@@ -137,6 +145,9 @@ class SlideShow {
   }
 
   start() {
+    if (this.slider) {
+      this.stop();
+    }
     this.slider = setInterval(() => {
       this.index++;
       if (this.index > this.max - 1) {
