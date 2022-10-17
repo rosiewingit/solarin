@@ -390,7 +390,7 @@ class PPTContent {
 
   createEsgSection() {
     return `
-    <section class="body-content">
+    <section id="${this.id}" class="body-content">
     <div class="ppt-path">Home > About Us > <b>ESG</b></div>
     <hr class="ppt-hr" />
     <article class="page-article">
