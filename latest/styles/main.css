@@ -111,9 +111,13 @@ b {
   font-size: 0.8vmax;
 }
 
+#navProducts {
+  cursor: pointer;
+}
+
 .nav-child {
   text-align: center;
-  cursor: pointer;
+  /* cursor: pointer; */
   width: 20%;
   height: 100%;
 }
@@ -351,7 +355,7 @@ textarea {
 
 .fade-out {
   animation-name: fadein;
-  animation-duration: 2.5s;
+  animation-duration: 1.5s;
   animation-timing-function: ease-out;
 }
 

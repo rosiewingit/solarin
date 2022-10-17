@@ -51,6 +51,7 @@
 }
 
 .nav-ppt-child {
+  cursor: pointer;
   font-size: 0.9vmax;
   width: auto;
   height: 40px;
