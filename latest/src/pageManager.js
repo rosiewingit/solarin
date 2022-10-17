@@ -469,13 +469,47 @@ class PPTContent {
 
   createAccessSection() {
     return `
-      <section id="${this.id}" class="body-content">
-        <div class="ppt-path"></div>
-        <hr class="ppt-hr" />
-        <article id="${this.id}-article" class="page-article">
-          <h1 class="ppt-title">위치 안내</h1>
-        </article>
-      </section>
+    <section id="${this.id}" class="body-content">
+    <div class="ppt-path">Home > About Us > <b>Access</b></div>
+    <hr class="ppt-hr" />
+    <article id="${this.id}-article" class="page-article">
+      <h1 class="ppt-title">위치 안내</h1>
+      <div class="access-map-container">
+        <img class="map-image" src="./resources/access-map.png" />
+        <div class="access-map-overlay">
+          <div class="overlay-top">
+            <img class="brand-logo-color" src="./resources/logo-color.png" />
+          </div>
+          <div class="overlay-bottom">
+            <div class="overlay-bottom-top">
+              <p class="overlay-text">
+                14, Sagimakgol-ro 45beon-gil, Jungwon-gu, Seongnam-si,
+                Gyeonggi-do, Republic of Korea
+              </p>
+            </div>
+            <div class="overlay-bottom-bottom">
+              <p class="overlay-text">+82)0507-1395-0771</p>
+            </div>
+          </div>
+          <button
+            type="button"
+            id="accessContactBtn"
+            class="btn access-button"
+          >
+            Contact us
+          </button>
+        </div>
+      </div>
+    </article>
+  </section>
+  <section class="body-content">
+    <article class="page-article">
+      <h1 class="ppt-title">오시는 길</h1>
+    </article>
+  </section>
+  <section class="body-content">
+    <article class="page-article"></article>
+  </section>
       `;
   }
 

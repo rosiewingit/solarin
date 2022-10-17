@@ -29,6 +29,7 @@ const mainPageItems = [
 window.onload = () => {
   console.log("ONLOAD");
 
+  // showPage(accessPageId);
   showPage(rootPageId);
 
   mainPageItems.forEach((page) => {
