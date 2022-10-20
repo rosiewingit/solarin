@@ -1,4 +1,5 @@
 const rootPageId = "#root";
+const coretechnologyPageId = "#coretechnologyPage";
 const rndcenterPageId = "#rndcenterPage";
 const patentPageId = "#patentPage";
 const productsPageId = "#productsPage";
@@ -11,6 +12,7 @@ const accessPageId = "#accessPage";
 
 const pages = [
   rootPageId,
+  coretechnologyPageId,
   rndcenterPageId,
   patentPageId,
   productsPageId,
@@ -44,6 +46,9 @@ class PPTContent {
     }
 
     switch (this.page) {
+      case coretechnologyPageId:
+        $(this.page).append(this.createCoreTechnologySection());
+        break;
       case rndcenterPageId:
         $(this.page).append(this.createRndSection());
         break;
@@ -79,6 +84,67 @@ class PPTContent {
 
   initScroll() {
     $("html").animate({ scrollTop: 0 }, 0);
+  }
+
+  createCoreTechnologySection() {
+    return `
+    <section id="${this.id}" class="body-content">
+      <div class="core-tech-buttonbox">
+        <img
+          class="core-tech-buttonimg"
+          src="./resources/core-tech-button.png"
+        />
+      </div>
+      <div class="ppt-path">Home > Technology > <b>Core Technology</b></div>
+      <hr class="ppt-hr" />
+      <article class="page-article">
+        <h1 class="ppt-title">Core Technology</h1>
+        <div class="core-tech-cards">
+          <div class="core-tech-card">
+            <div class="core-tech-top"></div>
+            <div class="core-tech-mid"></div>
+            <div class="core-tech-bottom">
+              <p class="core-tech-subtitle">NTIS Project</p>
+              <h4 class="core-tech-title">용존산소증폭기</h4>
+              <p class="core-tech-description">
+                상세 설명 : 솔라인은 ‘새로운 생각, 편리한 생활’이라는 설립 이념
+                아래 ‘아이디어 설계 및 제조’, ‘기술 개발 컨설팅’, ‘신기술 연구
+                개발’ 분야에 영위하고 있는 기업으로서, 2019년 창립 이래 끊임없는
+                도전과 혁신...
+              </p>
+            </div>
+          </div>
+          <div class="core-tech-card">
+            <div class="core-tech-top"></div>
+            <div class="core-tech-mid"></div>
+            <div class="core-tech-bottom">
+              <p class="core-tech-subtitle">NTIS Project</p>
+              <h4 class="core-tech-title">2948-1102, 배수펌프</h4>
+              <p class="core-tech-description"></p>
+            </div>
+          </div>
+          <div class="core-tech-card">
+            <div class="core-tech-top"></div>
+            <div class="core-tech-mid"></div>
+            <div class="core-tech-bottom">
+              <p class="core-tech-subtitle">subtitle</p>
+              <h4 class="core-tech-title">핵심 기술 3</h4>
+              <p class="core-tech-description"></p>
+            </div>
+          </div>
+          <div class="core-tech-card">
+            <div class="core-tech-top"></div>
+            <div class="core-tech-mid"></div>
+            <div class="core-tech-bottom">
+              <p class="core-tech-subtitle">subtitle</p>
+              <h4 class="core-tech-title">핵심 기술 4</h4>
+              <p class="core-tech-description"></p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+      `;
   }
 
   createRndSection() {
@@ -342,14 +408,7 @@ class PPTContent {
         <div class="overview-second-bottom"></div>
       </article>
     </section>
-    <section class="body-content">
-      <article class="page-article">
-        <h1 class="ppt-title">
-          Core Technology Task : 핵심 기술 or 국가 연구 과제
-        </h1>
-        <div class="overview-task-cards"></div>
-      </article>
-    </section>
+    
       `;
   }
 

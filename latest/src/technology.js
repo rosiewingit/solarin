@@ -1,3 +1,13 @@
+const clickCoreTechnology = () => {
+  showPage(coretechnologyPageId);
+  setHeaderOpacity(1);
+  setNavDropdownOpacity(0.7);
+
+  const content = new PPTContent(coretechnologyPageId, "coretechnology-page-1");
+  content.init();
+  content.setPath("Home > Technology > <b>Core Technology</b>");
+};
+
 const clickRndCenter = () => {
   showPage(rndcenterPageId);
   setHeaderOpacity(1);
