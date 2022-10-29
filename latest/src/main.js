@@ -49,12 +49,21 @@ window.onload = () => {
     } else {
       slideShow.start();
     }
+
+    if (
+      $(window).height() >
+      $(document).height() - $(window).scrollTop() - $("footer").height() / 2
+    ) {
+      $("#centerButton").css("visibility", "hidden");
+    } else {
+      $("#centerButton").css("visibility", "visible");
+    }
   });
 };
 
 const clickCenterButton = () => {
   window.open("http://www.voicechip.co.kr/self-relience/diy.htm", "_blank");
-}
+};
 
 const setHeaderOpacity = (opacity) => {
   $("header").css("background-color", `rgba(0,0,0,${opacity})`);
