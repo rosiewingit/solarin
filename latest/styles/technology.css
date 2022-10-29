@@ -1,32 +1,3 @@
-.ppt-hr {
-  width: 100%;
-  color: #d9d9d9;
-  opacity: 0.7;
-  margin: 0;
-  margin-top: 5px;
-}
-
-.ppt-path {
-  margin-top: 17%;
-  width: 100%;
-  text-align: left;
-  font-size: 0.5vmax;
-  color: #9ca1a2;
-}
-
-.ppt-title {
-  padding: 2.5% 0;
-  font-weight: 900;
-  font-size: 1.5vmax;
-  color: #545454;
-}
-
-.ppt-title::before {
-  content: "";
-  border-left: 3.5pt solid #00a634;
-  margin-right: 10px;
-}
-
 .patent-item {
 }
 
@@ -118,4 +89,107 @@
   color: #ffffff;
   font-size: 0.75vmax;
   text-overflow: ellipsis;
+}
+
+.rnd-body {
+  margin-top: 4em;
+  width: 100%;
+}
+
+.rnd-body-top {
+  width: 100%;
+  height: 37em;
+  margin-bottom: 2.5em;
+}
+
+.rnd-body-mid {
+  width: 100%;
+  height: 37em;
+  margin-bottom: 2.5em;
+}
+
+.rnd-body-bottom {
+  width: 100%;
+  height: 37em;
+}
+
+.rnd-image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.rnd-center-1 {
+  width: 100%;
+  height: 100%;
+  background-image: url("../resources/rndcenter-img-1.png");
+}
+
+.rnd-center-2 {
+  width: 100%;
+  height: 100%;
+  background-image: url("../resources/rndcenter-img-2.png");
+}
+
+.rnd-center-3 {
+  float: right;
+  width: 50%;
+  height: 100%;
+  background-image: url("../resources/rndcenter-img-3.png");
+}
+
+.rnd-text {
+  width: 100%;
+  height: 100%;
+  padding-left: 4em;
+  padding-bottom: 2.2em;
+  display: flex;
+  flex-flow: column-reverse;
+}
+
+.rnd-title {
+  position: relative;
+  color: #ffffff;
+  font-size: 0.7vmax;
+  padding-bottom: 0.3em;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.rnd-subtitle {
+  position: relative;
+  color: #ffffff;
+  font-size: 0.9vmax;
+  font-weight: bold;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.rnd-bottom-text {
+  float: left;
+  padding: 5em;
+  padding-top: 18%;
+  width: 50%;
+  height: 100%;
+}
+
+.rnd-bottom-title {
+  color: #545454;
+  font-size: 0.67vmax;
+  font-weight: 550;
+  padding-bottom: 0.3em;
+  margin-block-end: 0;
+}
+
+.rnd-bottom-subtitle {
+  color: #545454;
+  font-size: 0.9vmax;
+  font-weight: 900;
+  padding-bottom: 0.5em;
+}
+
+.rnd-bottom-description {
+  color: #828282;
+  font-size: 0.65vmax;
+  font-weight: 500;
 }

@@ -134,11 +134,45 @@ b {
   border-bottom: solid 2px #01cf42;
 }
 
+.ppt-hr {
+  width: 100%;
+  color: #d9d9d9;
+  opacity: 0.7;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.ppt-path {
+  margin-top: 17%;
+  width: 100%;
+  text-align: left;
+  font-size: 0.5vmax;
+  color: #9ca1a2;
+}
+
+.ppt-title {
+  padding: 2.5% 0;
+  font-weight: 900;
+  font-size: 1.5vmax;
+  color: #545454;
+  margin-block-end: 0;
+}
+
+.ppt-title::before {
+  content: "";
+  border-left: 3.5pt solid #00a634;
+  margin-right: 10px;
+}
+
+.ppt-text {
+  font-weight: 600;
+  font-size: 0.7vmax;
+}
+
 .hidden {
   display: none;
   visibility: hidden;
 }
-
 
 .center-buttonbox {
   z-index: 500px;
@@ -153,7 +187,7 @@ b {
 .center-button {
   width: 165px;
   height: 60px;
-  background-color: #00A634;
+  background-color: #00a634;
   color: #ffffff;
   /* letter-spacing: -1px; */
   font-weight: 900;
@@ -176,8 +210,8 @@ b {
   opacity: 0.7;
 }
 
-
 .body-content {
+  display: table;
   float: left;
   width: 100%;
   height: 100%;

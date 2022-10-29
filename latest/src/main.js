@@ -29,7 +29,7 @@ const mainPageItems = [
 window.onload = () => {
   console.log("ONLOAD");
 
-  // clickCoreTechnology();
+  // clickRndCenter();
   showPage(rootPageId);
 
   mainPageItems.forEach((page) => {
