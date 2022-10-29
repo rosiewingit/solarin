@@ -27,3 +27,18 @@ const clickPatent = () => {
   content.init();
   content.setPath("Home > Technology > <b>Patent</b>");
 };
+
+const clickTechCoreCard1 = () => {
+  showPage(coretechnologyDetailPageId);
+  setHeaderOpacity(1);
+  setNavDropdownOpacity(0.7);
+
+  const content = new PPTContent(
+    coretechnologyDetailPageId,
+    "core-detail-page-1"
+  );
+  content.init();
+  content.setPath(
+    "Home > Technology > Core Technology > <b>용존산소증폭기</b>"
+  );
+};
