@@ -52,6 +52,10 @@ window.onload = () => {
   });
 };
 
+const clickCenterButton = () => {
+  window.open("http://www.voicechip.co.kr/self-relience/diy.htm", "_blank");
+}
+
 const setHeaderOpacity = (opacity) => {
   $("header").css("background-color", `rgba(0,0,0,${opacity})`);
 };
@@ -112,8 +116,9 @@ class MainContent {
   }
 
   createSection() {
+    // <section id="${this.id}" class="main-body-content fade-in">
     return `
-    <section id="${this.id}" class="main-body-content fade-in">
+    <section id="${this.id}" class="main-body-content">
       <article id="${this.id}-article" class="main-body-item">
         <h1 class="main-body-item-title">Make convenient with new ideas.</h1>
         <p class="main-body-item-subtitle">새로운 생각으로 일상을 더 편리하게, 아이디어를 현실로 만드는 기업 솔라인</p>

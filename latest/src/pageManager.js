@@ -89,12 +89,6 @@ class PPTContent {
   createCoreTechnologySection() {
     return `
     <section id="${this.id}" class="body-content">
-      <div class="core-tech-buttonbox">
-        <img
-          class="core-tech-buttonimg"
-          src="./resources/core-tech-button.png"
-        />
-      </div>
       <div class="ppt-path">Home > Technology > <b>Core Technology</b></div>
       <hr class="ppt-hr" />
       <article class="page-article">
