@@ -29,7 +29,7 @@ const mainPageItems = [
 window.onload = () => {
   console.log("ONLOAD");
 
-  // clickRndCenter();
+  // clickTechCoreCard1();
   showPage(rootPageId);
 
   mainPageItems.forEach((page) => {

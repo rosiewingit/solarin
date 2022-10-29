@@ -613,49 +613,73 @@ class PPTContent {
   createCoreTechnologyDetailSection() {
     return `
     <section id="${this.id}" class="body-content">
-    <div class="ppt-path">Home > Technology > Core Technology > <b>용존산소증폭기</b></div>
-    <hr class="ppt-hr" />
-    <article id="${this.id}-article">
-      <h1 class="ppt-title">R&D Center</h1>
-      <p class="ppt-text">
-        성남시에 위치한 솔라인 연구소는 국가 연구 과제를 수행중이며, 적정
-        기술을 개발하기 위한 공생기술 센터를 운영중입니다. 다년간의 연구를
-        거듭한 연구소는 연구 시설 및 기술을 보유하고 있습니다.
-      </p>
-      <div class="rnd-body">
-        <div class="rnd-body-top">
-          <div class="rnd-image rnd-center-1">
-            <div class="rnd-text">
-              <p class="rnd-subtitle">2948-1102, 용존산소증폭기</p>
-              <p class="rnd-title">A1103 연구소</p>
-            </div>
-          </div>
-        </div>
-        <div class="rnd-body-mid">
-          <div class="rnd-image rnd-center-2">
-            <div class="rnd-text">
-              <p class="rnd-subtitle">BOD-12873, 배수펌프</p>
-              <p class="rnd-title">국가 연구 과제 실험실</p>
-            </div>
-          </div>
-        </div>
-        <div class="rnd-body-bottom">
-          <div class="rnd-bottom-text">
-            <p class="rnd-bottom-title">IDEA DESIGN & MANUFACTURING</p>
-            <p class="rnd-bottom-subtitle">
-              국내 최고의 설계 경력 35년 이상의 베테랑
-            </p>
-            <p class="rnd-bottom-description">
-              국내 유일의 아이디어 디자인 및 설계 분야에 있는 솔라인은
-              임직원의 80%가 각 분야에서 35년 이상 근무한 베테랑들로 구성되어
-              있습니다.
-            </p>
-          </div>
-          <div class="rnd-image rnd-center-3"></div>
-        </div>
+      <div class="ppt-path">
+        Home > Technology > Core Technology > <b>용존산소증폭기</b>
       </div>
-    </article>
-  </section>
+      <hr class="ppt-hr" />
+      <article id="${this.id}-article">
+        <h1 class="core-detail-title">
+          용존산소증폭기, Dissolved Oxygen Amplifier
+        </h1>
+        <p class="core-detail-text">
+          솔라인은 2019년 설립된 국내 유일의 아이디어 제작 업체로서, 국무총리
+          또는 행정각부의 장은 소관사무에 관하여 법률이나 대통령령의 위임 또는
+          직권으로 총리령 또는 부령을 발할 수 있다.<br /><br />
+          국가는 재해를 예방하고 그 위험으로부터 국민을 보호하기 위하여
+          노력하여야 한다.<br />모든 국민은 신속한 재판을 받을 권리를 가진다.
+          형사피고인은 상당한 이유가 없는 한 지체없이 공개재판을 받을 권리를
+          가진다. 국가는 균형있는 국민경제의 성장 및 안정과 적정한 소득의 분배를
+          유지하고, 시장의 지배와 경제력의 남용을 방지하며, 경제주체간의 조화를
+          통한 경제의 민주화를 위하여 경제에 관한 규제와 조정을 할 수 있다.<br /><br />모든
+          국민은 신속한 재판을 받을 권리를 가진다. 형사피고인은 상당한 이유가
+          없는 한 지체없이 공개재판을 받을 권리를 가진다. 국가는 균형있는
+          국민경제의 성장 및 안정과 적정한 소득의 분배를 유지하고, 시장의 지배와
+          경제력의 남용을 방지하며, 경제주체간의 조화를 통한 경제의 민주화를
+          위하여 경제에 관한 규제와 조정을 할 수 있다.
+        </p>
+        <div class="core-detail-feature">
+          <div class="core-detail-feature-card">
+            <img src="./resources/core-detail-icon-1.png" />
+            <p>
+              솔라인은 2019년 설립된 국내 유일의 아이디어 제작 업체로서,
+              국무총리 또는 행정각부의 장은 소관사무에 관하여 법률이나
+              대통령령의 위임 또는 직권으로 총리령 또는 부령을 발할 수 있다.
+            </p>
+          </div>
+          <div class="core-detail-feature-card">
+            <img src="./resources/core-detail-icon-2.png" />
+            <p>
+              솔라인은 2019년 설립된 국내 유일의 아이디어 제작 업체로서,
+              국무총리 또는 행정각부의 장은 소관사무에 관하여 법률이나
+              대통령령의 위임 또는 직권으로 총리령 또는 부령을 발할 수 있다.
+            </p>
+          </div>
+          <div class="core-detail-feature-card">
+            <img src="./resources/core-detail-icon-3.png" />
+            <p>
+              솔라인은 2019년 설립된 국내 유일의 아이디어 제작 업체로서,
+              국무총리 또는 행정각부의 장은 소관사무에 관하여 법률이나
+              대통령령의 위임 또는 직권으로 총리령 또는 부령을 발할 수 있다.
+            </p>
+          </div>
+        </div>
+        <div class="core-detail-graph-wrapper">
+          <p>용존 산조 증가폭 비교 그래프</p>
+          <div class="core-detail-graph">
+            <div class="core-detail-graph-image core-detail-graph-card-1"></div>
+            <div class="core-detail-graph-image core-detail-graph-card-2"></div>
+          </div>
+        </div>
+        <div class="rnd-body">
+          <div class="rnd-body-top">
+            <div class="core-detail-image core-detail-card-1"></div>
+          </div>
+          <div class="rnd-body-mid">
+            <div class="core-detail-image core-detail-card-2"></div>
+          </div>
+        </div>
+      </article>
+    </section>
       `;
   }
 
