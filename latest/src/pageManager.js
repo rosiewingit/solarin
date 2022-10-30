@@ -7,6 +7,7 @@ const newsPageId = "#newsPage";
 const certificationPageId = "#certificationPage";
 const overviewPageId = "#overviewPage";
 const ceoMessagePageId = "#ceoMessagePage";
+const csrPageId = "#csrPage";
 const esgPageId = "#esgPage";
 const accessPageId = "#accessPage";
 
@@ -23,6 +24,7 @@ const pages = [
   certificationPageId,
   overviewPageId,
   ceoMessagePageId,
+  csrPageId,
   esgPageId,
   accessPageId,
   coretechnologyDetailPageId,
@@ -73,6 +75,9 @@ class PPTContent {
         break;
       case ceoMessagePageId:
         $(this.page).append(this.createCeoMessageSection());
+        break;
+      case csrPageId:
+        $(this.page).append(this.createCsrSection());
         break;
       case esgPageId:
         $(this.page).append(this.createEsgSection());
@@ -479,6 +484,138 @@ class PPTContent {
           </p>
           <span class="ceo-message-name">솔라인 대표 김재술</span>
           <img class="ceo-message-sign" src="./resources/ceo-sign.png" />
+        </div>
+      </article>
+    </section>
+      `;
+  }
+
+  createCsrSection() {
+    return `
+    <section id="${this.id}" class="body-content">
+      <div class="ppt-path">
+        Home > Technology > Core Technology > <b>용존산소증폭기</b>
+      </div>
+      <hr class="ppt-hr" />
+      <article id="${this.id}-article">
+        <h1 class="ppt-title">CSR, 사회공헌</h1>
+        <p class="ppt-text">
+          ‘CSR’이란 기업의 사회적 책임(Corporate Social Responsibility)이라는
+          의미로, 기업과 사회의 공생관계를 올바르게 발전시키기 위해 기업이
+          취하는 행동이라고 할 수 있습니다.<br />솔라인에서는,
+        </p>
+        <div class="csr-content">
+          <nav>
+            <div class="nav nav-tabs" id="csr-nav-tab" role="tablist">
+              <button
+                class="nav-link csr-nav-link active"
+                id="csr-nav-tab-1"
+                data-bs-toggle="tab"
+                data-bs-target="#csr-tab-1"
+                type="button"
+                role="tab"
+                aria-controls="csr-tab-1"
+                aria-selected="true"
+              >
+                비전 및 목표
+              </button>
+              <button
+                class="nav-link csr-nav-link"
+                id="csr-nav-tab-2"
+                data-bs-toggle="tab"
+                data-bs-target="#csr-tab-2"
+                type="button"
+                role="tab"
+                aria-controls="csr-tab-2"
+                aria-selected="false"
+              >
+                적정기술
+              </button>
+              <button
+                class="nav-link csr-nav-link"
+                id="csr-nav-tab-3"
+                data-bs-toggle="tab"
+                data-bs-target="#csr-tab-3"
+                type="button"
+                role="tab"
+                aria-controls="csr-tab-3"
+                aria-selected="false"
+              >
+                공생기술센터
+              </button>
+              <button
+                class="nav-link csr-nav-link"
+                id="csr-nav-tab-4"
+                data-bs-toggle="tab"
+                data-bs-target="#csr-tab-4"
+                type="button"
+                role="tab"
+                aria-controls="csr-tab-4"
+                aria-selected="false"
+              >
+                자립마을 프로젝트
+              </button>
+              <button
+                class="nav-link csr-nav-link"
+                id="csr-nav-tab-5"
+                data-bs-toggle="tab"
+                data-bs-target="#csr-tab-5"
+                type="button"
+                role="tab"
+                aria-controls="csr-tab-5"
+                aria-selected="false"
+              >
+                사회공헌현황
+              </button>
+            </div>
+          </nav>
+          <div class="tab-content" id="csr-tab">
+            <div
+              class="tab-pane fade show active"
+              id="csr-tab-1"
+              role="tabpanel"
+              aria-labelledby="csr-nav-tab-1"
+              tabindex="0"
+            >
+              비전 및 목표...
+            </div>
+            <div
+              class="tab-pane fade"
+              id="csr-tab-2"
+              role="tabpanel"
+              aria-labelledby="csr-nav-tab-2"
+              tabindex="0"
+            >
+              적정기술...
+            </div>
+            <div
+              class="tab-pane fade"
+              id="csr-tab-3"
+              role="tabpanel"
+              aria-labelledby="csr-nav-tab-3"
+              tabindex="0"
+            >
+              공생기술센터...
+            </div>
+            <div
+              class="tab-pane fade"
+              id="csr-tab-4"
+              role="tabpanel"
+              aria-labelledby="csr-nav-tab-4"
+              tabindex="0"
+            >
+              자립마을 프로젝트...
+            </div>
+            <div
+              class="tab-pane fade"
+              id="csr-tab-5"
+              role="tabpanel"
+              aria-labelledby="csr-nav-tab-5"
+              tabindex="0"
+            >
+              사회공헌현황...
+            </div>
+          </div>
         </div>
       </article>
     </section>
