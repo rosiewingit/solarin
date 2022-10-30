@@ -328,3 +328,8 @@
 .csr-nav-link:hover {
   color: #00a634;
 }
+
+/* Remove all in Future */
+.csr-tab-body {
+  width: 100%;
+}

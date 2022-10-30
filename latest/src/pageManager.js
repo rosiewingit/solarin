@@ -577,7 +577,10 @@ class PPTContent {
               aria-labelledby="csr-nav-tab-1"
               tabindex="0"
             >
-              비전 및 목표...
+              <img
+                class="csr-tab-body"
+                src="./resources/whole-image-tab1-1.png"
+              />
             </div>
             <div
               class="tab-pane fade"
@@ -586,7 +589,22 @@ class PPTContent {
               aria-labelledby="csr-nav-tab-2"
               tabindex="0"
             >
-              적정기술...
+              <img
+                class="csr-tab-body"
+                src="./resources/whole-image-tab2-1.png"
+              />
+              <img
+                class="csr-tab-body"
+                src="./resources/whole-image-tab2-2.png"
+              />
+              <img
+                class="csr-tab-body"
+                src="./resources/whole-image-tab2-3.png"
+              />
+              <img
+                class="csr-tab-body"
+                src="./resources/whole-image-tab2-4.png"
+              />
             </div>
             <div
               class="tab-pane fade"
@@ -595,7 +613,14 @@ class PPTContent {
               aria-labelledby="csr-nav-tab-3"
               tabindex="0"
             >
-              공생기술센터...
+              <img
+                class="csr-tab-body"
+                src="./resources/whole-image-tab3-1.png"
+              />
+              <img
+                class="csr-tab-body"
+                src="./resources/whole-image-tab3-2.png"
+              />
             </div>
             <div
               class="tab-pane fade"
@@ -604,7 +629,14 @@ class PPTContent {
               aria-labelledby="csr-nav-tab-4"
               tabindex="0"
             >
-              자립마을 프로젝트...
+              <img
+                class="csr-tab-body"
+                src="./resources/whole-image-tab4-1.png"
+              />
+              <img
+                class="csr-tab-body"
+                src="./resources/whole-image-tab4-2.png"
+              />
             </div>
             <div
               class="tab-pane fade"
@@ -613,7 +645,10 @@ class PPTContent {
               aria-labelledby="csr-nav-tab-5"
               tabindex="0"
             >
-              사회공헌현황...
+              <img
+                class="csr-tab-body"
+                src="./resources/whole-image-tab5-1.png"
+              />
             </div>
           </div>
         </div>
