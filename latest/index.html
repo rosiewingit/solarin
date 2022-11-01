@@ -302,6 +302,30 @@
   <div id="esgPage" class="main-body hidden"></div>
   <div id="accessPage" class="main-body hidden"></div>
   <div id="coretechnologyDetailPage" class="main-body hidden"></div>
+  <div id="imageViewer" class="image-viewer hidden">
+    <div class="image-viewer-body">
+      <div id="bigImage" class="image-viewer-big"></div>
+      <div class="image-viewer-nav">
+        <div class="image-viewer-nav-circle active-circle"></div>
+        <div class="image-viewer-nav-circle"></div>
+        <div class="image-viewer-nav-circle"></div>
+        <div class="image-viewer-nav-circle"></div>
+        <div class="image-viewer-nav-circle"></div>
+        <div class="image-viewer-nav-circle"></div>
+        <div class="image-viewer-nav-circle"></div>
+      </div>
+    </div>
+    <img src="./resources/left-arrow.svg" class="image-viewer-left" />
+    <img src="./resources/right-arrow.svg" class="image-viewer-right" />
+    <div class="close-button-wrapper">
+      <img
+        src="./resources/close-button.svg"
+        id="closeImageButton"
+        class="close-button"
+        onclick="closeImageViewer()"
+      />
+    </div>
+  </div>
   <footer class="main-footer">
     <div class="main-footer-top">
       <img class="brand-logo-color" src="./resources/logo-color.png" />

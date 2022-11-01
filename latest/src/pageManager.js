@@ -249,7 +249,7 @@ class PPTContent {
       <article id="${this.id}-article" class="page-article">
         <div class="products-left">
           <div class="products-left-top">
-            <div id="productsImage" class="products-image"></div>
+            <div id="productsImage" onclick="clickProductsImage()" class="products-image"></div>
           </div>
           <div class="products-left-bottom">
             <div class="products-thumbnails">

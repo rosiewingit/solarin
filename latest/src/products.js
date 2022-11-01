@@ -7,3 +7,13 @@ const clickProducts = () => {
   content.init();
   content.setPath("Home > Products > <b>침수선박배수펌프</b>");
 };
+
+const clickProductsImage = () => {
+  const imageUrl = $("#productsImage").css("background-image");
+  $("#imageViewer").removeClass("hidden");
+  $("#bigImage").css("background-image", imageUrl);
+};
+
+const closeImageViewer = () => {
+  $("#imageViewer").addClass("hidden");
+};
