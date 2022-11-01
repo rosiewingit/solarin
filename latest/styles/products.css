@@ -52,7 +52,7 @@
 .products-thumbnails {
   margin-top: 2em;
   width: 100%;
-  height: 3.5em;
+  height: 10%;
   display: table;
 }
 
@@ -114,8 +114,8 @@
 
 .products-nav {
   position: fixed;
-  right: 18em;
-  top: 19em;
+  right: 15%;
+  top: 28%;
   width: 13em;
   height: 25em;
   background-color: rgba(0, 0, 0, 0.5);
@@ -129,23 +129,20 @@
 }
 
 .products-nav-title {
-  font-size: 0.7vmax;
+  cursor: pointer;
+  font-size: small;
   line-height: 1.8em;
   font-weight: 200;
   color: #ffffff;
 }
 
 .products-nav-title:hover {
-  font-size: 0.7vmax;
-  line-height: 1.8em;
   font-weight: bolder;
   text-decoration: underline;
   color: #01cf42;
 }
 
 .products-nav-title:active {
-  font-size: 0.7vmax;
-  line-height: 1.8em;
   font-weight: bolder;
   text-decoration: underline;
   color: #01cf42;
