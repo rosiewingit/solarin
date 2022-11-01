@@ -232,42 +232,67 @@ class PPTContent {
   createProductsSection() {
     return `
     <section id="${this.id}" class="body-content">
-    <div class="products-nav"></div>
-    <div class="ppt-path">Home > Products > <b>경량방수포차수막</b></div>
-    <hr class="ppt-hr" />
-    <article id="${this.id}-article" class="page-article">
-      <div class="products-left">
-        <div class="products-left-top">
-          <div id="productsImage" class="products-image"></div>
+      <div id="productsNav" class="products-nav">
+        <div class="products-nav-body">
+          <p class="products-nav-title">침수 선박 배수 펌프</p>
+          <p class="products-nav-title">경량 방수포 차수막</p>
+          <p class="products-nav-title">녹조제거 바지선</p>
+          <p class="products-nav-title">어망절단기</p>
+          <p class="products-nav-title">익수자인양기</p>
+          <p class="products-nav-title">전동차 트레일러(TBD)</p>
+          <p class="products-nav-title">화재 진압용 드론(TBD)</p>
+          <p class="products-nav-title">그물망 구조 드론(TBD)</p>
         </div>
-        <div class="products-left-bottom">
-          <div class="products-thumbnails">
-            <div class="products-thumb products-left-arrow"></div>
-            <div id="productsThumb1" class="products-thumb"></div>
-            <div id="productsThumb2" class="products-thumb"></div>
-            <div id="productsThumb3" class="products-thumb"></div>
-            <div id="productsThumb4" class="products-thumb"></div>
-            <div id="productsThumb5" class="products-thumb"></div>
-            <div id="productsThumb6" class="products-thumb"></div>
-            <div id="productsThumb7" class="products-thumb"></div>
-            <div class="products-thumb products-right-arrow"></div>
+      </div>
+      <div class="ppt-path">Home > Products > <b>경량방수포차수막</b></div>
+      <hr class="ppt-hr" />
+      <article id="${this.id}-article" class="page-article">
+        <div class="products-left">
+          <div class="products-left-top">
+            <div id="productsImage" class="products-image"></div>
+          </div>
+          <div class="products-left-bottom">
+            <div class="products-thumbnails">
+              <div class="products-thumb products-left-arrow"></div>
+              <div class="products-thumb">
+                <div id="productsThumb1" class="products-thumb-image"></div>
+              </div>
+              <div class="products-thumb">
+                <div id="productsThumb2" class="products-thumb-image"></div>
+              </div>
+              <div class="products-thumb">
+                <div id="productsThumb3" class="products-thumb-image"></div>
+              </div>
+              <div class="products-thumb">
+                <div id="productsThumb4" class="products-thumb-image"></div>
+              </div>
+              <div class="products-thumb">
+                <div id="productsThumb5" class="products-thumb-image"></div>
+              </div>
+              <div class="products-thumb">
+                <div id="productsThumb6" class="products-thumb-image"></div>
+              </div>
+              <div class="products-thumb">
+                <div id="productsThumb7" class="products-thumb-image"></div>
+              </div>
+              <div class="products-thumb products-right-arrow"></div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="products-right">
-        <h1 class="products-title">경량 방수포 차수막</h1>
-        <p class="products-text">
-          재질 : 경량방수포 고주파 결합 제작<br />
-          제품 보관 방법 : 두루마리 매트방식<br /><br />
-          설치 방법 : 범람예상지역 사전 설치 방법, 물 주입과
-          공기주입-에어펌프<br /><br />
-          보관 크기 : 750*300<br />
-          설치 크기 : 4200*600<br /><br />
-          홍수시, 지하 주차장 또는
-        </p>
-      </div>
-    </article>
-  </section>
+        <div class="products-right">
+          <h1 class="products-title">경량 방수포 차수막</h1>
+          <p class="products-text">
+            재질 : 경량방수포 고주파 결합 제작<br />
+            제품 보관 방법 : 두루마리 매트방식<br /><br />
+            설치 방법 : 범람예상지역 사전 설치 방법, 물 주입과
+            공기주입-에어펌프<br /><br />
+            보관 크기 : 750*300<br />
+            설치 크기 : 4200*600<br /><br />
+            홍수시, 지하 주차장 또는
+          </p>
+        </div>
+      </article>
+    </section>
       `;
   }
 

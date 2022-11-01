@@ -55,8 +55,14 @@ window.onload = () => {
       $(document).height() - $(window).scrollTop() - $("footer").height() / 2
     ) {
       $("#centerButton").css("visibility", "hidden");
+      if ($("#productsNav")) {
+        $("#productsNav").css("visibility", "hidden");
+      }
     } else {
       $("#centerButton").css("visibility", "visible");
+      if ($("#productsNav")) {
+        $("#productsNav").css("visibility", "visible");
+      }
     }
   });
 };
