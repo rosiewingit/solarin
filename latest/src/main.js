@@ -9,20 +9,17 @@ const mainPageItems = [
   {
     id: "main-page-2",
     title: "Technology for Human.",
-    subtitle:
-      "새로운 생각으로 일상을 더 편리하게, 아이디어를 현실로 만드는 기업 솔라인.",
+    subtitle: "솔라인은 인간을 위한 기술을 만듭니다.",
   },
   {
     id: "main-page-3",
     title: "Idea Design & Manufacturing",
-    subtitle:
-      "새로운 생각으로 일상을 더 편리하게, 아이디어를 현실로 만드는 기업 솔라인.",
+    subtitle: "당신의 아이디어를 현실로 만들어 드립니다.",
   },
   {
     id: "main-page-4",
     title: "New Challenge for Future.",
-    subtitle:
-      "새로운 생각으로 일상을 더 편리하게, 아이디어를 현실로 만드는 기업 솔라인.",
+    subtitle: "미래를 위한 새로운 도전.",
   },
 ];
 
