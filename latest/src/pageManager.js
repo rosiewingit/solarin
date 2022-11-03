@@ -48,6 +48,7 @@ class PPTContent {
 
   init() {
     if ($(`#${this.id}`).length > 0) {
+      this.initScroll();
       return;
     }
 

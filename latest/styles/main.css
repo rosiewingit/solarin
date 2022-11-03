@@ -117,7 +117,7 @@ b {
 
 .nav-child {
   text-align: center;
-  /* cursor: pointer; */
+  cursor: pointer;
   width: 20%;
   height: 100%;
 }
