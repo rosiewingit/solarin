@@ -29,7 +29,7 @@ const mainPageItems = [
 window.onload = () => {
   console.log("ONLOAD");
 
-  // clickAccess();
+  // clickNews();
   showPage(rootPageId);
 
   mainPageItems.forEach((page) => {
