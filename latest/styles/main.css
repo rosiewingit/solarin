@@ -509,6 +509,11 @@ textarea {
   right: 0;
 }
 
+.dummy-img {
+  width: 100%;
+  height: auto;
+}
+
 .fade-in {
   animation-name: fadein;
   animation-duration: 2.5s;
