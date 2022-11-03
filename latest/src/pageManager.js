@@ -374,13 +374,10 @@ class PPTContent {
         </div>
         <div class="overview-first-right">
           <div class="overview-first-right-top">
-            <img
-              class="brand-logo-color overview-logo"
-              src="./resources/logo-color.png"
-            />
+            <img class="overview-logo" src="./resources/logo-color.png" />
           </div>
           <div class="overview-first-right-mid">
-            <h1 class="overview-first-title">"Company Slogan"</h1>
+            <h1 class="overview-first-title">New Ideas, Handy Life.</h1>
           </div>
           <div class="overview-first-right-bottom">
             <table class="table table-borderless">
@@ -440,8 +437,7 @@ class PPTContent {
         <div class="overview-second-bottom"></div>
       </article>
     </section>
-    
-      `;
+    `;
   }
 
   createCeoMessageSection() {

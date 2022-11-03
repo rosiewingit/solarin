@@ -22,14 +22,14 @@
 .overview-first-right-top {
   display: flex;
   width: 100%;
-  height: 25%;
+  height: 20%;
   align-items: flex-end;
 }
 
 .overview-first-right-mid {
   display: flex;
   width: 100%;
-  height: 25%;
+  height: 30%;
   align-items: center;
 }
 
@@ -39,22 +39,31 @@
 }
 
 .overview-first-title {
-  font-size: 1.8vmax;
-  font-weight: 900;
+  font-size: xx-large;
+  font-weight: bolder;
   color: #545454;
 }
 
 .overview-table-item {
   width: 100%;
-  font-size: 0.8vmax;
+  font-size: smaller;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.overview-table-item:last-child {
+  border-bottom: none;
 }
 
 .overview-table-item th {
+  font-weight: 900;
   width: 30%;
+  padding: 15px 0px;
 }
 
 .overview-table-item td {
+  font-weight: 500;
   width: 70%;
+  padding: 15px 0;
 }
 
 .overview-second-top {
@@ -85,6 +94,12 @@
 }
 
 .overview-map-namecard p {
+  text-align: left;
+}
+
+.overview-logo {
+  width: auto;
+  height: 80px;
   text-align: left;
 }
 
