@@ -483,11 +483,13 @@ class PPTContent {
       </div>
       <hr class="ppt-hr" />
       <article id="${this.id}-article">
-        <h1 class="ppt-title">CSR, 사회공헌</h1>
+        <h1 class="ppt-title">CSR이란?</h1>
         <p class="ppt-text">
           ‘CSR’이란 기업의 사회적 책임(Corporate Social Responsibility)이라는
           의미로, 기업과 사회의 공생관계를 올바르게 발전시키기 위해 기업이
-          취하는 행동이라고 할 수 있습니다.<br />솔라인에서는,
+          취하는 행동이라고 할 수 있습니다.<br />솔라인에서는 UN에서 정한 지속
+          가능한 개발 목표(SDGs)를 기준으로 하여 적정기술을 연구하고 개발하여
+          사회공헌에 앞장서고 있습니다.
         </p>
         <div class="csr-content">
           <nav>
