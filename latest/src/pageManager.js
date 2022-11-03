@@ -156,49 +156,50 @@ class PPTContent {
   createRndSection() {
     return `
     <section id="${this.id}" class="body-content">
-    <div class="ppt-path">Home > Technology > <b>R&D Center</b></div>
-    <hr class="ppt-hr" />
-    <article id="${this.id}-article">
-      <h1 class="ppt-title">R&D Center</h1>
-      <p class="ppt-text">
-        성남시에 위치한 솔라인 연구소는 국가 연구 과제를 수행중이며, 적정
-        기술을 개발하기 위한 공생기술 센터를 운영중입니다. 다년간의 연구를
-        거듭한 연구소는 연구 시설 및 기술을 보유하고 있습니다.
-      </p>
-      <div class="rnd-body">
-        <div class="rnd-body-top">
-          <div class="rnd-image rnd-center-1">
-            <div class="rnd-text">
-              <p class="rnd-subtitle">2948-1102, 용존산소증폭기</p>
-              <p class="rnd-title">A1103 연구소</p>
+      <div class="ppt-path">Home > Technology > <b>R&D Center</b></div>
+      <hr class="ppt-hr" />
+      <article id="${this.id}-article">
+        <h1 class="ppt-title">R&D Center</h1>
+        <p class="ppt-text">
+          성남시에 위치한 솔라인 연구소는 적정 기술을 개발하기 위한
+          공생기술센터와 국가 연구 과제 수행을 위한 연구 전담 실험실로 운영되며,
+          다년간의 연구를 거듭하여 축적된 아이디어 설계 및 제조 분야의 전 과정에
+          걸친 다양한 연구 기술을 보유하고 있습니다.
+        </p>
+        <div class="rnd-body">
+          <div class="rnd-body-top">
+            <div class="rnd-image rnd-center-1">
+              <div class="rnd-text">
+                <p class="rnd-subtitle">2948-1102, 용존산소증폭기</p>
+                <p class="rnd-title">A1103 연구소</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="rnd-body-mid">
-          <div class="rnd-image rnd-center-2">
-            <div class="rnd-text">
-              <p class="rnd-subtitle">BOD-12873, 배수펌프</p>
-              <p class="rnd-title">국가 연구 과제 실험실</p>
+          <div class="rnd-body-mid">
+            <div class="rnd-image rnd-center-2">
+              <div class="rnd-text">
+                <p class="rnd-subtitle">BOD-12873, 배수펌프</p>
+                <p class="rnd-title">국가 연구 과제 실험실</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="rnd-body-bottom">
-          <div class="rnd-bottom-text">
-            <p class="rnd-bottom-title">IDEA DESIGN & MANUFACTURING</p>
-            <p class="rnd-bottom-subtitle">
-              국내 최고의 설계 경력 35년 이상의 베테랑
-            </p>
-            <p class="rnd-bottom-description">
-              국내 유일의 아이디어 디자인 및 설계 분야에 있는 솔라인은
-              임직원의 80%가 각 분야에서 35년 이상 근무한 베테랑들로 구성되어
-              있습니다.
-            </p>
+          <div class="rnd-body-bottom">
+            <div class="rnd-bottom-text">
+              <p class="rnd-bottom-title">IDEA DESIGN & MANUFACTURING</p>
+              <p class="rnd-bottom-subtitle">
+                국내 최고의 설계 경력 35년 이상의 베테랑
+              </p>
+              <p class="rnd-bottom-description">
+                국내 유일의 아이디어 디자인 및 설계 분야에 있는 솔라인은
+                임직원의 80%가 각 분야에서 35년 이상 근무한 베테랑들로 구성되어
+                있습니다.
+              </p>
+            </div>
+            <div class="rnd-image rnd-center-3"></div>
           </div>
-          <div class="rnd-image rnd-center-3"></div>
         </div>
-      </div>
-    </article>
-  </section>
+      </article>
+    </section>
       `;
   }
 
