@@ -218,11 +218,15 @@
 .core-detail-feature-card {
   height: 100%;
   display: table-cell;
+  vertical-align: middle;
 }
 
 .core-detail-feature-card img {
+  width: 90px;
+  height: auto;
   float: left;
   padding-top: 0.3em;
+  margin-top: 4%;
 }
 
 .core-detail-feature-card p {
