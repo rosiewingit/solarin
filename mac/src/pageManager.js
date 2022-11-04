@@ -111,13 +111,12 @@ class PPTContent {
             <div class="core-tech-top"></div>
             <div class="core-tech-mid"></div>
             <div class="core-tech-bottom">
-              <p class="core-tech-subtitle">NTIS Project</p>
+              <p class="core-tech-subtitle"></p>
               <h4 class="core-tech-title">용존산소증폭기</h4>
               <p class="core-tech-description">
                 상세 설명 : 솔라인은 ‘새로운 생각, 편리한 생활’이라는 설립 이념
                 아래 ‘아이디어 설계 및 제조’, ‘기술 개발 컨설팅’, ‘신기술 연구
-                개발’ 분야에 영위하고 있는 기업으로서, 2019년 창립 이래 끊임없는
-                도전과 혁신...
+                개발’ 분야에 영위하고 있는 기업으로서, 2019년 창립 이래 끊임없는...
               </p>
             </div>
           </div>

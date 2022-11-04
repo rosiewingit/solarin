@@ -73,13 +73,13 @@
 
 .core-tech-subtitle {
   color: #ffffff;
-  font-size: 0.75vmax;
+  font-size: 0.5vmax;
   line-height: 10%;
 }
 
 .core-tech-title {
   color: #ffffff;
-  font-size: 1.1vmax;
+  font-size: 1vmax;
   font-weight: bold;
 }
 
@@ -87,7 +87,7 @@
   width: 100%;
   height: 70%;
   color: #ffffff;
-  font-size: 0.75vmax;
+  font-size: 0.7vmax;
   text-overflow: ellipsis;
 }
 

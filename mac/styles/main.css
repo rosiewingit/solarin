@@ -108,7 +108,6 @@ b {
   float: right;
   width: 100%;
   height: 40%;
-  font-size: 0.8vmax;
 }
 
 #navProducts {
@@ -120,6 +119,7 @@ b {
   cursor: pointer;
   width: 20%;
   height: 100%;
+  font-size: 0.8vmax;
 }
 
 .nav-child a {
@@ -178,24 +178,26 @@ b {
   z-index: 500px;
   cursor: pointer;
   position: fixed;
-  width: 165px;
-  height: 60px;
+  width: 7.5em;
+  height: 2.8em;
   bottom: 7%;
   right: 15%;
 }
 
 .center-button {
-  width: 165px;
-  height: 60px;
+  width: 100%;
+  height: 100%;
   background-color: #00a634;
   color: #ffffff;
   /* letter-spacing: -1px; */
   font-weight: 900;
   border-radius: 50px;
   border: none;
+  font-size: 11.5px;
 }
 
 .center-button img {
+  width: 1.2em;
   margin-bottom: 2px;
   margin-right: 5px;
 }
@@ -245,6 +247,7 @@ b {
   min-height: 30px;
   width: 100%;
   padding: 5px 0;
+  font-size: 0.6vmax;
 }
 
 .nav-dropdown-link {
@@ -482,10 +485,10 @@ textarea {
   position: absolute;
   display: table;
   left: 40%;
-  bottom: 2em;
+  bottom: 1.2em;
   width: 20%;
-  height: 4%;
-  border-spacing: 22px 10px;
+  height: 5%;
+  border-spacing: 16px 10px;
 }
 
 .image-viewer-nav-circle {
