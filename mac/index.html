@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<head>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+    crossorigin="anonymous"
+  />
+  <link href="styles/main.css" rel="stylesheet" />
+  <link href="styles/technology.css" rel="stylesheet" />
+  <link href="styles/products.css" rel="stylesheet" />
+  <link href="styles/prcenter.css" rel="stylesheet" />
+  <link href="styles/aboutus.css" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Noto+Sans:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet"
+  />
+  <script
+    src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"
+  ></script>
+  <script type="text/javascript" src="./src/pageManager.js"></script>
+  <script type="text/javascript" src="./src/main.js"></script>
+  <script type="text/javascript" src="./src/technology.js"></script>
+  <script type="text/javascript" src="./src/products.js"></script>
+  <script type="text/javascript" src="./src/prcenter.js"></script>
+  <script type="text/javascript" src="./src/aboutus.js"></script>
+</head>
+<body>
+  <header class="main-header">
+    <nav class="navbar navbar-expand-lg navbar-light main-navbar">
+      <div class="nav-left">
+        <a href="index.html">
+          <img class="brand-logo" src="./resources/logo.png" />
+        </a>
+      </div>
+      <div class="nav-right">
+        <div class="nav-margin"></div>
+        <ul class="nav-container navbar-nav">
+          <li id="navMenu1" class="nav-child nav-item">
+            <a class="nav-link nav-highlight" onclick="clickCoreTechnology()"
+              >TECHNOLOGY</a
+            >
+            <ul id="navMenuDrop1" class="nav-dropdown-menu">
+              <li class="nav-dropdown-child nav-item">
+                <a
+                  class="nav-dropdown-link nav-highlight"
+                  onclick="clickCoreTechnology()"
+                  >Core Technology</a
+                >
+              </li>
+              <li class="nav-dropdown-child nav-item">
+                <a
+                  class="nav-dropdown-link nav-highlight"
+                  onclick="clickRndCenter()"
+                  >R&D Center</a
+                >
+              </li>
+              <li class="nav-dropdown-child nav-item">
+                <a
+                  class="nav-dropdown-link nav-highlight"
+                  onclick="clickPatent()"
+                  >Patent</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li id="navProducts" class="nav-child nav-item">
+            <a class="nav-link nav-highlight" onclick="clickProducts()"
+              >PRODUCTS</a
+            >
+          </li>
+          <li id="navMenu3" class="nav-child nav-item">
+            <a class="nav-link nav-highlight" onclick="clickNews()"
+              >PR CENTER</a
+            >
+            <ul id="navMenuDrop3" class="nav-dropdown-menu">
+              <li class="nav-dropdown-child nav-item">
+                <a class="nav-dropdown-link nav-highlight" onclick="clickNews()"
+                  >News</a
+                >
+              </li>
+              <li class="nav-dropdown-child nav-item">
+                <a
+                  class="nav-dropdown-link nav-highlight"
+                  onclick="clickCertification()"
+                  >Certification</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li id="navMenu4" class="nav-child nav-item">
+            <a class="nav-link nav-highlight" onclick="clickOverview()"
+              >ABOUT US</a
+            >
+            <ul id="navMenuDrop4" class="nav-dropdown-menu">
+              <li class="nav-dropdown-child nav-item">
+                <a
+                  class="nav-dropdown-link nav-highlight"
+                  onclick="clickOverview()"
+                  >Overview</a
+                >
+              </li>
+              <li class="nav-dropdown-child nav-item">
+                <a
+                  class="nav-dropdown-link nav-highlight"
+                  onclick="clickCeoMessage()"
+                  >CEO Message</a
+                >
+              </li>
+              <li class="nav-dropdown-child nav-item">
+                <a class="nav-dropdown-link nav-highlight" onclick="clickCsr()"
+                  >CSR</a
+                >
+              </li>
+              <li class="nav-dropdown-child nav-item">
+                <a class="nav-dropdown-link nav-highlight" onclick="clickEsg()"
+                  >ESG</a
+                >
+              </li>
+              <li class="nav-dropdown-child nav-item">
+                <a
+                  class="nav-dropdown-link nav-highlight"
+                  onclick="clickAccess()"
+                  >Access</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-child nav-item dropdown">
+            <a
+              id="dropdownMenu"
+              class="nav-link dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              KOR
+            </a>
+            <ul
+              id="dropdownLang"
+              class="dropdown-menu"
+              aria-labelledby="dropdownMenu"
+            >
+              <li><a id="dropdownLangText" class="dropdown-item">ENG</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div id="centerButton" class="center-buttonbox">
+      <button type="button" onclick="clickCenterButton()" class="center-button">
+        <img src="./resources/link-icon.png" />
+        <span>공생기술센터</span>
+      </button>
+    </div>
+  </header>
+  <div id="root" class="main-body hidden"></div>
+  <div id="coretechnologyPage" class="main-body hidden"></div>
+  <div id="rndcenterPage" class="main-body hidden"></div>
+  <div id="patentPage" class="main-body hidden"></div>
+  <div id="productsPage" class="main-body hidden"></div>
+  <div id="newsPage" class="main-body news-body hidden"></div>
+  <div id="certificationPage" class="main-body hidden"></div>
+  <div id="overviewPage" class="main-body hidden"></div>
+  <div id="ceoMessagePage" class="main-body hidden"></div>
+  <div id="csrPage" class="main-body hidden"></div>
+  <div id="esgPage" class="main-body hidden"></div>
+  <div id="accessPage" class="main-body hidden"></div>
+  <div id="coretechnologyDetailPage" class="main-body hidden"></div>
+  <div id="imageViewer" class="image-viewer hidden">
+    <div class="image-viewer-body">
+      <div id="bigImage" class="image-viewer-big"></div>
+      <div class="image-viewer-nav">
+        <div class="image-viewer-nav-circle active-circle"></div>
+        <div class="image-viewer-nav-circle"></div>
+        <div class="image-viewer-nav-circle"></div>
+        <div class="image-viewer-nav-circle"></div>
+        <div class="image-viewer-nav-circle"></div>
+        <div class="image-viewer-nav-circle"></div>
+        <div class="image-viewer-nav-circle"></div>
+      </div>
+    </div>
+    <img src="./resources/left-arrow.svg" class="image-viewer-left" />
+    <img src="./resources/right-arrow.svg" class="image-viewer-right" />
+    <div class="close-button-wrapper">
+      <img
+        src="./resources/close-button.svg"
+        id="closeImageButton"
+        class="close-button"
+        onclick="closeImageViewer()"
+      />
+    </div>
+  </div>
+  <footer class="main-footer">
+    <div class="main-footer-top">
+      <img class="brand-logo-color" src="./resources/logo-color.png" />
+    </div>
+    <div class="main-footer-mid">
+      <div class="main-footer-mid-item">
+        <p class="footer-company-info">
+          솔라인은 2019년 설립된 아이디어 설계-제작 업체로서 기관 및 공기업과
+          협력하여 구난, 방재 관련 제품을 주력으로 개발하고 있으며, 독자적인
+          기술력으로 특허를 출원하고, 국가 연구 과제를 수행중에 있습니다.<br /><br />
+          앞으로도 솔라인은 차별화 된 기술로 관련 기관과 기술적 파트너쉽을 이뤄
+          다양한 제품을 개발하여 사회 공헌에 앞장서는 기업이 되겠습니다.
+        </p>
+        <button
+          type="button"
+          id="mainLearnMoreBtn"
+          class="btn main-footer-button"
+        >
+          <span class="button-text"> Learn more </span>
+          <div>
+            <img class="button-logo" src="./resources/button-arrow.svg" />
+          </div>
+        </button>
+      </div>
+      <div class="main-footer-mid-item">
+        <p><span class="text-bold-title">대표명</span><span>김재술</span></p>
+        <p>
+          <span class="text-bold-title">사업자등록번호</span
+          ><span>710-31-00611</span>
+        </p>
+        <p>
+          <span class="text-bold-title">대표 전화</span
+          ><span>0507-1395-0771</span>
+        </p>
+        <p>
+          <span class="text-bold-title">주소</span><br /><span
+            >경기도 성남시 중원구 사기막골로 45번길 14</span
+          >
+        </p>
+        <button
+          type="button"
+          id="mainContactBtn"
+          class="btn main-footer-button"
+        >
+          Contact us
+        </button>
+      </div>
+      <div class="main-footer-mid-item">
+        <p>
+          <span class="text-bold-title">사이트맵</span>
+        </p>
+        <hr />
+        <p>내부정보관리규정</p>
+        <p>공생기술센터</p>
+      </div>
+      <div class="main-footer-mid-item">
+        <p>
+          <span class="text-bold-title">문의하기</span>
+        </p>
+        <hr />
+        <p><span>이름</span><br /><input /></p>
+        <p><span>연락처</span><br /><input /></p>
+        <p><span>문의내용</span><br /><textarea></textarea></p>
+        <p class="main-terms">
+          <input type="checkbox" class="main-terms-checkbox" />
+          <span class="text-bold-title"
+            >개인정보수집 및 약관에 동의합니다.</span
+          >
+        </p>
+        <button type="button" id="mainSubmitBtn" class="btn main-footer-button">
+          Submit
+        </button>
+      </div>
+    </div>
+    <div class="main-footer-bottom">
+      <p>Copyright 2022 Solarin Co. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>

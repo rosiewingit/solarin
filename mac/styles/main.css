@@ -1,0 +1,548 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans";
+}
+
+b {
+  font-weight: 900;
+}
+
+.main-header {
+  position: fixed;
+  width: 100%;
+  height: 11%;
+  max-height: 120px;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 500;
+}
+
+.main-body {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+.main-footer {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 67%;
+  background-color: #ffffff;
+  align-self: flex-end;
+  flex-flow: column;
+  font-size: 0.6vmax;
+}
+
+.main-body-content {
+  position: absolute;
+  top: 0;
+  float: left;
+  width: 100%;
+  height: 100%;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.main-body-item {
+  width: 100%;
+  height: auto;
+  color: #ffffff;
+  text-align: left;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 25%;
+}
+
+.main-body-item-title {
+  font-size: 3.2vmax;
+  font-weight: bolder;
+}
+
+.main-body-item-subtitle {
+  font-size: 1vmax;
+  font-weight: 400;
+}
+
+.main-navbar {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 0% 15%;
+}
+
+.nav-left {
+  position: relative;
+  float: left;
+  width: auto;
+  height: 100%;
+}
+
+.brand-logo {
+  position: relative;
+  float: left;
+  width: auto;
+  height: 50%;
+  margin-top: 35%;
+}
+
+.nav-right {
+  position: relative;
+  float: right;
+  width: 60%;
+  margin-left: 32%;
+  height: 100%;
+}
+
+.nav-margin {
+  float: right;
+  width: 100%;
+  height: 60%;
+}
+
+.nav-container {
+  float: right;
+  width: 100%;
+  height: 40%;
+  font-size: 0.8vmax;
+}
+
+#navProducts {
+  cursor: pointer;
+}
+
+.nav-child {
+  text-align: center;
+  cursor: pointer;
+  width: 20%;
+  height: 100%;
+}
+
+.nav-child a {
+  height: 100%;
+  width: 100%;
+  color: #ffffff;
+}
+
+.nav-highlight:hover {
+  font-weight: 700;
+  color: #01cf42;
+  border-bottom: solid 2px #01cf42;
+}
+
+.ppt-hr {
+  width: 100%;
+  color: #d9d9d9;
+  opacity: 0.7;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.ppt-path {
+  margin-top: 17%;
+  width: 100%;
+  text-align: left;
+  font-size: 0.5vmax;
+  color: #9ca1a2;
+}
+
+.ppt-title {
+  padding: 2.5% 0;
+  font-weight: 900;
+  font-size: 1.5vmax;
+  color: #545454;
+  margin-block-end: 0;
+}
+
+.ppt-title::before {
+  content: "";
+  border-left: 3.5pt solid #00a634;
+  margin-right: 10px;
+}
+
+.ppt-text {
+  font-weight: 600;
+  font-size: 0.7vmax;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.center-buttonbox {
+  z-index: 500px;
+  cursor: pointer;
+  position: fixed;
+  width: 165px;
+  height: 60px;
+  bottom: 7%;
+  right: 15%;
+}
+
+.center-button {
+  width: 165px;
+  height: 60px;
+  background-color: #00a634;
+  color: #ffffff;
+  /* letter-spacing: -1px; */
+  font-weight: 900;
+  border-radius: 50px;
+  border: none;
+}
+
+.center-button img {
+  margin-bottom: 2px;
+  margin-right: 5px;
+}
+
+.center-button span {
+  line-height: 20px;
+}
+
+.center-button:hover {
+  background-color: #00a634;
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+.body-content {
+  display: table;
+  float: left;
+  width: 100%;
+  height: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.page-article {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.nav-dropdown-menu {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  list-style: none;
+  padding-inline-start: 0;
+  text-align: center;
+  padding-left: 20px;
+  visibility: hidden;
+}
+
+.nav-dropdown-child {
+  position: relative;
+  text-align: left;
+  cursor: pointer;
+  height: auto;
+  min-height: 30px;
+  width: 100%;
+  padding: 5px 0;
+}
+
+.nav-dropdown-link {
+  color: #ffffff;
+  width: 100%;
+  height: auto;
+  text-decoration: none;
+}
+
+#dropdownMenu {
+  text-align: right;
+}
+
+#dropdownMenu:hover {
+  font-weight: 700;
+  color: #01cf42;
+}
+
+#dropdownLang {
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  text-align: right;
+  position: absolute;
+  top: 55%;
+  right: 4%;
+  min-width: 0;
+  height: auto;
+}
+
+#dropdownLangText {
+  font-size: 0.8vmax;
+}
+
+#dropdownLangText:hover {
+  font-weight: 700;
+  color: #01cf42;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.main-footer-top {
+  width: 68%;
+  height: 25%;
+  margin-left: 16%;
+  margin-right: 16%;
+}
+
+.brand-logo-color {
+  width: auto;
+  height: 45%;
+  text-align: left;
+  margin-top: 4%;
+}
+
+.main-footer-mid {
+  width: 68%;
+  height: 72%;
+  margin-left: 16%;
+  margin-right: 16%;
+  position: flex;
+  flex-direction: row;
+}
+
+.main-footer-mid-item {
+  float: left;
+  width: 25%;
+  height: 100%;
+}
+
+.main-footer-mid-item p {
+  width: 88%;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.footer-company-info {
+  height: 65%;
+}
+
+.text-bold-title {
+  font-weight: bolder;
+  margin-right: 8%;
+}
+
+.main-footer-button {
+  background-color: #00a634;
+  color: #ffffff;
+  font-size: 11px;
+  border-radius: 0;
+}
+
+#mainLearnMoreBtn {
+  width: 11em;
+  height: 2.7em;
+  text-align: left;
+  padding-left: 0.3m;
+}
+
+#mainLearnMoreBtn:hover {
+  background-color: #00a634;
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+.button-text {
+  width: 85%;
+  float: left;
+}
+
+.button-logo {
+  width: 15%;
+}
+
+#mainContactBtn {
+  width: 8em;
+  height: 2.7em;
+  margin-top: 20%;
+  text-align: center;
+}
+
+#mainContactBtn:hover {
+  background-color: #00a634;
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+#mainSubmitBtn {
+  width: 6.5em;
+  height: 2.7em;
+  margin-top: 5%;
+  text-align: center;
+}
+
+#mainSubmitBtn:hover {
+  background-color: #00a634;
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+#mainSubmitBtn:focus {
+  background-color: #00a634;
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+.main-footer-bottom {
+  width: 100%;
+  height: 4%;
+  background-color: #000000;
+  color: #ffffff;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.main-footer-bottom p {
+  text-align: left;
+  padding-top: 0.4%;
+}
+
+hr {
+  border-top: 1px solid #d9d9d9;
+  opacity: 0.9;
+  margin-right: 10%;
+}
+
+input {
+  width: 100%;
+  height: 2.5em;
+  border: 1px solid #d9d9d9;
+  margin-top: 2%;
+}
+
+textarea {
+  width: 100%;
+  height: 7em;
+  border: 1px solid #d9d9d9;
+  margin-top: 2%;
+}
+
+.main-terms-checkbox {
+  border: 1px solid #d9d9d9;
+  width: 5%;
+  height: auto;
+  margin-right: 2%;
+  vertical-align: sub;
+}
+
+.image-viewer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+.image-viewer-body {
+  position: absolute;
+  left: 16%;
+  top: 13%;
+  width: 68%;
+  height: 74%;
+  background-color: #ffffff;
+}
+
+.image-viewer-big {
+  position: absolute;
+  left: 10%;
+  top: 12%;
+  width: 80%;
+  height: 76%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.image-viewer-left {
+  position: absolute;
+  width: 1.8em;
+  height: auto;
+  top: 48%;
+  left: 11%;
+}
+
+.image-viewer-right {
+  position: absolute;
+  width: 1.8em;
+  height: auto;
+  top: 48%;
+  right: 11%;
+}
+
+.image-viewer-nav {
+  position: absolute;
+  display: table;
+  left: 40%;
+  bottom: 2em;
+  width: 20%;
+  height: 4%;
+  border-spacing: 22px 10px;
+}
+
+.image-viewer-nav-circle {
+  display: table-cell;
+  border-radius: 50%;
+  border: 1px solid #d9d9d9;
+}
+
+.active-circle {
+  background-color: #d9d9d9;
+}
+
+.close-button-wrapper {
+  position: absolute;
+  left: 14%;
+  top: 13%;
+  width: 72%;
+  height: 74%;
+}
+
+.close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.dummy-img {
+  width: 100%;
+  height: auto;
+}
+
+.fade-in {
+  animation-name: fadein;
+  animation-duration: 2.5s;
+  animation-timing-function: linear;
+}
+
+.fade-out {
+  animation-name: fadein;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0.75;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
