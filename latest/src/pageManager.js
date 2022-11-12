@@ -109,43 +109,42 @@ class PPTContent {
         <div class="core-tech-cards">
           <div class="core-tech-card" onclick="clickTechCoreCard1()">
             <div class="core-tech-top"></div>
-            <div class="core-tech-mid"></div>
+            <div class="core-tech-mid">
+              <img
+                class="core-tech-learn-more-btn"
+                src="./resources/Learn-more-button.svg"
+              />
+            </div>
             <div class="core-tech-bottom">
-              <p class="core-tech-subtitle">NTIS Project</p>
+              <p class="core-tech-subtitle">연구 과제</p>
               <h4 class="core-tech-title">용존산소증폭기</h4>
               <p class="core-tech-description">
-                상세 설명 : 솔라인은 ‘새로운 생각, 편리한 생활’이라는 설립 이념
-                아래 ‘아이디어 설계 및 제조’, ‘기술 개발 컨설팅’, ‘신기술 연구
-                개발’ 분야에 영위하고 있는 기업으로서, 2019년 창립 이래 끊임없는
-                도전과 혁신...
+                용존산소증폭기는 ~방식으로 물속에 산소를 대폭 증가시키는
+                장치로서, 솔라인 특허로 개발된 장치입니다. 녹조 방제에
+                효과적이며, 녹조방제선과 함께 호수, 댐의 녹조를 제거하여 산소를
+                공급해주므로서, 수중 산소 농도를 유지하고, 수중 생태계에 도움이
+                되는 기술입니다.
               </p>
             </div>
           </div>
-          <div class="core-tech-card">
+          <div class="core-tech-card" onclick="clickTechCoreCard2()">
             <div class="core-tech-top"></div>
-            <div class="core-tech-mid"></div>
-            <div class="core-tech-bottom">
-              <p class="core-tech-subtitle">NTIS Project</p>
-              <h4 class="core-tech-title">2948-1102, 배수펌프</h4>
-              <p class="core-tech-description"></p>
+            <div class="core-tech-mid">
+              <img
+                class="core-tech-learn-more-btn"
+                src="./resources/Learn-more-button.svg"
+              />
             </div>
-          </div>
-          <div class="core-tech-card">
-            <div class="core-tech-top"></div>
-            <div class="core-tech-mid"></div>
             <div class="core-tech-bottom">
-              <p class="core-tech-subtitle">subtitle</p>
-              <h4 class="core-tech-title">핵심 기술 3</h4>
-              <p class="core-tech-description"></p>
-            </div>
-          </div>
-          <div class="core-tech-card">
-            <div class="core-tech-top"></div>
-            <div class="core-tech-mid"></div>
-            <div class="core-tech-bottom">
-              <p class="core-tech-subtitle">subtitle</p>
-              <h4 class="core-tech-title">핵심 기술 4</h4>
-              <p class="core-tech-description"></p>
+              <p class="core-tech-subtitle">연구 과제</p>
+              <h4 class="core-tech-title">폐플라스틱 감량화 장치</h4>
+              <p class="core-tech-description">
+                용존산소증폭기는 ~방식으로 물속에 산소를 대폭 증가시키는
+                장치로서, 솔라인 특허로 개발된 장치입니다. 녹조 방제에
+                효과적이며, 녹조방제선과 함께 호수, 댐의 녹조를 제거하여 산소를
+                공급해주므로서, 수중 산소 농도를 유지하고, 수중 생태계에 도움이
+                되는 기술입니다.
+              </p>
             </div>
           </div>
         </div>
