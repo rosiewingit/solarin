@@ -26,7 +26,7 @@ const mainPageItems = [
 window.onload = () => {
   console.log("ONLOAD");
 
-  // clickCoreTechnology();
+  // clickDevelopment();
   showPage(rootPageId);
 
   mainPageItems.forEach((page) => {

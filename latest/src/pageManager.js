@@ -214,6 +214,29 @@ class PPTContent {
       <div class="ppt-path">Home > Technology > <b>Development</b></div>
       <hr class="ppt-hr" />
       <article id="${this.id}-article">
+        <div class="development-body">
+          <div class="development-card">
+            <h1 class="development-title">
+              <div class="title-bar-top-line"></div>
+              제품명 1
+            </h1>
+            <div id="developmentCard1" class="development-image"></div>
+          </div>
+          <div class="development-card">
+            <h1 class="development-title">
+              <div class="title-bar-top-line"></div>
+              제품명 2
+            </h1>
+            <div id="developmentCard2" class="development-image"></div>
+          </div>
+          <div class="development-card">
+            <h1 class="development-title">
+              <div class="title-bar-top-line"></div>
+              제품명 3
+            </h1>
+            <div id="developmentCard3" class="development-image"></div>
+          </div>
+        </div>
       </article>
     </section>
       `;

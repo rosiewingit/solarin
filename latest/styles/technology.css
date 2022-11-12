@@ -290,3 +290,52 @@
   height: 100%;
   background-image: url("../resources/cord-detail-card-2.png");
 }
+
+.development-body {
+  width: 100%;
+}
+
+.development-card {
+  width: 100%;
+  height: 37em;
+  margin-bottom: 10em;
+}
+
+.development-image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#developmentCard1 {
+  width: 100%;
+  height: 100%;
+  background-image: url("../resources/development-card-1.svg");
+}
+
+#developmentCard2 {
+  width: 100%;
+  height: 100%;
+  background-image: url("../resources/development-card-2.svg");
+}
+
+#developmentCard3 {
+  width: 100%;
+  height: 100%;
+  background-image: url("../resources/development-card-3.svg");
+}
+
+.development-title {
+  padding: 3% 0;
+  font-weight: 900;
+  font-size: 24px;
+  color: #545454;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.title-bar-top-line {
+  width: 30px;
+  border-bottom: 5px solid #00a634;
+  margin-bottom: 13px;
+}
