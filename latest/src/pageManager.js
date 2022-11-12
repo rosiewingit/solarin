@@ -1,6 +1,7 @@
 const rootPageId = "#root";
 const coretechnologyPageId = "#coretechnologyPage";
 const rndcenterPageId = "#rndcenterPage";
+const developmentPageId = "#developmentPage";
 const patentPageId = "#patentPage";
 const productsPageId = "#productsPage";
 const newsPageId = "#newsPage";
@@ -18,6 +19,7 @@ const pages = [
   rootPageId,
   coretechnologyPageId,
   rndcenterPageId,
+  developmentPageId,
   patentPageId,
   productsPageId,
   newsPageId,
@@ -58,6 +60,9 @@ class PPTContent {
         break;
       case rndcenterPageId:
         $(this.page).append(this.createRndSection());
+        break;
+      case developmentPageId:
+        $(this.page).append(this.createDevelopmentSection());
         break;
       case patentPageId:
         $(this.page).append(this.createPatentSection());
@@ -198,6 +203,17 @@ class PPTContent {
             <div class="rnd-image rnd-center-3"></div>
           </div>
         </div>
+      </article>
+    </section>
+      `;
+  }
+
+  createDevelopmentSection() {
+    return `
+    <section id="${this.id}" class="body-content">
+      <div class="ppt-path">Home > Technology > <b>Development</b></div>
+      <hr class="ppt-hr" />
+      <article id="${this.id}-article">
       </article>
     </section>
       `;

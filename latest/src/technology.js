@@ -13,6 +13,16 @@ const clickCoreTechnology = () => {
   }
 };
 
+const clickDevelopment = () => {
+  showPage(developmentPageId);
+  setHeaderOpacity(1);
+  setNavDropdownOpacity(0.7);
+
+  const content = new PPTContent(developmentPageId, "development-page-1");
+  content.init();
+  content.setPath("Home > Technology > <b>Development</b>");
+};
+
 const clickRndCenter = () => {
   showPage(rndcenterPageId);
   setHeaderOpacity(1);
