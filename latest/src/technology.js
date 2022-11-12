@@ -6,6 +6,11 @@ const clickCoreTechnology = () => {
   const content = new PPTContent(coretechnologyPageId, "coretechnology-page-1");
   content.init();
   content.setPath("Home > Technology > <b>Core Technology</b>");
+
+  const cards = $(".core-tech-card");
+  for (let card of cards) {
+    addCoreTechCardHover($(card));
+  }
 };
 
 const clickRndCenter = () => {
@@ -40,5 +45,22 @@ const clickTechCoreCard1 = () => {
   content.init();
   content.setPath(
     "Home > Technology > Core Technology > <b>용존산소증폭기</b>"
+  );
+};
+
+const addCoreTechCardHover = (element) => {
+  element.hover(
+    () => {
+      element.find(".core-tech-learn-more-btn").removeClass("hidden");
+      element.find(".core-tech-subtitle").addClass("hidden");
+      element.find(".core-tech-description").removeClass("hidden");
+      element.find(".core-tech-bottom").css("padding-top", "0%");
+    },
+    () => {
+      element.find(".core-tech-learn-more-btn").addClass("hidden");
+      element.find(".core-tech-subtitle").removeClass("hidden");
+      element.find(".core-tech-description").addClass("hidden");
+      element.find(".core-tech-bottom").css("padding-top", "15%");
+    }
   );
 };

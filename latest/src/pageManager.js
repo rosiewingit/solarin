@@ -107,18 +107,18 @@ class PPTContent {
       <article class="page-article">
         <h1 class="ppt-title">Core Technology</h1>
         <div class="core-tech-cards">
-          <div class="core-tech-card" onclick="clickTechCoreCard1()">
+          <div id="techCoreCard1" class="core-tech-card" onclick="clickTechCoreCard1()">
             <div class="core-tech-top"></div>
             <div class="core-tech-mid">
               <img
-                class="core-tech-learn-more-btn"
+                class="core-tech-learn-more-btn hidden"
                 src="./resources/Learn-more-button.svg"
               />
             </div>
             <div class="core-tech-bottom">
               <p class="core-tech-subtitle">연구 과제</p>
               <h4 class="core-tech-title">용존산소증폭기</h4>
-              <p class="core-tech-description">
+              <p class="core-tech-description hidden">
                 용존산소증폭기는 ~방식으로 물속에 산소를 대폭 증가시키는
                 장치로서, 솔라인 특허로 개발된 장치입니다. 녹조 방제에
                 효과적이며, 녹조방제선과 함께 호수, 댐의 녹조를 제거하여 산소를
@@ -127,18 +127,18 @@ class PPTContent {
               </p>
             </div>
           </div>
-          <div class="core-tech-card" onclick="clickTechCoreCard2()">
+          <div id="techCoreCard2" class="core-tech-card" onclick="clickTechCoreCard2()">
             <div class="core-tech-top"></div>
             <div class="core-tech-mid">
               <img
-                class="core-tech-learn-more-btn"
+                class="core-tech-learn-more-btn hidden"
                 src="./resources/Learn-more-button.svg"
               />
             </div>
             <div class="core-tech-bottom">
               <p class="core-tech-subtitle">연구 과제</p>
               <h4 class="core-tech-title">폐플라스틱 감량화 장치</h4>
-              <p class="core-tech-description">
+              <p class="core-tech-description hidden">
                 용존산소증폭기는 ~방식으로 물속에 산소를 대폭 증가시키는
                 장치로서, 솔라인 특허로 개발된 장치입니다. 녹조 방제에
                 효과적이며, 녹조방제선과 함께 호수, 댐의 녹조를 제거하여 산소를
