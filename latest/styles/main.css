@@ -514,6 +514,20 @@ textarea {
   height: auto;
 }
 
+.bigimage-left-arrow {
+  float: left;
+  margin-left: 10px;
+  background-position: left;
+  background-image: url("../resources/left-arrow.svg");
+}
+
+.bigimage-right-arrow {
+  float: right;
+  margin-right: 10px;
+  background-position: right;
+  background-image: url("../resources/right-arrow.svg");
+}
+
 .fade-in {
   animation-name: fadein;
   animation-duration: 2.5s;

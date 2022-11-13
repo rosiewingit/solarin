@@ -566,7 +566,7 @@ class PPTContent {
                 aria-controls="csr-tab-2"
                 aria-selected="false"
               >
-                적정기술개발
+                공생기술센터
               </button>
             </div>
           </nav>
@@ -635,10 +635,66 @@ class PPTContent {
               aria-labelledby="csr-nav-tab-2"
               tabindex="0"
             >
-              <img
-                class="csr-tab-body"
-                src="./resources/whole-image-tab5-1.png"
-              />
+              <h1 class="csr-title">
+                <div class="title-bar-top-line"></div>
+                적정 기술을 개발하는 공생기술센터
+              </h1>
+              <p class="ppt-text">
+                솔라인에서는 지난 2009년부터 지역 사회 및 농촌 마을 지원을 위한
+                적정 기술을 연구하기 위한 공생기술센터를 운영중입니다.
+              </p>
+              <div class="csr-tab-image-container">
+                <div class="csr-tab-image csr-tab2-image1">
+                  <div class="bigimage-left-arrow csr-arrow-image"></div>
+                  <div class="bigimage-right-arrow csr-arrow-image"></div>
+                </div>
+              </div>
+              <hr class="ppt-hr" />
+              <h1 class="csr-title">
+                <div class="title-bar-top-line"></div>
+                인간을 위한 기술, 적정 기술이란?
+              </h1>
+              <p class="ppt-text">
+                적정기술이란 지역 사회의 인프라를 고려하여 만들어진 기술로
+                경제적이고 단순하며, 방향성에 목적을 둔 인간 중심적인 기술을
+                의미합니다.
+              </p>
+              <img class="big-image" src="./resources/csr-tab2-diagram.svg" />
+              <hr class="ppt-hr" />
+              <h1 class="csr-title">
+                <div class="title-bar-top-line"></div>
+                적정 기술로 만들어진 제품들
+              </h1>
+              <p class="ppt-text">
+                적정기술이란 지역 사회의 인프라를 고려하여 만들어진 기술로
+                경제적이고 단순하며, 방향성에 목적을 둔 인간 중심적인 기술을
+                의미합니다.
+              </p>
+              <div class="csr-tab2-cards">
+                <div class="csr-tab2-card">
+                  <!-- <div class="csr-tab2-info"></div> -->
+                </div>
+                <div class="csr-tab2-card"></div>
+                <div class="csr-tab2-card"></div>
+                <div class="csr-tab2-card"></div>
+                <div class="csr-tab2-card"></div>
+                <div class="csr-tab2-card"></div>
+              </div>
+              <hr class="ppt-hr" />
+              <h1 class="csr-title">
+                <div class="title-bar-top-line"></div>
+                현장에서의 공생기술센터
+              </h1>
+              <p class="ppt-text">
+                공생기술센터에서는 연구 뿐만 아니라 일상 생활 속 과학을 중심으로
+                다양한 체험 학습을 진행하며, 적정 기술과 관련된 강연을 합니다.
+              </p>
+              <div class="csr-tab-image-container">
+                <div class="csr-tab-image csr-tab2-image2">
+                  <div class="bigimage-left-arrow csr-arrow-image"></div>
+                  <div class="bigimage-right-arrow csr-arrow-image"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
