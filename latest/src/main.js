@@ -26,7 +26,7 @@ const mainPageItems = [
 window.onload = () => {
   console.log("ONLOAD");
 
-  // clickDevelopment();
+  // clickCsr();
   showPage(rootPageId);
 
   mainPageItems.forEach((page) => {

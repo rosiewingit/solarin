@@ -532,18 +532,14 @@ class PPTContent {
   createCsrSection() {
     return `
     <section id="${this.id}" class="body-content">
-      <div class="ppt-path">
-        Home > Technology > Core Technology > <b>용존산소증폭기</b>
-      </div>
+      <div class="ppt-path">Home > About Us > <b>CSR</b></div>
       <hr class="ppt-hr" />
       <article id="${this.id}-article">
         <h1 class="ppt-title">CSR이란?</h1>
         <p class="ppt-text">
           ‘CSR’이란 기업의 사회적 책임(Corporate Social Responsibility)이라는
           의미로, 기업과 사회의 공생관계를 올바르게 발전시키기 위해 기업이
-          취하는 행동이라고 할 수 있습니다.<br />솔라인에서는 UN에서 정한 지속
-          가능한 개발 목표(SDGs)를 기준으로 하여 적정기술을 연구하고 개발하여
-          사회공헌에 앞장서고 있습니다.
+          취하는 행동이라고 할 수 있습니다.
         </p>
         <div class="csr-content">
           <nav>
@@ -558,7 +554,7 @@ class PPTContent {
                 aria-controls="csr-tab-1"
                 aria-selected="true"
               >
-                비전 및 목표
+                농촌마을 자매결연
               </button>
               <button
                 class="nav-link csr-nav-link"
@@ -570,43 +566,7 @@ class PPTContent {
                 aria-controls="csr-tab-2"
                 aria-selected="false"
               >
-                적정기술
-              </button>
-              <button
-                class="nav-link csr-nav-link"
-                id="csr-nav-tab-3"
-                data-bs-toggle="tab"
-                data-bs-target="#csr-tab-3"
-                type="button"
-                role="tab"
-                aria-controls="csr-tab-3"
-                aria-selected="false"
-              >
-                공생기술센터
-              </button>
-              <button
-                class="nav-link csr-nav-link"
-                id="csr-nav-tab-4"
-                data-bs-toggle="tab"
-                data-bs-target="#csr-tab-4"
-                type="button"
-                role="tab"
-                aria-controls="csr-tab-4"
-                aria-selected="false"
-              >
-                자립마을 프로젝트
-              </button>
-              <button
-                class="nav-link csr-nav-link"
-                id="csr-nav-tab-5"
-                data-bs-toggle="tab"
-                data-bs-target="#csr-tab-5"
-                type="button"
-                role="tab"
-                aria-controls="csr-tab-5"
-                aria-selected="false"
-              >
-                사회공헌현황
+                적정기술개발
               </button>
             </div>
           </nav>
@@ -618,72 +578,61 @@ class PPTContent {
               aria-labelledby="csr-nav-tab-1"
               tabindex="0"
             >
-              <img
-                class="csr-tab-body"
-                src="./resources/whole-image-tab1-1.png"
-              />
+              <h1 class="csr-title">
+                <div class="title-bar-top-line"></div>
+                지역 사회간 국제 교류 시스템
+              </h1>
+              <p class="ppt-text">
+                솔라인에서는 지역 사회의 다문화 가정을 중심으로 하여 국가 간
+                농촌 마을의 교류를 추진하는 ‘농촌 마을 자매결연' 프로젝트를 운영
+                중입니다.<br />자매결연을 체결한 마을은 적정 기술과 언어를
+                교류하며 각 마을의 특산품 등 다양한 재화를 교환하며 공생을
+                실천해 나갑니다.
+              </p>
+              <img class="csr-tab-image" src="./resources/csr-tab1-map.svg" />
+              <hr class="ppt-hr" />
+              <h1 class="csr-title">
+                <div class="title-bar-top-line"></div>
+                더 넓은 세상으로, 자매 결연 홍보영상
+              </h1>
+              <p class="ppt-text">
+                솔라인에서는 지역 사회의 다문화 가정을 중심으로 하여 국가 간
+                농촌 마을의 교류를 추진하는 ‘농촌 마을 자매결연' 프로젝트를 운영
+                중입니다.<br />자매결연을 체결한 마을은 적정 기술과 언어를
+                교류하며 각 마을의 특산품 등 다양한 재화를 교환하며 공생을
+                실천해 나갑니다.
+              </p>
+              <iframe
+                class="csr-video"
+                src="https://www.youtube.com/embed/DWh-L15R-8o"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              <hr class="ppt-hr" />
+              <h1 class="csr-title">
+                <div class="title-bar-top-line"></div>
+                자매 결연 체험단 : 경남 통영 금평마을 - 몽골 붐브그르
+              </h1>
+              <p class="ppt-text">
+                솔라인에서는 지역 사회의 다문화 가정을 중심으로 하여 국가 간
+                농촌 마을의 교류를 추진하는 ‘농촌 마을 자매결연' 프로젝트를 운영
+                중입니다.<br />자매결연을 체결한 마을은 적정 기술과 언어를
+                교류하며 각 마을의 특산품 등 다양한 재화를 교환하며 공생을
+                실천해 나갑니다.
+              </p>
+              <div class="csr-tab1-cards">
+                <div class="csr-tab1-card"></div>
+                <div class="csr-tab1-card"></div>
+                <div class="csr-tab1-card"></div>
+                <div class="csr-tab1-card"></div>
+              </div>
             </div>
             <div
               class="tab-pane fade"
               id="csr-tab-2"
               role="tabpanel"
               aria-labelledby="csr-nav-tab-2"
-              tabindex="0"
-            >
-              <img
-                class="csr-tab-body"
-                src="./resources/whole-image-tab2-1.png"
-              />
-              <img
-                class="csr-tab-body"
-                src="./resources/whole-image-tab2-2.png"
-              />
-              <img
-                class="csr-tab-body"
-                src="./resources/whole-image-tab2-3.png"
-              />
-              <img
-                class="csr-tab-body"
-                src="./resources/whole-image-tab2-4.png"
-              />
-            </div>
-            <div
-              class="tab-pane fade"
-              id="csr-tab-3"
-              role="tabpanel"
-              aria-labelledby="csr-nav-tab-3"
-              tabindex="0"
-            >
-              <img
-                class="csr-tab-body"
-                src="./resources/whole-image-tab3-1.png"
-              />
-              <img
-                class="csr-tab-body"
-                src="./resources/whole-image-tab3-2.png"
-              />
-            </div>
-            <div
-              class="tab-pane fade"
-              id="csr-tab-4"
-              role="tabpanel"
-              aria-labelledby="csr-nav-tab-4"
-              tabindex="0"
-            >
-              <img
-                class="csr-tab-body"
-                src="./resources/whole-image-tab4-1.png"
-              />
-              <img
-                class="csr-tab-body"
-                src="./resources/whole-image-tab4-2.png"
-              />
-            </div>
-            <div
-              class="tab-pane fade"
-              id="csr-tab-5"
-              role="tabpanel"
-              aria-labelledby="csr-nav-tab-5"
               tabindex="0"
             >
               <img
