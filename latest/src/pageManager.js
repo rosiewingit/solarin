@@ -661,7 +661,7 @@ class PPTContent {
                 경제적이고 단순하며, 방향성에 목적을 둔 인간 중심적인 기술을
                 의미합니다.
               </p>
-              <img loading="lazy" class="big-image" src="./resources/csr-tab2-diagram.svg" />
+              <img loading="lazy" class="big-image" src="./resources/csr-tab2-diagram.png" />
               <hr class="ppt-hr" />
               <h1 class="csr-title">
                 <div class="title-bar-top-line"></div>
@@ -673,9 +673,7 @@ class PPTContent {
                 의미합니다.
               </p>
               <div class="csr-tab2-cards">
-                <div class="csr-tab2-card">
-                  <!-- <div class="csr-tab2-info"></div> -->
-                </div>
+                <div class="csr-tab2-card"></div>
                 <div class="csr-tab2-card"></div>
                 <div class="csr-tab2-card"></div>
                 <div class="csr-tab2-card"></div>
