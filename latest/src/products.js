@@ -5,7 +5,7 @@ const clickProducts = () => {
 
   const content = new PPTContent(productsPageId, "products-page-1");
   content.init();
-  content.setPath("Home > Products > <b>침수선박배수펌프</b>");
+  content.setPath("Home > <b>Products</b>");
 };
 
 const clickProductsImage = () => {

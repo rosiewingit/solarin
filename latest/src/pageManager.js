@@ -276,22 +276,26 @@ class PPTContent {
     <section id="${this.id}" class="body-content">
       <div id="productsNav" class="products-nav">
         <div class="products-nav-body">
-          <p class="products-nav-title">침수 선박 배수 펌프</p>
-          <p class="products-nav-title">경량 방수포 차수막</p>
-          <p class="products-nav-title">녹조제거 바지선</p>
-          <p class="products-nav-title">어망절단기</p>
-          <p class="products-nav-title">익수자인양기</p>
-          <p class="products-nav-title">전동차 트레일러(TBD)</p>
-          <p class="products-nav-title">화재 진압용 드론(TBD)</p>
-          <p class="products-nav-title">그물망 구조 드론(TBD)</p>
+          <p class="products-nav-title">어망절단기-압축공기식</p>
+          <p class="products-nav-title">어망절단기-전동식</p>
+          <p class="products-nav-title">T형 LED기술-모델명</p>
+          <p class="products-nav-title">연구 진행 제품 1-모델명</p>
+          <p class="products-nav-title">연구 진행 제품 2</p>
+          <p class="products-nav-title">개발 예정 제품 1(TBD)</p>
+          <p class="products-nav-title">개발 예정 제품 2(TBD)</p>
+          <p class="products-nav-title">개발 예정 제품 3(TBD)</p>
         </div>
       </div>
-      <div class="ppt-path">Home > Products > <b>경량방수포차수막</b></div>
+      <div class="ppt-path">Home > <b>Products</b></div>
       <hr class="ppt-hr" />
       <article id="${this.id}-article" class="page-article">
         <div class="products-left">
           <div class="products-left-top">
-            <div id="productsImage" onclick="clickProductsImage()" class="products-image"></div>
+            <div
+              id="productsImage"
+              onclick="clickProductsImage()"
+              class="products-image"
+            ></div>
           </div>
           <div class="products-left-bottom">
             <div class="products-thumbnails">
@@ -322,16 +326,58 @@ class PPTContent {
           </div>
         </div>
         <div class="products-right">
-          <h1 class="products-title">경량 방수포 차수막</h1>
-          <p class="products-text">
-            재질 : 경량방수포 고주파 결합 제작<br />
-            제품 보관 방법 : 두루마리 매트방식<br /><br />
-            설치 방법 : 범람예상지역 사전 설치 방법, 물 주입과
-            공기주입-에어펌프<br /><br />
-            보관 크기 : 750*300<br />
-            설치 크기 : 4200*600<br /><br />
-            홍수시, 지하 주차장 또는
-          </p>
+          <h1 class="products-title">압축 공기식 어망 절단기</h1>
+          <table class="products-table">
+            <tbody>
+              <tr class="products-tr">
+                <th>모델명</th>
+                <td>AIRCUT-100</td>
+              </tr>
+              <tr class="products-tr">
+                <th>개요</th>
+                <td>
+                  공기 탱크의 압축공기(렁)을 사용하여 어망을 절단하는 기기
+                </td>
+              </tr>
+              <tr class="products-tr">
+                <th>목적</th>
+                <td>폐 어망 및 로프를 현장에서 절단하기 위함</td>
+              </tr>
+              <tr class="products-tr">
+                <th>동력</th>
+                <td>고압 가스</td>
+              </tr>
+              <tr class="products-tr">
+                <th rowspan="3">성능</th>
+                <td>
+                  절단 시간 4초 이내
+                  <p class="products-td-light">* 직경 20mm 로프 기준</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  최대 사용 시간 5분
+                  <p class="products-td-light">* 연속 사용시</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  초당 진동수 110회
+                  <p></p>
+                </td>
+              </tr>
+              <tr class="products-tr">
+                <th rowspan="2">제원</th>
+                <td>
+                  전장 500mm
+                  <p class="products-td-light">칼날부 200mm, 본체 300mm</p>
+                </td>
+              </tr>
+              <tr>
+                <td>중량 1.5kg</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </article>
     </section>

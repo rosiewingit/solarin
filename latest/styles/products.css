@@ -26,15 +26,10 @@
 }
 
 .products-title {
+  padding-top: 0.5em;
   font-size: 1.5vmax;
-  font-weight: bolder;
+  font-weight: 900;
   color: #545454;
-}
-
-.products-text {
-  padding-top: 2.5em;
-  font-size: 0.7vmax;
-  font-weight: 550;
 }
 
 .products-image {
@@ -46,7 +41,7 @@
 }
 
 #productsImage {
-  background-image: url(../resources/products-1.png);
+  background-image: url(../resources/products/product1-1.png);
 }
 
 .products-thumbnails {
@@ -73,23 +68,23 @@
 }
 
 #productsThumb1 {
-  background-image: url("../resources/products-1.png");
+  background-image: url("../resources/products/product1-1.png");
 }
 
 #productsThumb2 {
-  background-image: url("../resources/products-2.png");
+  background-image: url("../resources/products/product1-2.png");
 }
 
 #productsThumb3 {
-  background-image: url("../resources/products-3.png");
+  background-image: url("../resources/products/product1-3.jpg");
 }
 
 #productsThumb4 {
-  background-image: url("../resources/products-4.png");
+  background-color: #d9d9d9;
 }
 
 #productsThumb5 {
-  background-image: url("../resources/products-5.png");
+  background-color: #d9d9d9;
 }
 
 #productsThumb6 {
@@ -154,4 +149,31 @@
 
 .products-thumb-image:active {
   outline: 3px solid #01cf42;
+}
+
+.products-table {
+  margin-top: 2.5em;
+  font-weight: 600;
+}
+
+.products-tr {
+  height: 2.3em;
+}
+
+.products-table th {
+  width: 7em;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 900;
+  vertical-align: text-top;
+}
+
+.products-table td {
+  vertical-align: text-top;
+  font-size: 13px;
+}
+
+.products-td-light {
+  font-weight: 300;
+  color: #9ca1a2;
 }
