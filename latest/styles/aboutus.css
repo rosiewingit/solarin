@@ -361,25 +361,25 @@
 }
 
 .csr-tab1-card:nth-child(1) {
-  background-image: url("../resources/csr-tab1-card1.svg");
+  background-image: url("../resources/csr-tab1-card1.png");
   margin-right: 1.5%;
   margin-bottom: 1.5%;
 }
 
 .csr-tab1-card:nth-child(2) {
-  background-image: url("../resources/csr-tab1-card2.svg");
+  background-image: url("../resources/csr-tab1-card2.png");
   margin-left: 1.5%;
   margin-bottom: 1.5%;
 }
 
 .csr-tab1-card:nth-child(3) {
-  background-image: url("../resources/csr-tab1-card3.svg");
+  background-image: url("../resources/csr-tab1-card3.png");
   margin-right: 1.5%;
   margin-top: 1.5%;
 }
 
 .csr-tab1-card:nth-child(4) {
-  background-image: url("../resources/csr-tab1-card4.svg");
+  background-image: url("../resources/csr-tab1-card4.png");
   margin-left: 1.5%;
   margin-top: 1.5%;
 }

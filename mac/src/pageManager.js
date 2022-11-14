@@ -210,20 +210,20 @@ class PPTContent {
       <article id="${this.id}-article" class="page-article">
         <div class="patent-item">
           <div class="row patent-item-row">
-            <div class="col-md-2"><img class="patent-img" src="./resources/patent1.png" /></div>
-            <div class="col-md-2"><img class="patent-img" src="./resources/patent1.png" /></div>
-            <div class="col-md-2"><img class="patent-img" src="./resources/patent1.png" /></div>
-            <div class="col-md-2"><img class="patent-img" src="./resources/patent1.png" /></div>
-            <div class="col-md-2"><img class="patent-img" src="./resources/patent1.png" /></div>
-            <div class="col-md-2"><img class="patent-img" src="./resources/patent1.png" /></div>
+            <div class="col-md-2"><img loading="lazy" class="patent-img" src="./resources/patent1.png" /></div>
+            <div class="col-md-2"><img loading="lazy" class="patent-img" src="./resources/patent1.png" /></div>
+            <div class="col-md-2"><img loading="lazy" class="patent-img" src="./resources/patent1.png" /></div>
+            <div class="col-md-2"><img loading="lazy" class="patent-img" src="./resources/patent1.png" /></div>
+            <div class="col-md-2"><img loading="lazy" class="patent-img" src="./resources/patent1.png" /></div>
+            <div class="col-md-2"><img loading="lazy" class="patent-img" src="./resources/patent1.png" /></div>
           </div>
           <div class="row patent-item-row">
-            <div class="col-md-2"><img class="patent-img" src="./resources/patent1.png" /></div>
-            <div class="col-md-2"><img class="patent-img" src="./resources/patent1.png" /></div>
-            <div class="col-md-2"><img class="patent-img" src="./resources/patent1.png" /></div>
-            <div class="col-md-2"><img class="patent-img" src="./resources/patent1.png" /></div>
-            <div class="col-md-2"><img class="patent-img" src="./resources/patent1.png" /></div>
-            <div class="col-md-2"><img class="patent-img" src="./resources/patent1.png" /></div>
+            <div class="col-md-2"><img loading="lazy" class="patent-img" src="./resources/patent1.png" /></div>
+            <div class="col-md-2"><img loading="lazy" class="patent-img" src="./resources/patent1.png" /></div>
+            <div class="col-md-2"><img loading="lazy" class="patent-img" src="./resources/patent1.png" /></div>
+            <div class="col-md-2"><img loading="lazy" class="patent-img" src="./resources/patent1.png" /></div>
+            <div class="col-md-2"><img loading="lazy" class="patent-img" src="./resources/patent1.png" /></div>
+            <div class="col-md-2"><img loading="lazy" class="patent-img" src="./resources/patent1.png" /></div>
           </div>
         </div>
       </article>
@@ -303,10 +303,10 @@ class PPTContent {
       <div class="ppt-path">Home > PR Center > <b>News</b></div>
       <hr class="ppt-hr" />
       <article id="${this.id}-article" class="page-article">
-        <img class="dummy-img" src="./resources/news-dummy-0.png" />
-        <img class="dummy-img" src="./resources/news-dummy-1.png" />
-        <img class="dummy-img" src="./resources/news-dummy-2.png" />
-        <img class="dummy-img" src="./resources/news-dummy-3.png" />
+        <img loading="lazy" class="dummy-img" src="./resources/news-dummy-0.png" />
+        <img loading="lazy" class="dummy-img" src="./resources/news-dummy-1.png" />
+        <img loading="lazy" class="dummy-img" src="./resources/news-dummy-2.png" />
+        <img loading="lazy" class="dummy-img" src="./resources/news-dummy-3.png" />
       </article>
     </section>
       `;
@@ -358,20 +358,20 @@ class PPTContent {
       <article id="${this.id}-article" class="page-article">
         <div class="patent-item">
           <div class="row patent-item-row">
-            <div class="col-md-2"><img class="patent-img" src="./resources/patent1.png" /></div>
-            <div class="col-md-2"><img class="patent-img" src="./resources/patent1.png" /></div>
-            <div class="col-md-2"><img class="patent-img" src="./resources/patent1.png" /></div>
-            <div class="col-md-2"><img class="patent-img" src="./resources/patent1.png" /></div>
-            <div class="col-md-2"><img class="patent-img" src="./resources/patent1.png" /></div>
-            <div class="col-md-2"><img class="patent-img" src="./resources/patent1.png" /></div>
+            <div class="col-md-2"><img loading="lazy" class="patent-img" src="./resources/patent1.png" /></div>
+            <div class="col-md-2"><img loading="lazy" class="patent-img" src="./resources/patent1.png" /></div>
+            <div class="col-md-2"><img loading="lazy" class="patent-img" src="./resources/patent1.png" /></div>
+            <div class="col-md-2"><img loading="lazy" class="patent-img" src="./resources/patent1.png" /></div>
+            <div class="col-md-2"><img loading="lazy" class="patent-img" src="./resources/patent1.png" /></div>
+            <div class="col-md-2"><img loading="lazy" class="patent-img" src="./resources/patent1.png" /></div>
           </div>
           <div class="row patent-item-row">
-            <div class="col-md-2"><img class="patent-img" src="./resources/patent1.png" /></div>
-            <div class="col-md-2"><img class="patent-img" src="./resources/patent1.png" /></div>
-            <div class="col-md-2"><img class="patent-img" src="./resources/patent1.png" /></div>
-            <div class="col-md-2"><img class="patent-img" src="./resources/patent1.png" /></div>
-            <div class="col-md-2"><img class="patent-img" src="./resources/patent1.png" /></div>
-            <div class="col-md-2"><img class="patent-img" src="./resources/patent1.png" /></div>
+            <div class="col-md-2"><img loading="lazy" class="patent-img" src="./resources/patent1.png" /></div>
+            <div class="col-md-2"><img loading="lazy" class="patent-img" src="./resources/patent1.png" /></div>
+            <div class="col-md-2"><img loading="lazy" class="patent-img" src="./resources/patent1.png" /></div>
+            <div class="col-md-2"><img loading="lazy" class="patent-img" src="./resources/patent1.png" /></div>
+            <div class="col-md-2"><img loading="lazy" class="patent-img" src="./resources/patent1.png" /></div>
+            <div class="col-md-2"><img loading="lazy" class="patent-img" src="./resources/patent1.png" /></div>
           </div>
         </div>
       </article>
@@ -389,7 +389,7 @@ class PPTContent {
         </div>
         <div class="overview-first-right">
           <div class="overview-first-right-top">
-            <img class="overview-logo" src="./resources/logo-color.png" />
+            <img loading="lazy" class="overview-logo" src="./resources/logo-color.png" />
           </div>
           <div class="overview-first-right-mid">
             <h1 class="overview-first-title">New Ideas, Handy Life.</h1>
@@ -462,7 +462,7 @@ class PPTContent {
       <hr class="ppt-hr" />
       <article id="${this.id}-article" class="page-article">
         <div class="ceo-message-left">
-          <img src="./resources/ceo-image.png" />
+          <img loading="lazy" src="./resources/ceo-image.png" />
         </div>
         <div class="ceo-message-right">
           <h1 class="ceo-message-title">Make convenient with new ideas.</h1>
@@ -483,7 +483,7 @@ class PPTContent {
             되겠습니다. 감사합니다.
           </p>
           <span class="ceo-message-name">솔라인 대표 김재술</span>
-          <img class="ceo-message-sign" src="./resources/ceo-sign.png" />
+          <img loading="lazy" class="ceo-message-sign" src="./resources/ceo-sign.png" />
         </div>
       </article>
     </section>
@@ -580,6 +580,7 @@ class PPTContent {
               tabindex="0"
             >
               <img
+                loading="lazy"
                 class="csr-tab-body"
                 src="./resources/whole-image-tab1-1.png"
               />
@@ -592,18 +593,22 @@ class PPTContent {
               tabindex="0"
             >
               <img
+                loading="lazy"
                 class="csr-tab-body"
                 src="./resources/whole-image-tab2-1.png"
               />
               <img
+                loading="lazy"
                 class="csr-tab-body"
                 src="./resources/whole-image-tab2-2.png"
               />
               <img
+                loading="lazy"
                 class="csr-tab-body"
                 src="./resources/whole-image-tab2-3.png"
               />
               <img
+                loading="lazy"
                 class="csr-tab-body"
                 src="./resources/whole-image-tab2-4.png"
               />
@@ -616,10 +621,12 @@ class PPTContent {
               tabindex="0"
             >
               <img
+                loading="lazy"
                 class="csr-tab-body"
                 src="./resources/whole-image-tab3-1.png"
               />
               <img
+                loading="lazy"
                 class="csr-tab-body"
                 src="./resources/whole-image-tab3-2.png"
               />
@@ -632,10 +639,12 @@ class PPTContent {
               tabindex="0"
             >
               <img
+                loading="lazy"
                 class="csr-tab-body"
                 src="./resources/whole-image-tab4-1.png"
               />
               <img
+                loading="lazy"
                 class="csr-tab-body"
                 src="./resources/whole-image-tab4-2.png"
               />
@@ -648,6 +657,7 @@ class PPTContent {
               tabindex="0"
             >
               <img
+                loading="lazy"
                 class="csr-tab-body"
                 src="./resources/whole-image-tab5-1.png"
               />
@@ -673,7 +683,7 @@ class PPTContent {
         것이라고 할 수 있습니다.
       </p>
       <div class="esg-main-image">
-        <img src="./resources/esg-main-image.png" />
+        <img loading="lazy" src="./resources/esg-main-image.png" />
       </div>
     </article>
   </section>
@@ -746,10 +756,10 @@ class PPTContent {
       <article id="${this.id}-article" class="page-article">
         <h1 class="ppt-title">위치 안내</h1>
         <div class="access-map-container">
-          <img class="map-image" src="./resources/access-map.png" />
+          <img loading="lazy" class="map-image" src="./resources/access-map.png" />
           <div class="access-map-overlay">
             <div class="overlay-top">
-              <img class="brand-logo-color" src="./resources/logo-color.png" />
+              <img loading="lazy" class="brand-logo-color" src="./resources/logo-color.png" />
             </div>
             <div class="overlay-bottom">
               <div class="overlay-bottom-top">
@@ -775,12 +785,12 @@ class PPTContent {
     </section>
     <section class="body-content">
       <article class="page-article">
-        <img src="./resources/access-dummy-2.png" class="dummy-img" />
+        <img loading="lazy" src="./resources/access-dummy-2.png" class="dummy-img" />
       </article>
     </section>
     <section class="body-content">
       <article class="page-article">
-        <img src="./resources/access-dummy-3.png" class="dummy-img" />
+        <img loading="lazy" src="./resources/access-dummy-3.png" class="dummy-img" />
       </article>
     </section>
       `;
@@ -794,10 +804,10 @@ class PPTContent {
   //   <article id="${this.id}-article" class="page-article">
   //     <h1 class="ppt-title">위치 안내</h1>
   //     <div class="access-map-container">
-  //       <img class="map-image" src="./resources/access-map.png" />
+  //       <img loading="lazy" class="map-image" src="./resources/access-map.png" />
   //       <div class="access-map-overlay">
   //         <div class="overlay-top">
-  //           <img class="brand-logo-color" src="./resources/logo-color.png" />
+  //           <img loading="lazy" class="brand-logo-color" src="./resources/logo-color.png" />
   //         </div>
   //         <div class="overlay-bottom">
   //           <div class="overlay-bottom-top">
@@ -861,7 +871,7 @@ class PPTContent {
         </p>
         <div class="core-detail-feature">
           <div class="core-detail-feature-card">
-            <img src="./resources/core-detail-icon-1.png" />
+            <img loading="lazy" src="./resources/core-detail-icon-1.png" />
             <p>
               솔라인은 2019년 설립된 국내 유일의 아이디어 제작 업체로서,
               국무총리 또는 행정각부의 장은 소관사무에 관하여 법률이나
@@ -869,7 +879,7 @@ class PPTContent {
             </p>
           </div>
           <div class="core-detail-feature-card">
-            <img src="./resources/core-detail-icon-2.png" />
+            <img loading="lazy" src="./resources/core-detail-icon-2.png" />
             <p>
               솔라인은 2019년 설립된 국내 유일의 아이디어 제작 업체로서,
               국무총리 또는 행정각부의 장은 소관사무에 관하여 법률이나
@@ -877,7 +887,7 @@ class PPTContent {
             </p>
           </div>
           <div class="core-detail-feature-card">
-            <img src="./resources/core-detail-icon-3.png" />
+            <img loading="lazy" src="./resources/core-detail-icon-3.png" />
             <p>
               솔라인은 2019년 설립된 국내 유일의 아이디어 제작 업체로서,
               국무총리 또는 행정각부의 장은 소관사무에 관하여 법률이나
