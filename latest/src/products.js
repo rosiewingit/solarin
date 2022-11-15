@@ -99,10 +99,7 @@ class Product {
                 <th>모델명</th>
                 <td>${model}</td>
               </tr>
-              <tr class="products-tr">
-                <th>개요</th>
-                <td>${description}</td>
-              </tr>
+              ${this.getArrayElement("개요", description)}
               <tr class="products-tr">
                 <th>목적</th>
                 <td>${purpose}</td>
@@ -121,9 +118,13 @@ class Product {
   }
 
   getArrayElement(title, array) {
-    if (!array) {
-      console.log("Invalid array");
-      return;
+    if (!Array.isArray(array)) {
+      return `
+      <tr class="products-tr">
+        <th>${title}</th>
+        <td>${array}</td>
+      </tr>
+      `;
     }
     const rowspan = array.length;
     let result = `
