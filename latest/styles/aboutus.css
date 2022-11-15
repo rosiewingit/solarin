@@ -110,10 +110,8 @@
 }
 
 .ceo-message-left img {
-  position: absolute;
-  left: 0;
-  margin-top: 3%;
-  height: 35%;
+  margin-top: 6%;
+  width: 70%;
 }
 
 .ceo-message-right {
@@ -133,12 +131,14 @@
 .ceo-message-text {
   width: 100%;
   margin-top: 8%;
-  font-size: 0.8vmax;
+  margin-bottom: 6%;
+  font-size: small;
+  font-weight: 400;
 }
 
 .ceo-message-name {
-  margin-top: 6%;
-  font-size: 1vmax;
+  font-size: medium;
+  font-weight: 600;
 }
 
 .ceo-message-sign {
