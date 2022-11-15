@@ -1,0 +1,163 @@
+{
+  "product-1": {
+    "title": "압축 공기식 어망 절단기",
+    "details": {
+      "model": "AIRCUT-100",
+      "description": "공기 탱크의 압축공기(렁)을 사용하여 어망을 절단하는 기기",
+      "purpose": "폐 어망 및 로프를 현장에서 절단하기 위함",
+      "power": "고압 가스",
+      "performance": [
+        {
+          "main": "절단 시간 4초 이내",
+          "sub": "* 직경 20mm 로프 기준"
+        },
+        {
+          "main": "최대 사용 시간 5분",
+          "sub": "* 연속 사용시"
+        },
+        {
+          "main": "초당 진동수 110회",
+          "sub": ""
+        }
+      ],
+      "size": [
+        {
+          "main": "전장 500mm",
+          "sub": "칼날부 200mm, 본체 300mm"
+        },
+        {
+          "main": "중량 1.5kg",
+          "sub": ""
+        }
+      ],
+      "media": [
+        "product1-1.png",
+        "product1-2.png",
+        "product1-3.jpg",
+        "product1-4.mp4"
+      ]
+    }
+  },
+  "product-2": {
+    "title": "전동식 어망 절단기",
+    "details": {
+      "model": "MOTORCUT-100",
+      "description": [
+        {
+          "main": "배터리의 전력을 사용하여 어망을 절단하는 기기",
+          "sub": "* IP68등급의 완벽 방수 배터리 사용"
+        }
+      ],
+      "purpose": "폐 어망 및 로프를 현장에서 절단하기 위함",
+      "power": "방수 모터",
+      "performance": [
+        {
+          "main": "절단 시간 4초 이내",
+          "sub": "* 직경 20mm 로프 기준"
+        },
+        {
+          "main": "최대 사용 시간 30분",
+          "sub": "* 500W 기준. 연속 사용시"
+        },
+        {
+          "main": "초당 진동수 110회",
+          "sub": "없습니다"
+        }
+      ],
+      "size": [
+        {
+          "main": "전장 540mm",
+          "sub": "칼날부 200mm, 본체 340mm"
+        },
+        {
+          "main": "중량 2.7kg",
+          "sub": "배터리 중량 1.1kg"
+        }
+      ],
+      "media": [
+        "product2-1.png",
+        "product2-2.png",
+        "product2-3.jpg",
+        "product2-4.mp4"
+      ]
+    }
+  },
+  "product-3": {
+    "title": "T형 LED기술-모델명",
+    "details": {
+      "model": "MOTORCUT-100",
+      "description": [
+        {
+          "main": "배터리의 전력을 사용하여 어망을 절단하는 기기",
+          "sub": "* IP68등급의 완벽 방수 배터리 사용"
+        }
+      ],
+      "purpose": "폐 어망 및 로프를 현장에서 절단하기 위함",
+      "power": "방수 모터",
+      "performance": [
+        {
+          "main": "절단 시간 4초 이내",
+          "sub": "* 직경 20mm 로프 기준"
+        },
+        {
+          "main": "최대 사용 시간 30분",
+          "sub": "* 500W 기준. 연속 사용시"
+        },
+        {
+          "main": "초당 진동수 110회",
+          "sub": "없습니다"
+        }
+      ],
+      "size": [
+        {
+          "main": "전장 540mm",
+          "sub": "칼날부 200mm, 본체 340mm"
+        },
+        {
+          "main": "중량 2.7kg",
+          "sub": "배터리 중량 1.1kg"
+        }
+      ],
+      "media": ["product3-1.png", "product2-2.png", "product2-3.jpg"]
+    }
+  },
+  "product-4": {
+    "title": "연구 진행 제품-모델명",
+    "details": {
+      "model": "MOTORCUT-100",
+      "description": [
+        {
+          "main": "배터리의 전력을 사용하여 어망을 절단하는 기기",
+          "sub": "* IP68등급의 완벽 방수 배터리 사용"
+        }
+      ],
+      "purpose": "폐 어망 및 로프를 현장에서 절단하기 위함",
+      "power": "방수 모터",
+      "performance": [
+        {
+          "main": "절단 시간 4초 이내",
+          "sub": "* 직경 20mm 로프 기준"
+        },
+        {
+          "main": "최대 사용 시간 30분",
+          "sub": "* 500W 기준. 연속 사용시"
+        },
+        {
+          "main": "초당 진동수 110회",
+          "sub": "없습니다"
+        }
+      ],
+      "size": [
+        {
+          "main": "전장 540mm",
+          "sub": "칼날부 200mm, 본체 340mm"
+        },
+        {
+          "main": "중량 2.7kg",
+          "sub": "배터리 중량 1.1kg"
+        }
+      ],
+      "media": ["product4-1.png", "product2-2.png", "product2-3.jpg"]
+    }
+  }
+}
