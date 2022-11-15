@@ -9,17 +9,25 @@ const clickProducts = () => {
 
   $.getJSON("./data/products.json", (data) => {
     for (const item in data) {
-      const product = new Product(data[item]);
+      const product = new Product(item, data[item]);
       product.init();
       console.log(data[item]);
     }
   });
 };
 
-const clickProductsImage = () => {
-  const imageUrl = $("#productsImage").css("background-image");
+const clickProductsImage = (imageUrl) => {
   $("#imageViewer").removeClass("hidden");
-  $("#bigImage").css("background-image", imageUrl);
+  $("#bigImage").css(
+    "background-image",
+    `url("./resources/products/${imageUrl}")`
+  );
+};
+
+const changeMainImage = (id, url) => {
+  const imageElement = $(`#${id}`).find(".products-image");
+  console.log(id);
+  imageElement.css("background-image", `url("./resources/products/${url}")`);
 };
 
 const closeImageViewer = () => {
@@ -27,7 +35,8 @@ const closeImageViewer = () => {
 };
 
 class Product {
-  constructor(info) {
+  constructor(id, info) {
+    this.id = id;
     this.info = info;
   }
 
@@ -52,40 +61,50 @@ class Product {
     const power = details.power;
     const performance = details.performance;
     const size = details.size;
-    const media = details.performance;
+    const media = details.media;
     return `
-    <article class="product-article">
+    <article id="${this.id}" class="product-article">
         <div class="products-left">
           <div class="products-left-top">
             <div
-              id="productsImage"
-              onclick="clickProductsImage()"
+              onclick="clickProductsImage('${media[0]}')"
               class="products-image"
+              style="background-image: url(./resources/products/${media[0]});"
             ></div>
           </div>
           <div class="products-left-bottom">
             <div class="products-thumbnails">
               <div class="products-thumb products-left-arrow"></div>
               <div class="products-thumb">
-                <div id="productsThumb1" class="products-thumb-image"></div>
+                <div class="products-thumb-image"
+                style="background-image: url(./resources/products/${media[0]});"
+                onclick="changeMainImage('${this.id}','${media[0]}')"
+                ></div>
               </div>
               <div class="products-thumb">
-                <div id="productsThumb2" class="products-thumb-image"></div>
+                <div class="products-thumb-image"
+                style="background-image: url(./resources/products/${media[1]});"
+                onclick="changeMainImage('${this.id}','${media[1]}')"></div>
               </div>
               <div class="products-thumb">
-                <div id="productsThumb3" class="products-thumb-image"></div>
+                <div class="products-thumb-image"
+                style="background-image: url(./resources/products/${
+                  media[2]
+                });" onclick="changeMainImage('${this.id}','${
+      media[2]
+    }')"></div>
               </div>
               <div class="products-thumb">
-                <div id="productsThumb4" class="products-thumb-image"></div>
+                <div class="products-thumb-image"></div>
               </div>
               <div class="products-thumb">
-                <div id="productsThumb5" class="products-thumb-image"></div>
+                <div class="products-thumb-image"></div>
               </div>
               <div class="products-thumb">
-                <div id="productsThumb6" class="products-thumb-image"></div>
+                <div class="products-thumb-image"></div>
               </div>
               <div class="products-thumb">
-                <div id="productsThumb7" class="products-thumb-image"></div>
+                <div class="products-thumb-image"></div>
               </div>
               <div class="products-thumb products-right-arrow"></div>
             </div>

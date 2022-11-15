@@ -44,7 +44,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url(../resources/products/product1-1.png);
 }
 
 #productsImage {
@@ -71,33 +70,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-#productsThumb1 {
-  background-image: url("../resources/products/product1-1.png");
-}
-
-#productsThumb2 {
-  background-image: url("../resources/products/product1-2.png");
-}
-
-#productsThumb3 {
-  background-image: url("../resources/products/product1-3.jpg");
-}
-
-#productsThumb4 {
-  background-color: #d9d9d9;
-}
-
-#productsThumb5 {
-  background-color: #d9d9d9;
-}
-
-#productsThumb6 {
-  background-color: #d9d9d9;
-}
-
-#productsThumb7 {
   background-color: #d9d9d9;
 }
 
