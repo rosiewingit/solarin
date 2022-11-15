@@ -1,4 +1,5 @@
 const host = "https://rosiewingit.github.io/solarin/latest/resources/";
+const dataHost = "https://rosiewingit.github.io/solarin/latest/data/";
 const mainPageItems = [
   {
     id: "main-page-1",

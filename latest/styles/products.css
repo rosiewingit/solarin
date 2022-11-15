@@ -1,14 +1,20 @@
+.product-article {
+  width: 100%;
+  height: 40em;
+  border-bottom: 1px solid #d9d9d9;
+}
+
 .products-left {
   float: left;
-  width: 43%;
+  width: 52%;
   height: 100%;
-  padding-top: 3.5em;
-  padding-right: 3.5em;
+  padding: 3.5em;
+  padding-right: 5em;
 }
 
 .products-right {
   float: right;
-  width: 57%;
+  width: 48%;
   height: 100%;
   padding-top: 4em;
 }
@@ -16,13 +22,13 @@
 .products-left-top {
   float: left;
   width: 100%;
-  height: 40%;
+  height: 80%;
 }
 
 .products-left-bottom {
   float: left;
   width: 100%;
-  height: 60%;
+  height: 20%;
 }
 
 .products-title {
@@ -38,16 +44,16 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  background-image: url(../resources/products/product1-1.png);
 }
 
 #productsImage {
-  background-image: url(../resources/products/product1-1.png);
 }
 
 .products-thumbnails {
   margin-top: 2em;
   width: 100%;
-  height: 10%;
+  height: 4em;
   display: table;
 }
 
