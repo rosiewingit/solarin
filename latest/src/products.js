@@ -11,7 +11,6 @@ const clickProducts = () => {
     for (const item in data) {
       const product = new Product(item, data[item]);
       product.init();
-      console.log(data[item]);
     }
   });
 };
@@ -21,11 +20,11 @@ const changeMainImage = (id, url) => {
     return;
   }
   const imageElement = $(`#${id}`).find(".products-image");
-  console.log(id);
   imageElement.css("background-image", `url("./resources/products/${url}")`);
 };
 
 const closeImageViewer = () => {
+  $("body").removeClass("scroll-block");
   $("#imageViewer").addClass("hidden");
 };
 
@@ -48,7 +47,9 @@ class Product {
     $(".products-image").click((e) => {
       const imageUrl = e.currentTarget.style.backgroundImage;
 
+      $("body").addClass("scroll-block");
       $("#imageViewer").removeClass("hidden");
+      $("#imageViewer").css("top", window.pageYOffset);
       $("#bigImage").css("background-image", imageUrl);
     });
   }
