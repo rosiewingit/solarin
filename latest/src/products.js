@@ -16,15 +16,10 @@ const clickProducts = () => {
   });
 };
 
-const clickProductsImage = (imageUrl) => {
-  $("#imageViewer").removeClass("hidden");
-  $("#bigImage").css(
-    "background-image",
-    `url("./resources/products/${imageUrl}")`
-  );
-};
-
 const changeMainImage = (id, url) => {
+  if (!url) {
+    return;
+  }
   const imageElement = $(`#${id}`).find(".products-image");
   console.log(id);
   imageElement.css("background-image", `url("./resources/products/${url}")`);
@@ -42,10 +37,20 @@ class Product {
 
   init() {
     this.addProductArticle();
+    this.addEvents();
   }
 
   addProductArticle() {
     $(`#products-page-1`).append(this.createProductArticle());
+  }
+
+  addEvents() {
+    $(".products-image").click((e) => {
+      const imageUrl = e.currentTarget.style.backgroundImage;
+
+      $("#imageViewer").removeClass("hidden");
+      $("#bigImage").css("background-image", imageUrl);
+    });
   }
 
   createProductArticle() {
@@ -67,7 +72,6 @@ class Product {
         <div class="products-left">
           <div class="products-left-top">
             <div
-              onclick="clickProductsImage('${media[0]}')"
               class="products-image"
               style="background-image: url(./resources/products/${media[0]});"
             ></div>
@@ -88,11 +92,8 @@ class Product {
               </div>
               <div class="products-thumb">
                 <div class="products-thumb-image"
-                style="background-image: url(./resources/products/${
-                  media[2]
-                });" onclick="changeMainImage('${this.id}','${
-      media[2]
-    }')"></div>
+                style="background-image: url(./resources/products/${media[2]});"
+                onclick="changeMainImage('${this.id}','${media[2]}')"></div>
               </div>
               <div class="products-thumb">
                 <div class="products-thumb-image"></div>
