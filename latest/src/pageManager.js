@@ -615,7 +615,9 @@ class PPTContent {
                 경제적이고 단순하며, 방향성에 목적을 둔 인간 중심적인 기술을
                 의미합니다.
               </p>
-              <img loading="lazy" class="big-image" src="./resources/csr-tab2-diagram.png" />
+              <div class="csr-tab-image-container-nomargin">
+                <img loading="lazy" class="big-image" src="./resources/csr-tab2-diagram.png" />
+              </div>
               <hr class="ppt-hr" />
               <h1 class="csr-title">
                 <div class="title-bar-top-line"></div>
