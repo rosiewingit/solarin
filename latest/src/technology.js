@@ -64,13 +64,13 @@ const addCoreTechCardHover = (element) => {
       element.find(".core-tech-learn-more-btn").removeClass("hidden");
       element.find(".core-tech-subtitle").addClass("hidden");
       element.find(".core-tech-description").removeClass("hidden");
-      element.find(".core-tech-bottom").css("padding-top", "0%");
+      element.find(".core-tech-bottom").css("padding-top", "10%");
     },
     () => {
       element.find(".core-tech-learn-more-btn").addClass("hidden");
       element.find(".core-tech-subtitle").removeClass("hidden");
       element.find(".core-tech-description").addClass("hidden");
-      element.find(".core-tech-bottom").css("padding-top", "15%");
+      element.find(".core-tech-bottom").css("padding-top", "40%");
     }
   );
 };
