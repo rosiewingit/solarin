@@ -32,12 +32,7 @@
   background-position-x: left;
   background-size: 100%;
   padding: 2.5%;
-}
-
-.core-tech-card:hover {
-  cursor: pointer;
-  background-blend-mode: overlay;
-  background-color: rgba(0, 166, 52, 0.7);
+  transition: 0.4s all;
 }
 
 .core-tech-card:nth-child(1) {
