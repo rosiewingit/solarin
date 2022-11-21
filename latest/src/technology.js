@@ -61,17 +61,15 @@ const clickTechCoreCard1 = () => {
 const addCoreTechCardHover = (element) => {
   element.hover(
     () => {
-      // $(this).animate({});
       element.css("cursor", "pointer");
       element.css("background-blend-mode", "overlay");
       element.css("background-color", "rgba(0, 166, 52, 0.7)");
       element.find(".core-tech-learn-more-btn").removeClass("hidden");
       element.find(".core-tech-subtitle").addClass("hidden");
       element.find(".core-tech-description").removeClass("hidden");
-      element.find(".core-tech-bottom").css("padding-top", "10%");
-      // $("#navMenuDrop1").css("opacity", "1");
-      // $("#navMenuDrop1").css("transition", "0.4s all");
-      // $("#navMenuDrop1").css("visibility", "visible");
+      element
+        .find(".core-tech-bottom")
+        .animate({ "padding-top": "10%" }, 500, "swing");
     },
     () => {
       element.css("cursor", "none");
@@ -80,7 +78,9 @@ const addCoreTechCardHover = (element) => {
       element.find(".core-tech-learn-more-btn").addClass("hidden");
       element.find(".core-tech-subtitle").removeClass("hidden");
       element.find(".core-tech-description").addClass("hidden");
-      element.find(".core-tech-bottom").css("padding-top", "40%");
+      element
+        .find(".core-tech-bottom")
+        .animate({ "padding-top": "40%" }, 500, "swing");
     }
   );
 };
