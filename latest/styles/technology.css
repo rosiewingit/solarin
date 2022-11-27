@@ -317,19 +317,19 @@
 #developmentCard1 {
   width: 100%;
   height: 100%;
-  background-image: url("../resources/development-card-1.svg");
+  background-image: url("../resources/technology/development/1-1.png");
 }
 
 #developmentCard2 {
   width: 100%;
   height: 100%;
-  background-image: url("../resources/development-card-2.svg");
+  background-image: url("../resources/technology/development/2-1.png");
 }
 
 #developmentCard3 {
   width: 100%;
   height: 100%;
-  background-image: url("../resources/development-card-3.svg");
+  background-image: url("../resources/technology/development/3-1.png");
 }
 
 .development-title {
