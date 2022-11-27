@@ -68,6 +68,8 @@ class Product {
     const performance = details.performance;
     const size = details.size;
     const media = details.media;
+    console.log("@@@info", this.info);
+    console.log("@@@power", power);
     return `
     <article id="${this.id}" class="product-article">
         <div class="products-left">
@@ -116,19 +118,10 @@ class Product {
           <h1 class="products-title">${title}</h1>
           <table class="products-table">
             <tbody>
-              <tr class="products-tr">
-                <th>모델명</th>
-                <td>${model}</td>
-              </tr>
+              ${this.getArrayElement("모델명", model)}
               ${this.getArrayElement("개요", description)}
-              <tr class="products-tr">
-                <th>목적</th>
-                <td>${purpose}</td>
-              </tr>
-              <tr class="products-tr">
-                <th>동력</th>
-                <td>${power}</td>
-              </tr>
+              ${this.getArrayElement("목적", purpose)}
+              ${this.getArrayElement("동력", power)}
               ${this.getArrayElement("성능", performance)}
               ${this.getArrayElement("제원", size)}
             </tbody>
@@ -139,6 +132,9 @@ class Product {
   }
 
   getArrayElement(title, array) {
+    if (array === undefined || array === null || array === "") {
+      return `<tr></tr>`;
+    }
     if (!Array.isArray(array)) {
       return `
       <tr class="products-tr">
@@ -153,7 +149,7 @@ class Product {
       <th rowspan="${rowspan}">${title}</th>
       <td>
         ${array[0].main}
-        <p class="products-td-light">${array[0].sub}</p>
+        ${this.getSubTextElement(array, 0)}
       </td>
     </tr>
     `;
@@ -162,11 +158,21 @@ class Product {
       result += `<tr>
       <td>
         ${array[i].main}
-        <p class="products-td-light">${array[i].sub}</p>
+        ${this.getSubTextElement(array, i)}
       </td>
     </tr>`;
     }
 
     return result;
+  }
+
+  getSubTextElement(array, index) {
+    const sub = array[index].sub;
+    if (sub === undefined || array === null) {
+      return `<p></p>`;
+    }
+    return `
+    <p class="products-td-light">${sub}</p>
+    `;
   }
 }
