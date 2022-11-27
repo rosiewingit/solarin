@@ -1,6 +1,6 @@
 .product-article {
   width: 100%;
-  height: 40em;
+  height: 45em;
   border-bottom: 1px solid #d9d9d9;
 }
 
@@ -16,13 +16,13 @@
   float: right;
   width: 48%;
   height: 100%;
-  padding-top: 4em;
+  padding-top: 5em;
 }
 
 .products-left-top {
   float: left;
   width: 100%;
-  height: 80%;
+  height: 70%;
 }
 
 .products-left-bottom {
@@ -50,7 +50,7 @@
 }
 
 .products-thumbnails {
-  margin-top: 2em;
+  margin-top: 1em;
   width: 100%;
   height: 4em;
   display: table;
@@ -131,12 +131,12 @@
 }
 
 .products-table {
-  margin-top: 2.5em;
+  margin-top: 3em;
   font-weight: 600;
 }
 
 .products-tr {
-  height: 2.3em;
+  height: 2.8em;
 }
 
 .products-table th {

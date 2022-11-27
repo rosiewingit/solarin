@@ -337,12 +337,12 @@ class PPTContent {
         <div class="products-nav-body">
           <p class="products-nav-title">어망절단기-압축공기식</p>
           <p class="products-nav-title">어망절단기-전동식</p>
-          <p class="products-nav-title">T형 LED기술-모델명</p>
-          <p class="products-nav-title">연구 진행 제품 1-모델명</p>
-          <p class="products-nav-title">연구 진행 제품 2</p>
-          <p class="products-nav-title">개발 예정 제품 1(TBD)</p>
-          <p class="products-nav-title">개발 예정 제품 2(TBD)</p>
-          <p class="products-nav-title">개발 예정 제품 3(TBD)</p>
+          <p class="products-nav-title">T형 LED기술(제품명)</p>
+          <p class="products-nav-title">해경 펌프</p>
+          <p class="products-nav-title">와이어 절단기</p>
+          <p class="products-nav-title">인양기</p>
+          <p class="products-nav-title">페달형 손소독기</p>
+          <p class="products-nav-title">태양광 경광등</p>
         </div>
       </div>
       <div class="ppt-path">Home > <b>Products</b></div>
