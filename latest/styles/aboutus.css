@@ -11,12 +11,12 @@
 }
 
 .overview-first-image {
-  width: 65%;
+  width: 66%;
   height: 100%;
-  background-image: url("../resources/overview-image.png");
+  background-image: url("../resources/aboutus/overview-image.png");
   background-position: left;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 .overview-first-right-top {
@@ -38,15 +38,20 @@
   height: 50%;
 }
 
+.overview-first-right-bottom table {
+  width: 85%;
+}
+
 .overview-first-title {
   font-size: xx-large;
-  font-weight: bolder;
+  font-weight: 900;
   color: #545454;
 }
 
 .overview-table-item {
   width: 100%;
-  font-size: smaller;
+  line-height: 1.8em;
+  font-size: 0.9em;
   border-bottom: 1px solid #d9d9d9;
 }
 
@@ -56,13 +61,13 @@
 
 .overview-table-item th {
   font-weight: 900;
-  width: 30%;
+  width: 40%;
   padding: 15px 0px;
 }
 
 .overview-table-item td {
   font-weight: 500;
-  width: 70%;
+  width: 60%;
   padding: 15px 0;
 }
 

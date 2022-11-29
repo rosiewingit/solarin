@@ -446,7 +446,7 @@ class PPTContent {
             <img loading="lazy" class="overview-logo" src="./resources/logo-color.png" />
           </div>
           <div class="overview-first-right-mid">
-            <h1 class="overview-first-title">New Ideas, Handy Life.</h1>
+            <h1 class="overview-first-title">'Technology for Human'</h1>
           </div>
           <div class="overview-first-right-bottom">
             <table class="table table-borderless">
