@@ -18,6 +18,16 @@ const clickCeoMessage = () => {
   content.setPath("Home > About Us > <b>CEO Message</b>");
 };
 
+const clickHistory = () => {
+  showPage(historyPageId);
+  setHeaderOpacity(1);
+  setNavDropdownOpacity(0.7);
+
+  const content = new PPTContent(historyPageId, "history-page-1");
+  content.init();
+  content.setPath("Home > About Us > <b>History</b>");
+};
+
 const clickCsr = () => {
   showPage(csrPageId);
   setHeaderOpacity(1);

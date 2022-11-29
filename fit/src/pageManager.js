@@ -7,6 +7,7 @@ const newsPageId = "#newsPage";
 const certificationPageId = "#certificationPage";
 const overviewPageId = "#overviewPage";
 const ceoMessagePageId = "#ceoMessagePage";
+const historyPageId = "#historyPage";
 const csrPageId = "#csrPage";
 const esgPageId = "#esgPage";
 const accessPageId = "#accessPage";
@@ -24,6 +25,7 @@ const pages = [
   certificationPageId,
   overviewPageId,
   ceoMessagePageId,
+  historyPageId,
   csrPageId,
   esgPageId,
   accessPageId,
@@ -76,6 +78,9 @@ class PPTContent {
         break;
       case ceoMessagePageId:
         $(this.page).append(this.createCeoMessageSection());
+        break;
+      case historyPageId:
+        $(this.page).append(this.createHistorySection());
         break;
       case csrPageId:
         $(this.page).append(this.createCsrSection());

@@ -8,6 +8,7 @@ const newsPageId = "#newsPage";
 const certificationPageId = "#certificationPage";
 const overviewPageId = "#overviewPage";
 const ceoMessagePageId = "#ceoMessagePage";
+const historyPageId = "#historyPage";
 const csrPageId = "#csrPage";
 const esgPageId = "#esgPage";
 const accessPageId = "#accessPage";
@@ -26,6 +27,7 @@ const pages = [
   certificationPageId,
   overviewPageId,
   ceoMessagePageId,
+  historyPageId,
   csrPageId,
   esgPageId,
   accessPageId,
@@ -81,6 +83,9 @@ class PPTContent {
         break;
       case ceoMessagePageId:
         $(this.page).append(this.createCeoMessageSection());
+        break;
+      case historyPageId:
+        $(this.page).append(this.createHistorySection());
         break;
       case csrPageId:
         $(this.page).append(this.createCsrSection());
@@ -540,6 +545,16 @@ class PPTContent {
           <img loading="lazy" class="ceo-message-sign" src="./resources/ceo-sign.png" />
         </div>
       </article>
+    </section>
+      `;
+  }
+
+  createHistorySection() {
+    return `
+    <section id="${this.id}" class="body-content">
+      <div class="ppt-path">Home > About Us > <b>History</b></div>
+      <hr class="ppt-hr" />
+      <article id="${this.id}-article" class="page-article"></article>
     </section>
       `;
   }

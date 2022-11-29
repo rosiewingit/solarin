@@ -16,7 +16,7 @@ const clickProducts = () => {
 };
 
 const changeMainImage = (id, url) => {
-  if (!url) {
+  if (url === undefined || url === "undefined" || url === null) {
     return;
   }
   const imageElement = $(`#${id}`).find(".products-image");
@@ -68,8 +68,6 @@ class Product {
     const performance = details.performance;
     const size = details.size;
     const media = details.media;
-    console.log("@@@info", this.info);
-    console.log("@@@power", power);
     return `
     <article id="${this.id}" class="product-article">
         <div class="products-left">
@@ -99,16 +97,28 @@ class Product {
                 onclick="changeMainImage('${this.id}','${media[2]}')"></div>
               </div>
               <div class="products-thumb">
-                <div class="products-thumb-image"></div>
+                <div class="products-thumb-image"style="background-image: url(./resources/products/${
+                  media[3]
+                });"
+                onclick="changeMainImage('${this.id}','${media[3]}')"></div>
               </div>
               <div class="products-thumb">
-                <div class="products-thumb-image"></div>
+                <div class="products-thumb-image"style="background-image: url(./resources/products/${
+                  media[4]
+                });"
+                onclick="changeMainImage('${this.id}','${media[4]}')"></div>
               </div>
               <div class="products-thumb">
-                <div class="products-thumb-image"></div>
+                <div class="products-thumb-image"style="background-image: url(./resources/products/${
+                  media[5]
+                });"
+                onclick="changeMainImage('${this.id}','${media[5]}')"></div>
               </div>
               <div class="products-thumb">
-                <div class="products-thumb-image"></div>
+                <div class="products-thumb-image"style="background-image: url(./resources/products/${
+                  media[6]
+                });"
+                onclick="changeMainImage('${this.id}','${media[6]}')"></div>
               </div>
               <div class="products-thumb products-right-arrow"></div>
             </div>
