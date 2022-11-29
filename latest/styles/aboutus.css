@@ -331,11 +331,11 @@
 }
 
 .csr-tab2-image1 {
-  background-image: url("../resources/csr-tab2-image.png");
+  background-image: url("../resources/aboutus/csr-tab2-image.png");
 }
 
 .csr-tab2-image2 {
-  background-image: url("../resources/csr-tab2-image2.png");
+  background-image: url("../resources/aboutus/csr-tab2-image2.png");
 }
 
 .csr-video {
@@ -363,25 +363,25 @@
 }
 
 .csr-tab1-card:nth-child(1) {
-  background-image: url("../resources/csr-tab1-card1.png");
+  background-image: url("../resources/aboutus/csr-tab1-card1.png");
   margin-right: 1.5%;
   margin-bottom: 1.5%;
 }
 
 .csr-tab1-card:nth-child(2) {
-  background-image: url("../resources/csr-tab1-card2.png");
+  background-image: url("../resources/aboutus/csr-tab1-card2.png");
   margin-left: 1.5%;
   margin-bottom: 1.5%;
 }
 
 .csr-tab1-card:nth-child(3) {
-  background-image: url("../resources/csr-tab1-card3.png");
+  background-image: url("../resources/aboutus/csr-tab1-card3.png");
   margin-right: 1.5%;
   margin-top: 1.5%;
 }
 
 .csr-tab1-card:nth-child(4) {
-  background-image: url("../resources/csr-tab1-card4.png");
+  background-image: url("../resources/aboutus/csr-tab1-card4.png");
   margin-left: 1.5%;
   margin-top: 1.5%;
 }
@@ -424,36 +424,36 @@
 }
 
 .csr-tab2-card:nth-child(1) {
-  background-image: url("../resources/csr-tab2-card1.png");
+  background-image: url("../resources/aboutus/csr-tab2-card1.png");
   margin-right: 1.5%;
 }
 
 .csr-tab2-card:nth-child(2) {
-  background-image: url("../resources/csr-tab2-card2.png");
+  background-image: url("../resources/aboutus/csr-tab2-card2.png");
   margin-left: 1.5%;
   margin-right: 1.5%;
 }
 
 .csr-tab2-card:nth-child(3) {
-  background-image: url("../resources/csr-tab2-card3.png");
+  background-image: url("../resources/aboutus/csr-tab2-card3.png");
   margin-left: 1.5%;
 }
 
 .csr-tab2-card:nth-child(4) {
-  background-image: url("../resources/csr-tab2-card4.png");
+  background-image: url("../resources/aboutus/csr-tab2-card4.png");
   margin-right: 1.5%;
   margin-top: 3%;
 }
 
 .csr-tab2-card:nth-child(5) {
-  background-image: url("../resources/csr-tab2-card5.png");
+  background-image: url("../resources/aboutus/csr-tab2-card5.png");
   margin-left: 1.5%;
   margin-right: 1.5%;
   margin-top: 3%;
 }
 
 .csr-tab2-card:nth-child(6) {
-  background-image: url("../resources/csr-tab2-card6.png");
+  background-image: url("../resources/aboutus/csr-tab2-card6.png");
   margin-left: 1.5%;
   margin-top: 3%;
 }

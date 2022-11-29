@@ -604,7 +604,7 @@ class PPTContent {
                 교류하며 각 마을의 특산품 등 다양한 재화를 교환하며 공생을
                 실천해 나갑니다.
               </p>
-              <img loading="lazy" class="csr-tab-image" src="./resources/csr-tab1-map.png" />
+              <img loading="lazy" class="csr-tab-image" src="./resources/aboutus/csr-tab1-map.png" />
               <hr class="ppt-hr" />
               <h1 class="csr-title">
                 <div class="title-bar-top-line"></div>
@@ -675,7 +675,7 @@ class PPTContent {
                 의미합니다.
               </p>
               <div class="csr-tab-image-container-nomargin">
-                <img loading="lazy" class="big-image" src="./resources/csr-tab2-diagram.png" />
+                <img loading="lazy" class="big-image" src="./resources/aboutus/csr-tab2-diagram.png" />
               </div>
               <hr class="ppt-hr" />
               <h1 class="csr-title">
