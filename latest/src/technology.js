@@ -21,6 +21,29 @@ const clickDevelopment = () => {
   const content = new PPTContent(developmentPageId, "development-page-1");
   content.init();
   content.setPath("Home > Technology > <b>Development</b>");
+
+  const developments = [
+    {
+      id: "developmentCard1",
+      name: "어망절단기",
+      images: ["1-1.png", "2-1.png", "3-1.png"],
+    },
+    {
+      id: "developmentCard2",
+      name: "펌프",
+      images: ["2-1.png", "3-1.png", "1-1.png"],
+    },
+    {
+      id: "developmentCard3",
+      name: "자동사다리",
+      images: ["3-1.png", "1-1.png", "2-1.png"],
+    },
+  ];
+
+  for (const item of developments) {
+    const development = new Development(item.id, item.name, item.images);
+    development.init();
+  }
 };
 
 const clickRndCenter = () => {
@@ -84,3 +107,68 @@ const addCoreTechCardHover = (element) => {
     }
   );
 };
+
+class Development {
+  constructor(id, name, images) {
+    this.id = id;
+    this.name = name;
+    this.images = images;
+  }
+
+  init() {
+    this.addDevelopmentCard();
+  }
+
+  addDevelopmentCard() {
+    $(`#developmentBody`).append(this.createDevelopmentCard());
+  }
+
+  createDevelopmentCard() {
+    return `
+    <div class="development-card">
+        <h1 class="development-title">
+          <div class="title-bar-top-line"></div>
+          ${this.name}
+        </h1>
+        <div
+          id="${this.id}"
+          class="carousel slide development-carousel"
+          data-bs-touch="false"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./resources/technology/development/${this.images[0]}"
+                class="d-block w-100"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./resources/technology/development/${this.images[1]}"
+                class="d-block w-100"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./resources/technology/development/${this.images[2]}"
+                class="d-block w-100"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev prev-carousel"
+            type="button"
+            data-bs-target="#${this.id}"
+            data-bs-slide="prev"
+          ></button>
+          <button
+            class="carousel-control-next next-carousel"
+            type="button"
+            data-bs-target="#${this.id}"
+            data-bs-slide="next"
+          ></button>
+        </div>
+      </div>
+    `;
+  }
+}
