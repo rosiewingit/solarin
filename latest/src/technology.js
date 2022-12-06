@@ -27,19 +27,19 @@ const clickDevelopment = () => {
       id: "developmentCard1",
       name: "어망절단기",
       type: "landscape",
-      images: ["1-1.png", "2-1.png", "3-1.png"],
-    },
-    {
-      id: "developmentCard3",
-      name: "자동사다리",
-      type: "portrait",
-      images: ["4-1.png", "4-2.png", "4-3.png"],
+      images: ["1-1.png", "1-2.png", "3-1.png"],
     },
     {
       id: "developmentCard2",
+      name: "자동사다리",
+      type: "portrait",
+      images: ["2-1.png", "2-2.png", "2-3.png", "2-4.png", "2-5.png"],
+    },
+    {
+      id: "developmentCard3",
       name: "해경배수펌프",
       type: "landscape",
-      images: ["2-1.png", "3-1.png", "1-1.png"],
+      images: ["3-1.png", "1-1.png", "1-2.png"],
     },
   ];
 
@@ -135,6 +135,11 @@ class Development {
 
   addDevelopmentCard() {
     $(`#developmentBody`).append(this.createDevelopmentCard());
+
+    for (const image of this.images) {
+      $(`#image-${this.id}`).append(this.createCardImage(image));
+    }
+    $(`#image-${this.id} div:first-child`).addClass("active");
   }
 
   createDevelopmentCard() {
@@ -149,26 +154,7 @@ class Development {
           class="carousel slide"
           data-bs-touch="false"
         >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src="./resources/technology/development/${this.images[0]}"
-                class="d-block w-100"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="./resources/technology/development/${this.images[1]}"
-                class="d-block w-100"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="./resources/technology/development/${this.images[2]}"
-                class="d-block w-100"
-              />
-            </div>
-          </div>
+          <div id="image-${this.id}" class="carousel-inner"></div>
           <button
             class="carousel-control-prev prev-carousel"
             type="button"
@@ -183,6 +169,17 @@ class Development {
           ></button>
         </div>
       </div>
+    `;
+  }
+
+  createCardImage(filename) {
+    return `
+    <div class="carousel-item">
+      <img
+        src="./resources/technology/development/${filename}"
+        class="d-block w-100"
+      />
+    </div>
     `;
   }
 }
