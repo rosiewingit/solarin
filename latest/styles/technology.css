@@ -304,13 +304,18 @@
 
 .development-card {
   width: 100%;
-  height: 37em;
-  margin-bottom: 10em;
+  height: inherit;
+  margin-bottom: 3em;
 }
 
-.development-carousel {
+.development-carousel-landscape {
   width: 100%;
-  height: 580px;
+  /* height: 580px; */
+}
+
+.development-carousel-portrait {
+  width: 100%;
+  /* height: 1020px; */
 }
 
 .development-carousel .carousel-inner {
@@ -334,7 +339,7 @@
 }
 
 .development-title {
-  padding: 3% 0;
+  padding: 2% 0;
   font-weight: 900;
   font-size: 24px;
   color: #545454;

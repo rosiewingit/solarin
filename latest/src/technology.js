@@ -26,22 +26,25 @@ const clickDevelopment = () => {
     {
       id: "developmentCard1",
       name: "어망절단기",
+      type: "landscape",
       images: ["1-1.png", "2-1.png", "3-1.png"],
-    },
-    {
-      id: "developmentCard2",
-      name: "펌프",
-      images: ["2-1.png", "3-1.png", "1-1.png"],
     },
     {
       id: "developmentCard3",
       name: "자동사다리",
-      images: ["3-1.png", "1-1.png", "2-1.png"],
+      type: "portrait",
+      images: ["4-1.png", "4-2.png", "4-3.png"],
+    },
+    {
+      id: "developmentCard2",
+      name: "해경배수펌프",
+      type: "landscape",
+      images: ["2-1.png", "3-1.png", "1-1.png"],
     },
   ];
 
   for (const item of developments) {
-    const development = new Development(item.id, item.name, item.images);
+    const development = new Development(item);
     development.init();
   }
 };
@@ -109,14 +112,25 @@ const addCoreTechCardHover = (element) => {
 };
 
 class Development {
-  constructor(id, name, images) {
-    this.id = id;
-    this.name = name;
-    this.images = images;
+  constructor(item) {
+    this.id = item.id;
+    this.name = item.name;
+    this.type = item.type;
+    this.images = item.images;
   }
 
   init() {
     this.addDevelopmentCard();
+
+    switch (this.type) {
+      case "portrait":
+        $(`#${this.id}`).addClass("development-carousel-portrait");
+        break;
+      case "landscape":
+        $(`#${this.id}`).addClass("development-carousel-landscape");
+      default:
+        break;
+    }
   }
 
   addDevelopmentCard() {
@@ -132,7 +146,7 @@ class Development {
         </h1>
         <div
           id="${this.id}"
-          class="carousel slide development-carousel"
+          class="carousel slide"
           data-bs-touch="false"
         >
           <div class="carousel-inner">
