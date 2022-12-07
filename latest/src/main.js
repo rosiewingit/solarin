@@ -73,6 +73,14 @@ const clickCenterButton = () => {
   window.open("http://www.voicechip.co.kr/self-relience/diy.htm", "_blank");
 };
 
+const goToContact = () => {
+  if (isMobile) {
+    location.href = "tel:0507-1395-0771";
+  } else {
+    location.href = "mailto:voicechip@naver.com";
+  }
+};
+
 const setHeaderOpacity = (opacity) => {
   $("header").css("background-color", `rgba(0,0,0,${opacity})`);
 };
@@ -119,6 +127,12 @@ const addHeaderHover = () => {
       $("#navMenuDrop4").css("transition", "0.2s all");
       $("#navMenuDrop4").css("visibility", "hidden");
     }
+  );
+};
+
+const isMobile = () => {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    navigator.userAgent
   );
 };
 
