@@ -81,6 +81,31 @@ const goToContact = () => {
   }
 };
 
+const sendMail = () => {
+  const name = $("#queryName").val();
+  const mail = $("#queryMail").val();
+  const body = $("#queryBody").val();
+
+  emailjs.init("UiaklHPms2XNWpNdG");
+
+  //emailjs.com
+  const templateParams = {
+    to_name: "Solarin",
+    from_name: name,
+    message: body,
+    reply_to: mail,
+  };
+
+  emailjs.send("default_service", "template_5f1wztn", templateParams).then(
+    function (response) {
+      console.log("SUCCESS!", response.status, response.text);
+    },
+    function (error) {
+      console.log("FAILED...", error);
+    }
+  );
+};
+
 const setHeaderOpacity = (opacity) => {
   $("header").css("background-color", `rgba(0,0,0,${opacity})`);
 };
