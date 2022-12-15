@@ -40,6 +40,14 @@ window.onload = () => {
   const slideShow = new SlideShow();
   slideShow.start();
 
+  $("#footerTermCheckbox").change(() => {
+    if ($("#footerTermCheckbox").is(":checked")) {
+      $("#mainSubmitBtn").removeAttr("disabled");
+    } else {
+      $("#mainSubmitBtn").attr("disabled", "disabled");
+    }
+  });
+
   $(window).scroll(function () {
     if ($(window).scrollTop() + $(window).height() == $(document).height()) {
       slideShow.stop();
@@ -63,6 +71,8 @@ window.onload = () => {
     }
   });
 };
+
+$(document).ready(() => {});
 
 const initScreen = () => {
   $("body").height(screen.height);

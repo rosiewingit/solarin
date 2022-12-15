@@ -12,6 +12,11 @@ body {
   font-family: "Noto Sans";
 }
 
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
 /* Macbook Retina */
 @media all and (max-width: 1919px) {
   .inner-body {
@@ -331,6 +336,11 @@ body {
   .main-footer-bottom p {
     text-align: left;
     line-height: 32px;
+  }
+
+  .footer-text {
+    color: #000000;
+    text-decoration: none;
   }
 
   input {

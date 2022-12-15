@@ -293,8 +293,14 @@
             <span class="text-bold-title">사이트맵</span>
           </p>
           <hr />
-          <p>내부정보관리규정</p>
-          <p>공생기술센터</p>
+          <p>
+            <a
+              class="footer-text"
+              href="http://www.voicechip.co.kr/self-relience/diy.htm"
+              target="_blank"
+              >공생기술센터</a
+            >
+          </p>
         </div>
         <div class="main-footer-mid-item">
           <p>
@@ -305,7 +311,11 @@
           <p><span>메일</span><br /><input id="queryMail" /></p>
           <p><span>문의내용</span><br /><textarea id="queryBody"></textarea></p>
           <p class="main-terms">
-            <input type="checkbox" class="main-terms-checkbox" />
+            <input
+              id="footerTermCheckbox"
+              type="checkbox"
+              class="main-terms-checkbox"
+            />
             <span class="text-bold-title"
               >개인정보수집 및 약관에 동의합니다.</span
             >
@@ -315,6 +325,7 @@
             id="mainSubmitBtn"
             class="btn main-footer-button"
             onclick="sendMail()"
+            disabled
           >
             Submit
           </button>
