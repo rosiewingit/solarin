@@ -310,12 +310,17 @@
 
 .development-carousel-landscape {
   width: 100%;
-  /* height: 580px; */
+  height: 580px;
 }
 
 .development-carousel-portrait {
   width: 100%;
   /* height: 1020px; */
+}
+
+.development-main-image {
+  width: 100%;
+  height: 100%;
 }
 
 .development-carousel .carousel-inner {

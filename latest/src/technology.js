@@ -33,7 +33,7 @@ const clickDevelopment = () => {
       id: "developmentCard2",
       name: "자동사다리",
       type: "portrait",
-      images: ["2-1.png", "2-2.png", "2-3.png", "2-4.png", "2-5.png"],
+      images: ["2-6.png", "1-1.png"],
     },
     {
       id: "developmentCard3",
@@ -175,10 +175,20 @@ class Development {
   createCardImage(filename) {
     return `
     <div class="carousel-item">
-      <img
-        src="./resources/technology/development/${filename}"
-        class="d-block w-100"
-      />
+      <div>
+        <div class="carousel-main-image blur">
+          <img
+            src="./resources/technology/development/${filename}"
+            class="d-block w-100"
+          />
+        </div>
+        <div class="carousel-main-image development-main-image">
+          <img
+          src="./resources/technology/development/${filename}"
+          class="d-block h-100"
+        />
+        </div>
+      </div>
     </div>
     `;
   }

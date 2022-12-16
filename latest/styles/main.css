@@ -970,6 +970,23 @@ hr {
   height: 100%;
 }
 
+.carousel-item {
+  width: 100%;
+  height: 580px;
+}
+
+.carousel-main-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.blur {
+  -webkit-filter: blur(20px);
+  -moz-filter: blur(20px);
+  filter: blur(20px);
+}
+
 .fade-in {
   animation-name: fadein;
   animation-duration: 2.5s;
