@@ -323,6 +323,10 @@
   height: 100%;
 }
 
+.carousel-position {
+  margin: auto;
+}
+
 .development-carousel .carousel-inner {
   height: inherit;
 }

@@ -185,7 +185,7 @@ class Development {
         <div class="carousel-main-image development-main-image">
           <img
           src="./resources/technology/development/${filename}"
-          class="d-block h-100"
+          class="d-block h-100 carousel-position"
         />
         </div>
       </div>
