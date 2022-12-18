@@ -26,20 +26,17 @@ const clickDevelopment = () => {
     {
       id: "developmentCard1",
       name: "어망절단기",
-      type: "landscape",
-      images: ["1-1.png", "1-2.png", "3-1.png"],
+      images: ["1-1-landscape.png", "1-2-landscape.png", "3-1-landscape.png"],
     },
     {
       id: "developmentCard2",
       name: "자동사다리",
-      type: "portrait",
-      images: ["2-6.png", "1-1.png"],
+      images: ["2-6-portrait.png", "1-1-landscape.png"],
     },
     {
       id: "developmentCard3",
       name: "해경배수펌프",
-      type: "landscape",
-      images: ["3-1.png", "1-1.png", "1-2.png"],
+      images: ["3-1-landscape.png", "1-1-landscape.png", "1-2-landscape.png"],
     },
   ];
 
@@ -115,22 +112,11 @@ class Development {
   constructor(item) {
     this.id = item.id;
     this.name = item.name;
-    this.type = item.type;
     this.images = item.images;
   }
 
   init() {
     this.addDevelopmentCard();
-
-    switch (this.type) {
-      case "portrait":
-        $(`#${this.id}`).addClass("development-carousel-portrait");
-        break;
-      case "landscape":
-        $(`#${this.id}`).addClass("development-carousel-landscape");
-      default:
-        break;
-    }
   }
 
   addDevelopmentCard() {
@@ -173,23 +159,42 @@ class Development {
   }
 
   createCardImage(filename) {
-    return `
-    <div class="carousel-item">
-      <div>
-        <div class="carousel-main-image blur">
-          <img
+    const TYPE = {
+      portrait: "portrait",
+      landscape: "landscape",
+    };
+    if (filename.includes(TYPE.portrait)) {
+      return `
+      <div class="carousel-item">
+        <div>
+          <div class="carousel-main-image blur">
+            <img
+              src="./resources/technology/development/${filename}"
+              class="d-block w-100"
+            />
+          </div>
+          <div class="carousel-main-image development-main-image">
+            <img
             src="./resources/technology/development/${filename}"
-            class="d-block w-100"
+            class="d-block h-100 carousel-position"
           />
-        </div>
-        <div class="carousel-main-image development-main-image">
-          <img
-          src="./resources/technology/development/${filename}"
-          class="d-block h-100 carousel-position"
-        />
+          </div>
         </div>
       </div>
-    </div>
-    `;
+      `;
+    } else {
+      return `
+      <div class="carousel-item">
+        <div>
+          <div class="carousel-main-image development-main-image">
+            <img
+            src="./resources/technology/development/${filename}"
+            class="d-block w-100 carousel-position"
+          />
+          </div>
+        </div>
+      </div>
+      `;
+    }
   }
 }
