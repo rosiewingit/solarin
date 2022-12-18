@@ -701,10 +701,6 @@ b {
   height: 40%;
 }
 
-#navProducts {
-  cursor: pointer;
-}
-
 .nav-child {
   text-align: center;
   cursor: pointer;

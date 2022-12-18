@@ -150,6 +150,19 @@ const addHeaderHover = () => {
     }
   );
 
+  $("#navMenu2").hover(
+    () => {
+      $("#navMenuDrop2").css("opacity", "1");
+      $("#navMenuDrop2").css("transition", "0.4s all");
+      $("#navMenuDrop2").css("visibility", "visible");
+    },
+    () => {
+      $("#navMenuDrop2").css("opacity", "0");
+      $("#navMenuDrop2").css("transition", "0.2s all");
+      $("#navMenuDrop2").css("visibility", "hidden");
+    }
+  );
+
   $("#navMenu3").hover(
     () => {
       $("#navMenuDrop3").css("opacity", "1");
