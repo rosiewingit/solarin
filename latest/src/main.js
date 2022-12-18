@@ -108,12 +108,24 @@ const sendMail = () => {
 
   emailjs.send("default_service", "template_5f1wztn", templateParams).then(
     function (response) {
-      console.log("SUCCESS!", response.status, response.text);
+      if (response.status === 200) {
+        alert("Success to send a mail.");
+        resetRequest();
+      }
     },
     function (error) {
-      console.log("FAILED...", error);
+      alert("Failed to send a mail. Please contact 'voicechip@naver.com'");
+      resetRequest();
     }
   );
+};
+
+const resetRequest = () => {
+  $("#queryName").val("");
+  $("#queryMail").val("");
+  $("#queryBody").val("");
+  $("#footerTermCheckbox").prop("checked", false);
+  $("#mainSubmitBtn").attr("disabled", "disabled");
 };
 
 const setHeaderOpacity = (opacity) => {
