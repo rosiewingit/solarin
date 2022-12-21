@@ -6,6 +6,18 @@ const clickCertification = () => {
   const content = new PPTContent(certificationPageId, "certification-page-1");
   content.init();
   content.setPath("Home > PR Center > <b>Certification</b>");
+
+  $.getJSON("./data/certifications.json", (data) => {
+    const hostUrl = data.hostUrl;
+    const certifications = data.certifications;
+
+    const certificationItems = new Certification(
+      "certifications",
+      hostUrl,
+      certifications
+    );
+    certificationItems.init();
+  });
 };
 
 const clickNews = () => {

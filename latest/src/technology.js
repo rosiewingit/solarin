@@ -64,6 +64,14 @@ const clickPatent = () => {
   const content = new PPTContent(patentPageId, "patent-page-1");
   content.init();
   content.setPath("Home > Technology > <b>Patent</b>");
+
+  $.getJSON("./data/certifications.json", (data) => {
+    const hostUrl = data.hostUrl;
+    const patents = data.patents;
+
+    const patentItems = new Certification("patents", hostUrl, patents);
+    patentItems.init();
+  });
 };
 
 const clickTechCoreCard1 = () => {
@@ -107,6 +115,45 @@ const addCoreTechCardHover = (element) => {
     }
   );
 };
+
+class Certification {
+  constructor(type, hostUrl, items) {
+    this.type = type;
+    this.hostUrl = hostUrl;
+    this.items = items;
+  }
+
+  init() {
+    const cards = this.items;
+    const row = 6;
+    const length = this.items.length;
+    const counts = length / row;
+
+    for (let i = 0; i < counts; i++) {
+      const tmpCards = cards.slice(row * i, row * (i + 1));
+      $(`#${this.type}Item`).append(this.createCards(tmpCards));
+    }
+  }
+
+  getImages(items) {
+    let result = "";
+    for (let item of items) {
+      result += `
+      <div class="col-md-2">
+        <img loading="lazy" class="patent-img" alt="${item.title}" src="${this.hostUrl}/${this.type}/${item.image}" />
+      </div>
+      `;
+    }
+    return result;
+  }
+
+  createCards(images) {
+    return `<div class="row patent-item-row">
+    ${this.getImages(images)}
+    </div>
+    `;
+  }
+}
 
 class Development {
   constructor(item) {

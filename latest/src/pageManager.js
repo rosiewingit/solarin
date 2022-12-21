@@ -282,12 +282,12 @@ class PPTContent {
   createDevelopmentSection() {
     return `
     <section id="${this.id}" class="body-content">
-        <div class="ppt-path">Home > Technology > <b>Development</b></div>
-        <hr class="ppt-hr" />
-        <article id="${this.id}-article">
-          <div id="developmentBody" class="development-body"></div>
-        </article>
-      </section>
+      <div class="ppt-path">Home > Technology > <b>Development</b></div>
+      <hr class="ppt-hr" />
+      <article id="${this.id}-article">
+        <div id="developmentBody" class="development-body"></div>
+      </article>
+    </section>
     `;
   }
 
@@ -296,24 +296,7 @@ class PPTContent {
       <div class="ppt-path"></div>
       <hr class="ppt-hr" />
       <article id="${this.id}-article" class="page-article">
-        <div class="patent-item">
-          <div class="row patent-item-row">
-            <div class="col-md-2"><img loading="lazy" class="patent-img" src="./resources/patent1.png" /></div>
-            <div class="col-md-2"><img loading="lazy" class="patent-img" src="./resources/patent1.png" /></div>
-            <div class="col-md-2"><img loading="lazy" class="patent-img" src="./resources/patent1.png" /></div>
-            <div class="col-md-2"><img loading="lazy" class="patent-img" src="./resources/patent1.png" /></div>
-            <div class="col-md-2"><img loading="lazy" class="patent-img" src="./resources/patent1.png" /></div>
-            <div class="col-md-2"><img loading="lazy" class="patent-img" src="./resources/patent1.png" /></div>
-          </div>
-          <div class="row patent-item-row">
-            <div class="col-md-2"><img loading="lazy" class="patent-img" src="./resources/patent1.png" /></div>
-            <div class="col-md-2"><img loading="lazy" class="patent-img" src="./resources/patent1.png" /></div>
-            <div class="col-md-2"><img loading="lazy" class="patent-img" src="./resources/patent1.png" /></div>
-            <div class="col-md-2"><img loading="lazy" class="patent-img" src="./resources/patent1.png" /></div>
-            <div class="col-md-2"><img loading="lazy" class="patent-img" src="./resources/patent1.png" /></div>
-            <div class="col-md-2"><img loading="lazy" class="patent-img" src="./resources/patent1.png" /></div>
-          </div>
-        </div>
+        <div id="patentsItem" class="patent-item"></div>
       </article>
     </section>`;
   }
@@ -354,68 +337,12 @@ class PPTContent {
       `;
   }
 
-  // createNewsSection_history() {
-  //   return `
-  //   <section id="${this.id}" class="body-content">
-  //     <div class="ppt-path">Home > PR Center > <b>News</b></div>
-  //     <hr class="ppt-hr" />
-  //     <div class="news-container">
-  //       <div class="news-headline">
-  //         <div class="news-headline-left">
-  //           <img loading="lazy" src="./resources/news-main-pic.png" />
-  //         </div>
-  //         <div class="news-headline-right">
-  //           <h1 class="news-headline-title">
-  //             유원대, 한국발명진흥회, ㈜넥스웜, 솔라인과 업무협약
-  //           </h1>
-  //           <p class="news-headline-date">2022.05.12 14:49</p>
-  //           <p class="news-headline-text">
-  //             [중부매일 윤여군 기자] 유원대학교(총장 채훈관)가 11일
-  //             한국발명진흥회(회장 권오현), ㈜넥스웜(대표이사 주진혁),
-  //             솔라인(대표 김재술) 등 벤처기업과 산학협력 업무협약을 체결했다.<br /><br />
-  //             아산캠퍼스 심우관 대회의실에서 진행된 협약식에는 채훈관 총장을
-  //             비롯해 김원진, 배재우, 김병주, 황재효 등 반도체디스플레이학과
-  //             교수들과 강민철 지식거래재산소 특허거래전문관, ㈜넥스웜의 주진혁
-  //             대표, 솔라인의 김재술 대표가 참석했다.<br /><br />협약에 따라 각
-  //             기관은 대학이 보유한 기술의 국내외 기술이전 및 거래활성화, 유원대
-  //             반도체디스플레이학과 졸업생의 취업, 교육·연구·기술 정보교류,
-  //             디스플레이 교육과정 개발 등에 공동 협력하기로 했다....
-  //           </p>
-  //         </div>
-  //       </div>
-  //       <hr class="ppt-hr" />
-  //       <div class="news-body-container">
-  //         <div class="news-body-header"></div>
-  //         <div class="news-body-cards"></div>
-  //       </div>
-  //     </div>
-  //   </section>
-  //     `;
-  // }
-
   createCertificationSection() {
     return `<section id="${this.id}" class="body-content">
       <div class="ppt-path"></div>
       <hr class="ppt-hr" />
       <article id="${this.id}-article" class="page-article">
-        <div class="patent-item">
-          <div class="row patent-item-row">
-            <div class="col-md-2"><img loading="lazy" class="patent-img" src="./resources/patent1.png" /></div>
-            <div class="col-md-2"><img loading="lazy" class="patent-img" src="./resources/patent1.png" /></div>
-            <div class="col-md-2"><img loading="lazy" class="patent-img" src="./resources/patent1.png" /></div>
-            <div class="col-md-2"><img loading="lazy" class="patent-img" src="./resources/patent1.png" /></div>
-            <div class="col-md-2"><img loading="lazy" class="patent-img" src="./resources/patent1.png" /></div>
-            <div class="col-md-2"><img loading="lazy" class="patent-img" src="./resources/patent1.png" /></div>
-          </div>
-          <div class="row patent-item-row">
-            <div class="col-md-2"><img loading="lazy" class="patent-img" src="./resources/patent1.png" /></div>
-            <div class="col-md-2"><img loading="lazy" class="patent-img" src="./resources/patent1.png" /></div>
-            <div class="col-md-2"><img loading="lazy" class="patent-img" src="./resources/patent1.png" /></div>
-            <div class="col-md-2"><img loading="lazy" class="patent-img" src="./resources/patent1.png" /></div>
-            <div class="col-md-2"><img loading="lazy" class="patent-img" src="./resources/patent1.png" /></div>
-            <div class="col-md-2"><img loading="lazy" class="patent-img" src="./resources/patent1.png" /></div>
-          </div>
-        </div>
+        <div id="certificationsItem" class="patent-item"></div>
       </article>
     </section>`;
   }
