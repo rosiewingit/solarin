@@ -196,6 +196,17 @@ const isMobile = () => {
   );
 };
 
+const closeImageViewer = () => {
+  $("body").removeClass("scroll-block");
+  $("#imageViewer").addClass("hidden");
+};
+
+const openImageViewer = (imageUrl) => {
+  $("#imageViewer").removeClass("hidden");
+  $("#imageViewer").css("top", window.pageYOffset);
+  $("#bigImage").css("background-image", imageUrl);
+};
+
 class MainContent {
   constructor(id) {
     this.id = id;

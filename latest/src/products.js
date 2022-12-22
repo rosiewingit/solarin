@@ -23,11 +23,6 @@ const changeMainImage = (id, url) => {
   imageElement.css("background-image", `url("./resources/products/${url}")`);
 };
 
-const closeImageViewer = () => {
-  $("body").removeClass("scroll-block");
-  $("#imageViewer").addClass("hidden");
-};
-
 class Product {
   constructor(id, info) {
     this.id = id;
@@ -48,9 +43,7 @@ class Product {
       const imageUrl = e.currentTarget.style.backgroundImage;
 
       $("body").addClass("scroll-block");
-      $("#imageViewer").removeClass("hidden");
-      $("#imageViewer").css("top", window.pageYOffset);
-      $("#bigImage").css("background-image", imageUrl);
+      openImageViewer(imageUrl);
     });
   }
 

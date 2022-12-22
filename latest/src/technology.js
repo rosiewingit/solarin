@@ -142,9 +142,10 @@ class Certification {
   getImages(items) {
     let result = "";
     for (let item of items) {
+      const imageUrl = `${this.hostUrl}/${this.type}/${item.image}`;
       result += `
-      <div class="col-md-2">
-        <img loading="lazy" class="patent-img" alt="${item.title}" src="${this.hostUrl}/${this.type}/${item.image}" />
+      <div class="col-md-2" onclick=openImageViewer("url('${imageUrl}')")>
+        <img loading="lazy" class="patent-img" alt="${item.title}" src="${imageUrl}"/>
       </div>
       `;
     }
