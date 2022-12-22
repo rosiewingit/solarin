@@ -129,6 +129,10 @@ class Certification {
     const length = this.items.length;
     const counts = length / row;
 
+    if ($(`#${this.type}Item`).children().length > 0) {
+      return;
+    }
+
     for (let i = 0; i < counts; i++) {
       const tmpCards = cards.slice(row * i, row * (i + 1));
       $(`#${this.type}Item`).append(this.createCards(tmpCards));
