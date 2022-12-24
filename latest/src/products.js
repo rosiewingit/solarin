@@ -1,4 +1,4 @@
-const clickProducts = () => {
+const clickDevelopment = () => {
   showPage(productsPageId);
   setHeaderOpacity(1);
   setNavDropdownOpacity(0.7);
@@ -11,6 +11,26 @@ const clickProducts = () => {
     for (const item in data) {
       const product = new Product(item, data[item]);
       product.init();
+    }
+  });
+};
+
+const clickPrototype = () => {
+  showPage(prototypePageId);
+  setHeaderOpacity(1);
+  setNavDropdownOpacity(0.7);
+
+  const content = new PPTContent(prototypePageId, "prototype-page-1");
+  content.init();
+  content.setPath("Home > Technology > <b>Prototype</b>");
+
+  $.getJSON("./data/prototypes.json", (data) => {
+    const hostUrl = data.hostUrl;
+    const prototypes = data.prototypes;
+
+    for (const item of prototypes) {
+      const prototype = new Prototype(hostUrl, item);
+      prototype.init();
     }
   });
 };
@@ -177,5 +197,98 @@ class Product {
     return `
     <p class="products-td-light">${sub}</p>
     `;
+  }
+}
+
+class Prototype {
+  constructor(hostUrl, item) {
+    this.hostUrl = hostUrl;
+    this.index = item.index;
+    this.name = item.name;
+    this.medias = item.medias;
+    this.id = `developmentCard${item.index}`;
+  }
+
+  init() {
+    this.addDevelopmentCard();
+  }
+
+  addDevelopmentCard() {
+    $(`#developmentBody`).append(this.createDevelopmentCard());
+
+    for (const media of this.medias) {
+      $(`#image-${this.id}`).append(this.createCardImage(media));
+    }
+    $(`#image-${this.id} div:first-child`).addClass("active");
+  }
+
+  createDevelopmentCard() {
+    return `
+    <div class="development-card">
+        <h1 class="development-title">
+          <div class="title-bar-top-line"></div>
+          ${this.name}
+        </h1>
+        <div
+          id="${this.id}"
+          class="carousel slide"
+          data-bs-touch="false"
+        >
+          <div id="image-${this.id}" class="carousel-inner"></div>
+          <button
+            class="carousel-control-prev prev-carousel"
+            type="button"
+            data-bs-target="#${this.id}"
+            data-bs-slide="prev"
+          ></button>
+          <button
+            class="carousel-control-next next-carousel"
+            type="button"
+            data-bs-target="#${this.id}"
+            data-bs-slide="next"
+          ></button>
+        </div>
+      </div>
+    `;
+  }
+
+  createCardImage(filename) {
+    const TYPE = {
+      portrait: "portrait",
+      landscape: "landscape",
+    };
+    if (filename.includes(TYPE.portrait)) {
+      return `
+      <div class="carousel-item">
+        <div>
+          <div class="carousel-main-image blur">
+            <img
+              src="${this.hostUrl}/${this.index}/${filename}"
+              class="d-block w-100"
+            />
+          </div>
+          <div class="carousel-main-image development-main-image">
+            <img
+            src="${this.hostUrl}/${this.index}/${filename}"
+            class="d-block h-100 carousel-position"
+          />
+          </div>
+        </div>
+      </div>
+      `;
+    } else {
+      return `
+      <div class="carousel-item">
+        <div>
+          <div class="carousel-main-image development-main-image">
+            <img
+            src="${this.hostUrl}/${this.index}/${filename}"
+            class="d-block w-100 carousel-position"
+          />
+          </div>
+        </div>
+      </div>
+      `;
+    }
   }
 }

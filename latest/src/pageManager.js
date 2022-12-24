@@ -1,7 +1,7 @@
 const rootPageId = "#root";
 const coretechnologyPageId = "#coretechnologyPage";
 const rndcenterPageId = "#rndcenterPage";
-const developmentPageId = "#developmentPage";
+const prototypePageId = "#prototypePage";
 const patentPageId = "#patentPage";
 const productsPageId = "#productsPage";
 const newsPageId = "#newsPage";
@@ -20,7 +20,7 @@ const pages = [
   rootPageId,
   coretechnologyPageId,
   rndcenterPageId,
-  developmentPageId,
+  prototypePageId,
   patentPageId,
   productsPageId,
   newsPageId,
@@ -68,7 +68,7 @@ class PPTContent {
       case rndcenterPageId:
         $(this.page).append(this.createRndSection());
         break;
-      case developmentPageId:
+      case prototypePageId:
         $(this.page).append(this.createDevelopmentSection());
         break;
       case patentPageId:
