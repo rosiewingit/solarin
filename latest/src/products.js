@@ -210,19 +210,22 @@ class Prototype {
   }
 
   init() {
-    this.addDevelopmentCard();
+    this.addPrototypeCard();
   }
 
-  addDevelopmentCard() {
-    $(`#developmentBody`).append(this.createDevelopmentCard());
+  addPrototypeCard() {
+    $(`#developmentBody`).append(this.createPrototypeCard());
 
     for (const media of this.medias) {
+      if (media.includes("mp4")) {
+        continue;
+      }
       $(`#image-${this.id}`).append(this.createCardImage(media));
     }
     $(`#image-${this.id} div:first-child`).addClass("active");
   }
 
-  createDevelopmentCard() {
+  createPrototypeCard() {
     return `
     <div class="development-card">
         <h1 class="development-title">
