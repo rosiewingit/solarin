@@ -40,7 +40,10 @@ const changeMainImage = (id, url) => {
     return;
   }
   const imageElement = $(`#${id}`).find(".products-image");
-  imageElement.css("background-image", `url("./resources/products/${url}")`);
+  imageElement.css(
+    "background-image",
+    `url("./resources/images/developments/${url}")`
+  );
 };
 
 class Product {
@@ -74,12 +77,6 @@ class Product {
     }
     const title = this.info.title;
     const details = this.info.details;
-    const model = details.model;
-    const description = details.description;
-    const purpose = details.purpose;
-    const power = details.power;
-    const performance = details.performance;
-    const size = details.size;
     const media = details.media;
     return `
     <article id="${this.id}" class="product-article">
@@ -87,7 +84,9 @@ class Product {
           <div class="products-left-top">
             <div
               class="products-image"
-              style="background-image: url(./resources/products/${media[0]});"
+              style="background-image: url(./resources/images/developments/${
+                media[0]
+              });"
             ></div>
           </div>
           <div class="products-left-bottom">
@@ -95,40 +94,46 @@ class Product {
               <div class="products-thumb products-left-arrow"></div>
               <div class="products-thumb">
                 <div class="products-thumb-image"
-                style="background-image: url(./resources/products/${media[0]});"
+                style="background-image: url(./resources/images/developments/${
+                  media[0]
+                });"
                 onclick="changeMainImage('${this.id}','${media[0]}')"
                 ></div>
               </div>
               <div class="products-thumb">
                 <div class="products-thumb-image"
-                style="background-image: url(./resources/products/${media[1]});"
+                style="background-image: url(./resources/images/developments/${
+                  media[1]
+                });"
                 onclick="changeMainImage('${this.id}','${media[1]}')"></div>
               </div>
               <div class="products-thumb">
                 <div class="products-thumb-image"
-                style="background-image: url(./resources/products/${media[2]});"
+                style="background-image: url(./resources/images/developments/${
+                  media[2]
+                });"
                 onclick="changeMainImage('${this.id}','${media[2]}')"></div>
               </div>
               <div class="products-thumb">
-                <div class="products-thumb-image"style="background-image: url(./resources/products/${
+                <div class="products-thumb-image"style="background-image: url(./resources/images/developments/${
                   media[3]
                 });"
                 onclick="changeMainImage('${this.id}','${media[3]}')"></div>
               </div>
               <div class="products-thumb">
-                <div class="products-thumb-image"style="background-image: url(./resources/products/${
+                <div class="products-thumb-image"style="background-image: url(./resources/images/developments/${
                   media[4]
                 });"
                 onclick="changeMainImage('${this.id}','${media[4]}')"></div>
               </div>
               <div class="products-thumb">
-                <div class="products-thumb-image"style="background-image: url(./resources/products/${
+                <div class="products-thumb-image"style="background-image: url(./resources/images/developments/${
                   media[5]
                 });"
                 onclick="changeMainImage('${this.id}','${media[5]}')"></div>
               </div>
               <div class="products-thumb">
-                <div class="products-thumb-image"style="background-image: url(./resources/products/${
+                <div class="products-thumb-image"style="background-image: url(./resources/images/developments/${
                   media[6]
                 });"
                 onclick="changeMainImage('${this.id}','${media[6]}')"></div>
@@ -139,19 +144,44 @@ class Product {
         </div>
         <div class="products-right">
           <h1 class="products-title">${title}</h1>
-          <table class="products-table">
-            <tbody>
-              ${this.getArrayElement("모델명", model)}
-              ${this.getArrayElement("개요", description)}
-              ${this.getArrayElement("목적", purpose)}
-              ${this.getArrayElement("동력", power)}
-              ${this.getArrayElement("성능", performance)}
-              ${this.getArrayElement("제원", size)}
-            </tbody>
-          </table>
+          ${this.getTableElement(details)}
         </div>
       </article>
       `;
+  }
+
+  getTableElement(details) {
+    const mode = details.mode;
+    const model = details.model;
+    const description = details.description;
+    const purpose = details.purpose;
+    const power = details.power;
+    const performance = details.performance;
+    const size = details.size;
+
+    let result = "";
+
+    if (mode === "ready") {
+      result += `
+      <div class="table-cover">
+        <div class="table-cover-wrapper">
+          <p class="table-cover-text">페이지 준비중 입니다</p>
+        </div>
+      </div>`;
+    } else {
+      result += `<table class="products-table">
+      <tbody>
+        ${this.getArrayElement("모델명", model)}
+        ${this.getArrayElement("개요", description)}
+        ${this.getArrayElement("목적", purpose)}
+        ${this.getArrayElement("동력", power)}
+        ${this.getArrayElement("성능", performance)}
+        ${this.getArrayElement("제원", size)}
+      </tbody>
+    </table>`;
+    }
+
+    return result;
   }
 
   getArrayElement(title, array) {

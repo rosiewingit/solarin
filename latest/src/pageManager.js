@@ -304,7 +304,7 @@ class PPTContent {
   createProductsSection() {
     return `
     <section id="${this.id}" class="body-content">
-      <div id="productsNav" class="products-nav">
+      <div id="productsNav" class="products-nav hidden">
         <div class="products-nav-body">
           <p class="products-nav-title">어망절단기-압축공기식</p>
           <p class="products-nav-title">어망절단기-전동식</p>
