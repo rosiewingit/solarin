@@ -7,7 +7,12 @@ const clickDevelopment = () => {
   content.init();
   content.setPath("Home > <b>Products</b>");
 
+  const articles = $("#products-page-1").find("article");
+
   $.getJSON("./data/products.json", (data) => {
+    if (articles.length === Object.keys(data).length) {
+      return;
+    }
     for (const item in data) {
       const product = new Product(item, data[item]);
       product.init();
@@ -24,10 +29,15 @@ const clickPrototype = () => {
   content.init();
   content.setPath("Home > Technology > <b>Prototype</b>");
 
+  const cards = $("#developmentBody").find(".development-card");
+
   $.getJSON("./data/prototypes.json", (data) => {
     const hostUrl = data.hostUrl;
     const prototypes = data.prototypes;
 
+    if (cards.length === prototypes.length) {
+      return;
+    }
     for (const item of prototypes) {
       const prototype = new Prototype(hostUrl, item);
       prototype.init();
