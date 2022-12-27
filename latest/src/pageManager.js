@@ -585,8 +585,8 @@ class PPTContent {
               </p>
               <div class="csr-tab-image-container">
                 <div class="csr-tab-image csr-tab2-image1">
-                  <div class="bigimage-left-arrow csr-arrow-image"></div>
-                  <div class="bigimage-right-arrow csr-arrow-image"></div>
+                  <div class="bigimage-left-arrow csr-arrow-image hidden"></div>
+                  <div class="bigimage-right-arrow csr-arrow-image hidden"></div>
                 </div>
               </div>
               <hr class="ppt-hr" />
@@ -631,8 +631,8 @@ class PPTContent {
               </p>
               <div class="csr-tab-image-container">
                 <div class="csr-tab-image csr-tab2-image2">
-                  <div class="bigimage-left-arrow csr-arrow-image"></div>
-                  <div class="bigimage-right-arrow csr-arrow-image"></div>
+                  <div class="bigimage-left-arrow csr-arrow-image hidden"></div>
+                  <div class="bigimage-right-arrow csr-arrow-image hidden"></div>
                 </div>
               </div>
             </div>
