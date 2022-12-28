@@ -246,16 +246,16 @@ class PPTContent {
           <div class="rnd-body-top">
             <div class="rnd-image rnd-center-1">
               <div class="rnd-text">
-                <p class="rnd-subtitle">2948-1102, 용존산소증폭기</p>
-                <p class="rnd-title">A1103 연구소</p>
+                <p class="rnd-subtitle">연구개발 전담부서</p>
+                <p class="rnd-title">A-1103 연구소</p>
               </div>
             </div>
           </div>
           <div class="rnd-body-mid">
             <div class="rnd-image rnd-center-2">
               <div class="rnd-text">
-                <p class="rnd-subtitle">BOD-12873, 배수펌프</p>
-                <p class="rnd-title">국가 연구 과제 실험실</p>
+                <p class="rnd-subtitle">침수선박 배수펌프 실험실</p>
+                <p class="rnd-title">A-B202 실험실</p>
               </div>
             </div>
           </div>
