@@ -200,6 +200,7 @@ const closeImageViewer = () => {
 };
 
 const openImageViewer = (imageUrl) => {
+  $("body").addClass("scroll-block");
   $("#imageViewer").removeClass("hidden");
   $("#imageViewer").css("top", window.pageYOffset);
   $("#bigImage").css("background-image", imageUrl);

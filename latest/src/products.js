@@ -74,8 +74,6 @@ class Product {
   addEvents() {
     $(".products-image").click((e) => {
       const imageUrl = e.currentTarget.style.backgroundImage;
-
-      $("body").addClass("scroll-block");
       openImageViewer(imageUrl);
     });
   }
