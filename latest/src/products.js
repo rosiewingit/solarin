@@ -255,9 +255,9 @@ class Prototype {
     $(`#developmentBody`).append(this.createPrototypeCard());
 
     for (const media of this.medias) {
-      if (media.includes("mp4")) {
-        continue;
-      }
+      // if (media.includes("mp4")) {
+      //   continue;
+      // }
       $(`#image-${this.id}`).append(this.createCardImage(media));
     }
     $(`#image-${this.id} div:first-child`).addClass("active");
@@ -299,37 +299,81 @@ class Prototype {
       landscape: "landscape",
     };
     if (filename.includes(TYPE.portrait)) {
-      return `
-      <div class="carousel-item">
+      if (this.isVideo(filename)) {
+        // video
+        return `
+        <div class="carousel-item">
+          <div>
+            <div class="carousel-main-image development-main-image">
+              <video
+                src="${this.hostUrl}/${this.index}/${filename}"
+                class="d-block h-100 carousel-position"
+                controls
+                muted
+              ></video>
+            </div>
+          </div>
+        </div>;
+        `;
+      } else {
+        return `
+        <div class="carousel-item">
         <div>
-          <div class="carousel-main-image blur">
-            <img
-              src="${this.hostUrl}/${this.index}/${filename}"
-              class="d-block w-100"
-            />
+        <div class="carousel-main-image blur">
+        <img
+        src="${this.hostUrl}/${this.index}/${filename}"
+        class="d-block w-100"
+        />
           </div>
           <div class="carousel-main-image development-main-image">
-            <img
-            src="${this.hostUrl}/${this.index}/${filename}"
-            class="d-block h-100 carousel-position"
+          <img
+          src="${this.hostUrl}/${this.index}/${filename}"
+          class="d-block h-100 carousel-position"
           />
           </div>
-        </div>
-      </div>
-      `;
+          </div>
+          </div>
+          `;
+      }
     } else {
-      return `
-      <div class="carousel-item">
-        <div>
-          <div class="carousel-main-image development-main-image">
-            <img
-            src="${this.hostUrl}/${this.index}/${filename}"
-            class="d-block w-100 carousel-position"
-          />
+      if (this.isVideo(filename)) {
+        // video
+        return `
+        <div class="carousel-item">
+          <div>
+            <div class="carousel-main-image development-main-image">
+              <video
+                src="${this.hostUrl}/${this.index}/${filename}"
+                class="d-block w-100 carousel-position"
+                controls
+                muted
+              ></video>
+            </div>
+          </div>
+        </div>;
+        `;
+      } else {
+        return `
+        <div class="carousel-item">
+          <div>
+            <div class="carousel-main-image development-main-image">
+              <img
+              src="${this.hostUrl}/${this.index}/${filename}"
+              class="d-block w-100 carousel-position"
+            />
+            </div>
           </div>
         </div>
-      </div>
-      `;
+        `;
+      }
+    }
+  }
+
+  isVideo(filename) {
+    if (filename.includes(".mp4") || filename.includes(".MP4")) {
+      return true;
+    } else {
+      return false;
     }
   }
 }
