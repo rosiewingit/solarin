@@ -313,7 +313,7 @@ class Prototype {
               ></video>
             </div>
           </div>
-        </div>;
+        </div>
         `;
       } else {
         return `
@@ -350,7 +350,7 @@ class Prototype {
               ></video>
             </div>
           </div>
-        </div>;
+        </div>
         `;
       } else {
         return `
