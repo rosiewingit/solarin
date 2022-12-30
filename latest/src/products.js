@@ -293,11 +293,20 @@ class Prototype {
     `;
   }
 
-  createCardImage(filename) {
+  createCardImage(media) {
+    let filename = "";
+    let title = "";
+    if (typeof media === "string") {
+      filename = media;
+    } else if (typeof media === "object") {
+      filename = media.src;
+      title = media.title;
+    }
     const TYPE = {
       portrait: "portrait",
       landscape: "landscape",
     };
+
     if (filename.includes(TYPE.portrait)) {
       if (this.isVideo(filename)) {
         // video
@@ -327,6 +336,7 @@ class Prototype {
           </div>
           <div class="carousel-main-image development-main-image">
           <img
+          title="${title}"
           src="${this.hostUrl}/${this.index}/${filename}"
           class="d-block h-100 carousel-position"
           />
@@ -358,6 +368,7 @@ class Prototype {
           <div>
             <div class="carousel-main-image development-main-image">
               <img
+              title="${title}"
               src="${this.hostUrl}/${this.index}/${filename}"
               class="d-block w-100 carousel-position"
             />
