@@ -1,0 +1,21 @@
+{
+  "hostUrl": "./resources/images",
+  "patents": [
+    { "title": "회전식열교환기", "image": "1.png" },
+    { "title": "가연성폐기물을 이용한 발전장치", "image": "2.png" },
+    { "title": "손소독기", "image": "3.jpg" },
+    { "title": "기판이 필요없는 LED패널", "image": "4.jpg" },
+    { "title": "LED전광패널", "image": "5.jpg" },
+    { "title": "발광다이오드전기광학패널", "image": "6.jpg" }
+  ],
+  "certifications": [
+    { "title": "KC인증_와이어로프절단기", "image": "1.png" },
+    { "title": "KC인증_태양광 충전 경광등", "image": "2.png" },
+    { "title": "KC인증_센서감지식 손소독기", "image": "3.png" },
+    { "title": "KC인증_페달식 손소독기", "image": "4.png" },
+    { "title": "산학협력 확인서_U1 University", "image": "5.png" },
+    { "title": "벤처기업확인서", "image": "6.jpg" },
+    { "title": "연구개발전담부터 인정서", "image": "7.jpeg" },
+    { "title": "사업자등록증", "image": "8.jpg" }
+  ]
+}
