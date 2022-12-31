@@ -41,7 +41,7 @@ const clickPatent = () => {
   });
 };
 
-const clickTechCoreCard1 = () => {
+const clickTechCoreCard = () => {
   showPage(coretechnologyDetailPageId);
   setHeaderOpacity(1);
   setNavDropdownOpacity(0.7);

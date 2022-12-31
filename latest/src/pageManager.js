@@ -125,7 +125,7 @@ class PPTContent {
           <div
             id="techCoreCard1"
             class="core-tech-card"
-            onclick="clickTechCoreCard1()"
+            onclick="clickTechCoreCard()"
           >
             <div class="core-tech-top"></div>
             <div class="core-tech-mid">
@@ -136,21 +136,17 @@ class PPTContent {
               />
             </div>
             <div class="core-tech-bottom">
-              <p class="core-tech-subtitle">NTIS Project</p>
+              <p class="core-tech-subtitle">High Voltage Motor Drive System</p>
               <h4 class="core-tech-title">고출력 모터 드라이브 시스템</h4>
               <p class="core-tech-description hidden">
-                용존산소증폭기는 ~방식으로 물속에 산소를 대폭 증가시키는
-                장치로서, 솔라인 특허로 개발된 장치입니다. 녹조 방제에
-                효과적이며, 녹조방제선과 함께 호수, 댐의 녹조를 제거하여 산소를
-                공급해주므로서, 수중 산소 농도를 유지하고, 수중 생태계에 도움이
-                되는 기술입니다.
+              고출력 모터 드라이브 시스템은 솔라인에서 자체 개발한 모터 시스템으로서, 국가 연구 과제로 수행 중인 배수 펌프와 더불어 다양한 제품의 주 동력원으로 사용되고 있습니다.
               </p>
             </div>
           </div>
           <div
             id="techCoreCard2"
             class="core-tech-card"
-            onclick="clickTechCoreCard2()"
+            onclick="clickTechCoreCard()"
           >
             <div class="core-tech-top"></div>
             <div class="core-tech-mid">
@@ -161,21 +157,17 @@ class PPTContent {
               />
             </div>
             <div class="core-tech-bottom">
-              <p class="core-tech-subtitle">NTIS Project</p>
+              <p class="core-tech-subtitle">High Voltage Battery System</p>
               <h4 class="core-tech-title">고출력 배터리 시스템</h4>
               <p class="core-tech-description hidden">
-                용존산소증폭기는 ~방식으로 물속에 산소를 대폭 증가시키는
-                장치로서, 솔라인 특허로 개발된 장치입니다. 녹조 방제에
-                효과적이며, 녹조방제선과 함께 호수, 댐의 녹조를 제거하여 산소를
-                공급해주므로서, 수중 산소 농도를 유지하고, 수중 생태계에 도움이
-                되는 기술입니다.
+               고출력 배터리 시스템은 고압 전력을 사용한 배터리를 완전 방수 패키징 하여 다양한 해양 구조 제품에 사용되고 있는 솔라인의 독자적인 배터리 시스템입니다.
               </p>
             </div>
           </div>
           <div
             id="techCoreCard3"
             class="core-tech-card"
-            onclick="clickTechCoreCard3()"
+            onclick="clickTechCoreCard()"
           >
             <div class="core-tech-top"></div>
             <div class="core-tech-mid">
@@ -186,14 +178,10 @@ class PPTContent {
               />
             </div>
             <div class="core-tech-bottom">
-              <p class="core-tech-subtitle">NTIS Project</p>
+              <p class="core-tech-subtitle">Dissolved Oxygen Amplifier</p>
               <h4 class="core-tech-title">용존산소 증폭기</h4>
               <p class="core-tech-description hidden">
-                용존산소증폭기는 ~방식으로 물속에 산소를 대폭 증가시키는
-                장치로서, 솔라인 특허로 개발된 장치입니다. 녹조 방제에
-                효과적이며, 녹조방제선과 함께 호수, 댐의 녹조를 제거하여 산소를
-                공급해주므로서, 수중 산소 농도를 유지하고, 수중 생태계에 도움이
-                되는 기술입니다.
+              용존 산소 증폭기는 물속의 산소 농도를 증폭시켜 수온 상승 시 녹조를 예방하고, 수중 생태계를 보존하는 장치입니다. 
               </p>
             </div>
           </div>
@@ -201,7 +189,7 @@ class PPTContent {
           <div
             id="techCoreCard4"
             class="core-tech-card"
-            onclick="clickTechCoreCard4()"
+            onclick="clickTechCoreCard()"
           >
             <div class="core-tech-top"></div>
             <div class="core-tech-mid">
@@ -212,14 +200,10 @@ class PPTContent {
               />
             </div>
             <div class="core-tech-bottom">
-              <p class="core-tech-subtitle">NTIS Project</p>
+              <p class="core-tech-subtitle">Waste Plastic Reducing Machine</p>
               <h4 class="core-tech-title">폐플라스틱 감량화 장치</h4>
               <p class="core-tech-description hidden">
-                용존산소증폭기는 ~방식으로 물속에 산소를 대폭 증가시키는
-                장치로서, 솔라인 특허로 개발된 장치입니다. 녹조 방제에
-                효과적이며, 녹조방제선과 함께 호수, 댐의 녹조를 제거하여 산소를
-                공급해주므로서, 수중 산소 농도를 유지하고, 수중 생태계에 도움이
-                되는 기술입니다.
+              폐플라스틱 감량화 장치는 폐플라스틱을 연소하여 대체 연료로 만드는 장치입니다. 폐플라스틱을 새로운 에너지원으로 만드는 솔라인의 주요 미래 연구과제입니다.
               </p>
             </div>
           </div>
@@ -828,67 +812,85 @@ class PPTContent {
         <h1 class="core-detail-title">
           용존산소증폭기, Dissolved Oxygen Amplifier
         </h1>
-        <p class="core-detail-text">
-          솔라인은 2019년 설립된 국내 유일의 아이디어 제작 업체로서, 국무총리
-          또는 행정각부의 장은 소관사무에 관하여 법률이나 대통령령의 위임 또는
-          직권으로 총리령 또는 부령을 발할 수 있다.<br /><br />
-          국가는 재해를 예방하고 그 위험으로부터 국민을 보호하기 위하여
-          노력하여야 한다.<br />모든 국민은 신속한 재판을 받을 권리를 가진다.
-          형사피고인은 상당한 이유가 없는 한 지체없이 공개재판을 받을 권리를
-          가진다. 국가는 균형있는 국민경제의 성장 및 안정과 적정한 소득의 분배를
-          유지하고, 시장의 지배와 경제력의 남용을 방지하며, 경제주체간의 조화를
-          통한 경제의 민주화를 위하여 경제에 관한 규제와 조정을 할 수 있다.<br /><br />모든
-          국민은 신속한 재판을 받을 권리를 가진다. 형사피고인은 상당한 이유가
-          없는 한 지체없이 공개재판을 받을 권리를 가진다. 국가는 균형있는
-          국민경제의 성장 및 안정과 적정한 소득의 분배를 유지하고, 시장의 지배와
-          경제력의 남용을 방지하며, 경제주체간의 조화를 통한 경제의 민주화를
-          위하여 경제에 관한 규제와 조정을 할 수 있다.
-        </p>
-        <div class="core-detail-feature">
-          <div class="core-detail-feature-card">
-            <img loading="lazy" src="./resources/core-detail-icon-1.png" />
-            <p>
-              솔라인은 2019년 설립된 국내 유일의 아이디어 제작 업체로서,
-              국무총리 또는 행정각부의 장은 소관사무에 관하여 법률이나
-              대통령령의 위임 또는 직권으로 총리령 또는 부령을 발할 수 있다.
-            </p>
-          </div>
-          <div class="core-detail-feature-card">
-            <img loading="lazy" src="./resources/core-detail-icon-2.png" />
-            <p>
-              솔라인은 2019년 설립된 국내 유일의 아이디어 제작 업체로서,
-              국무총리 또는 행정각부의 장은 소관사무에 관하여 법률이나
-              대통령령의 위임 또는 직권으로 총리령 또는 부령을 발할 수 있다.
-            </p>
-          </div>
-          <div class="core-detail-feature-card">
-            <img loading="lazy" src="./resources/core-detail-icon-3.png" />
-            <p>
-              솔라인은 2019년 설립된 국내 유일의 아이디어 제작 업체로서,
-              국무총리 또는 행정각부의 장은 소관사무에 관하여 법률이나
-              대통령령의 위임 또는 직권으로 총리령 또는 부령을 발할 수 있다.
-            </p>
-          </div>
-        </div>
-        <div class="core-detail-graph-wrapper">
-          <p>용존 산조 증가폭 비교 그래프</p>
-          <div class="core-detail-graph">
-            <div class="core-detail-graph-image core-detail-graph-card-1"></div>
-            <div class="core-detail-graph-image core-detail-graph-card-2"></div>
-          </div>
-        </div>
-        <div class="rnd-body">
-          <div class="rnd-body-top">
-            <div class="core-detail-image core-detail-card-1"></div>
-          </div>
-          <div class="rnd-body-mid">
-            <div class="core-detail-image core-detail-card-2"></div>
-          </div>
-        </div>
+        <img class="core-detail-blurred" loading="lazy" src="./resources/technology/blurred-core-technology.png"/>
       </article>
     </section>
       `;
   }
+
+  // [22.12.31] hidden
+  // createCoreTechnologyDetailSection() {
+  //   return `
+  //   <section id="${this.id}" class="body-content">
+  //     <div class="ppt-path">
+  //       Home > Technology > Core Technology > <b>용존산소증폭기</b>
+  //     </div>
+  //     <hr class="ppt-hr" />
+  //     <article id="${this.id}-article">
+  //       <h1 class="core-detail-title">
+  //         용존산소증폭기, Dissolved Oxygen Amplifier
+  //       </h1>
+  //       <p class="core-detail-text">
+  //         솔라인은 2019년 설립된 국내 유일의 아이디어 제작 업체로서, 국무총리
+  //         또는 행정각부의 장은 소관사무에 관하여 법률이나 대통령령의 위임 또는
+  //         직권으로 총리령 또는 부령을 발할 수 있다.<br /><br />
+  //         국가는 재해를 예방하고 그 위험으로부터 국민을 보호하기 위하여
+  //         노력하여야 한다.<br />모든 국민은 신속한 재판을 받을 권리를 가진다.
+  //         형사피고인은 상당한 이유가 없는 한 지체없이 공개재판을 받을 권리를
+  //         가진다. 국가는 균형있는 국민경제의 성장 및 안정과 적정한 소득의 분배를
+  //         유지하고, 시장의 지배와 경제력의 남용을 방지하며, 경제주체간의 조화를
+  //         통한 경제의 민주화를 위하여 경제에 관한 규제와 조정을 할 수 있다.<br /><br />모든
+  //         국민은 신속한 재판을 받을 권리를 가진다. 형사피고인은 상당한 이유가
+  //         없는 한 지체없이 공개재판을 받을 권리를 가진다. 국가는 균형있는
+  //         국민경제의 성장 및 안정과 적정한 소득의 분배를 유지하고, 시장의 지배와
+  //         경제력의 남용을 방지하며, 경제주체간의 조화를 통한 경제의 민주화를
+  //         위하여 경제에 관한 규제와 조정을 할 수 있다.
+  //       </p>
+  //       <div class="core-detail-feature">
+  //         <div class="core-detail-feature-card">
+  //           <img loading="lazy" src="./resources/core-detail-icon-1.png" />
+  //           <p>
+  //             솔라인은 2019년 설립된 국내 유일의 아이디어 제작 업체로서,
+  //             국무총리 또는 행정각부의 장은 소관사무에 관하여 법률이나
+  //             대통령령의 위임 또는 직권으로 총리령 또는 부령을 발할 수 있다.
+  //           </p>
+  //         </div>
+  //         <div class="core-detail-feature-card">
+  //           <img loading="lazy" src="./resources/core-detail-icon-2.png" />
+  //           <p>
+  //             솔라인은 2019년 설립된 국내 유일의 아이디어 제작 업체로서,
+  //             국무총리 또는 행정각부의 장은 소관사무에 관하여 법률이나
+  //             대통령령의 위임 또는 직권으로 총리령 또는 부령을 발할 수 있다.
+  //           </p>
+  //         </div>
+  //         <div class="core-detail-feature-card">
+  //           <img loading="lazy" src="./resources/core-detail-icon-3.png" />
+  //           <p>
+  //             솔라인은 2019년 설립된 국내 유일의 아이디어 제작 업체로서,
+  //             국무총리 또는 행정각부의 장은 소관사무에 관하여 법률이나
+  //             대통령령의 위임 또는 직권으로 총리령 또는 부령을 발할 수 있다.
+  //           </p>
+  //         </div>
+  //       </div>
+  //       <div class="core-detail-graph-wrapper">
+  //         <p>용존 산조 증가폭 비교 그래프</p>
+  //         <div class="core-detail-graph">
+  //           <div class="core-detail-graph-image core-detail-graph-card-1"></div>
+  //           <div class="core-detail-graph-image core-detail-graph-card-2"></div>
+  //         </div>
+  //       </div>
+  //       <div class="rnd-body">
+  //         <div class="rnd-body-top">
+  //           <div class="core-detail-image core-detail-card-1"></div>
+  //         </div>
+  //         <div class="rnd-body-mid">
+  //           <div class="core-detail-image core-detail-card-2"></div>
+  //         </div>
+  //       </div>
+  //     </article>
+  //   </section>
+  //     `;
+  // }
 
   setPath(path) {
     $(`#${this.id}`).find(".ppt-path").html(path);

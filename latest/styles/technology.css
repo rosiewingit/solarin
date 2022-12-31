@@ -97,6 +97,11 @@
   text-overflow: ellipsis;
 }
 
+.core-detail-blurred {
+  width: 100%;
+  height: 100%;
+}
+
 .rnd-body {
   margin-top: 50px;
   width: 100%;
