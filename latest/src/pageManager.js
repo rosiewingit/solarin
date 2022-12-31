@@ -3,7 +3,7 @@ const coretechnologyPageId = "#coretechnologyPage";
 const rndcenterPageId = "#rndcenterPage";
 const prototypePageId = "#prototypePage";
 const patentPageId = "#patentPage";
-const productsPageId = "#productsPage";
+const developmentPageId = "#developmentPage";
 const newsPageId = "#newsPage";
 const certificationPageId = "#certificationPage";
 const overviewPageId = "#overviewPage";
@@ -22,7 +22,7 @@ const pages = [
   rndcenterPageId,
   prototypePageId,
   patentPageId,
-  productsPageId,
+  developmentPageId,
   newsPageId,
   certificationPageId,
   overviewPageId,
@@ -69,13 +69,13 @@ class PPTContent {
         $(this.page).append(this.createRndSection());
         break;
       case prototypePageId:
-        $(this.page).append(this.createDevelopmentSection());
+        $(this.page).append(this.createPrototypeSection());
         break;
       case patentPageId:
         $(this.page).append(this.createPatentSection());
         break;
-      case productsPageId:
-        $(this.page).append(this.createProductsSection());
+      case developmentPageId:
+        $(this.page).append(this.createDevelopmentSection());
         break;
       case newsPageId:
         $(this.page).append(this.createNewsSection());
@@ -279,13 +279,13 @@ class PPTContent {
       `;
   }
 
-  createDevelopmentSection() {
+  createPrototypeSection() {
     return `
     <section id="${this.id}" class="body-content">
-      <div class="ppt-path">Home > Technology > <b>Development</b></div>
+      <div class="ppt-path">Home > Products > <b>Prototype</b></div>
       <hr class="ppt-hr" />
       <article id="${this.id}-article">
-        <div id="developmentBody" class="development-body"></div>
+        <div id="prototypeBody" class="development-body"></div>
       </article>
     </section>
     `;
@@ -301,22 +301,23 @@ class PPTContent {
     </section>`;
   }
 
-  createProductsSection() {
+  createDevelopmentSection() {
     return `
     <section id="${this.id}" class="body-content">
-      <div id="productsNav" class="products-nav hidden">
-        <div class="products-nav-body">
-          <p class="products-nav-title">어망절단기-압축공기식</p>
-          <p class="products-nav-title">어망절단기-전동식</p>
-          <p class="products-nav-title">T형 LED기술(제품명)</p>
-          <p class="products-nav-title">해경 펌프</p>
-          <p class="products-nav-title">와이어 절단기</p>
-          <p class="products-nav-title">인양기</p>
-          <p class="products-nav-title">페달형 손소독기</p>
+      <div id="productsNav" class="products-nav">
+      <div class="products-nav-body">
+          <div class="products-nav-tag"></div>
+          <p class="products-nav-title">압축 공기식 어망 절단기</p>
+          <p class="products-nav-title">전동식 어망 절단기</p>
           <p class="products-nav-title">태양광 경광등</p>
+          <p class="products-nav-title">자동사다리</p>
+          <p class="products-nav-title">페달형 손 소독기</p>
+          <p class="products-nav-title">해경 배수 펌프</p>
+          <p class="products-nav-title">익수자 인양 장치</p>
+          <p class="products-nav-title">포터블식 소화 장치</p>
         </div>
       </div>
-      <div class="ppt-path">Home > <b>Products</b></div>
+      <div class="ppt-path">Home > Products > <b>Development</b></div>
       <hr class="ppt-hr" />
     </section>
       `;

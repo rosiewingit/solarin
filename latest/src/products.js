@@ -1,11 +1,11 @@
 const clickDevelopment = () => {
-  showPage(productsPageId);
+  showPage(developmentPageId);
   setHeaderOpacity(1);
   setNavDropdownOpacity(0.7);
 
-  const content = new PPTContent(productsPageId, "products-page-1");
+  const content = new PPTContent(developmentPageId, "products-page-1");
   content.init();
-  content.setPath("Home > <b>Products</b>");
+  content.setPath("Home > Products > <b>Development</b>");
 
   const articles = $("#products-page-1").find("article");
 
@@ -27,9 +27,9 @@ const clickPrototype = () => {
 
   const content = new PPTContent(prototypePageId, "prototype-page-1");
   content.init();
-  content.setPath("Home > Technology > <b>Prototype</b>");
+  content.setPath("Home > Products > <b>Prototype</b>");
 
-  const cards = $("#developmentBody").find(".development-card");
+  const cards = $("#prototypeBody").find(".development-card");
 
   $.getJSON("./data/prototypes.json", (data) => {
     const hostUrl = data.hostUrl;
@@ -252,7 +252,7 @@ class Prototype {
   }
 
   addPrototypeCard() {
-    $(`#developmentBody`).append(this.createPrototypeCard());
+    $(`#prototypeBody`).append(this.createPrototypeCard());
 
     for (const media of this.medias) {
       // if (media.includes("mp4")) {

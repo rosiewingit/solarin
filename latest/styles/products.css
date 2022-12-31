@@ -1,39 +1,40 @@
 .product-article {
   width: 100%;
-  height: 45em;
+  height: 40em;
   border-bottom: 1px solid #d9d9d9;
 }
 
 .products-left {
   float: left;
-  width: 52%;
+  width: 61%;
   height: 100%;
-  padding: 3.5em;
-  padding-right: 5em;
+  padding: 5em;
+  padding-right: 10em;
 }
 
 .products-right {
   float: right;
-  width: 48%;
+  width: 39%;
   height: 100%;
-  padding-top: 5em;
+  padding-top: 4.3em;
 }
 
 .products-left-top {
   float: left;
   width: 100%;
-  height: 70%;
+  height: 75%;
 }
 
 .products-left-bottom {
+  padding-top: 1em;
   float: left;
   width: 100%;
-  height: 20%;
+  height: auto;
 }
 
 .products-title {
   padding-top: 0.5em;
-  font-size: 1.5vmax;
+  font-size: 23pt;
   font-weight: 900;
   color: #545454;
 }
@@ -86,14 +87,25 @@
   background-image: url("../resources/right-arrow.svg");
 }
 
+.products-nav-tag {
+  position: fixed;
+  right: 15em;
+  top: 23%;
+  width: 2.5em;
+  height: 8em;
+  z-index: 300;
+  color: #ffffff;
+  background-image: url("../resources/products/product-nav-vertical.svg");
+}
+
 .products-nav {
   position: fixed;
-  right: 15%;
-  top: 28%;
-  width: 13em;
-  height: 25em;
+  right: 0%;
+  top: 23%;
+  width: 15em;
+  height: 24em;
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 3em 2em;
+  padding: 2.5em;
   z-index: 300;
 }
 
@@ -105,7 +117,7 @@
 .products-nav-title {
   cursor: pointer;
   font-size: small;
-  line-height: 1.8em;
+  line-height: 1.9em;
   font-weight: 200;
   color: #ffffff;
 }
@@ -131,12 +143,12 @@
 }
 
 .products-table {
-  margin-top: 3em;
+  margin-top: 2.5em;
   font-weight: 600;
 }
 
 .products-tr {
-  height: 2.8em;
+  height: 2.5em;
 }
 
 .products-table th {
@@ -161,14 +173,14 @@
   margin-top: 6%;
   display: flex;
   width: 100%;
-  height: 63%;
+  height: 70%;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
 .table-cover-wrapper {
   align-self: center;
-  width: 260px;
-  height: 45px;
+  width: 210px;
+  height: 43px;
   margin: 0 auto;
   outline: 2px solid #ffffff;
 }
@@ -177,9 +189,9 @@
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  line-height: 45px;
+  line-height: 43px;
   text-align: center;
-  font-size: 23px;
+  font-size: 18px;
   font-weight: 400;
   color: #ffffff;
 }
