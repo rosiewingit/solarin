@@ -24,6 +24,20 @@ const mainPageItems = [
   },
 ];
 
+$(document).ready(() => {
+  if (navigator.userAgent.indexOf("Trident") > 0) {
+    alert(
+      `해당 페이지는 Microsoft Edge, Chrome 브라우저에 최적화 되어있습니다. 확인 버튼을 누르면 Edge브라우저로 자동으로 이동됩니다.`
+    );
+    window.location = "microsoft-edge:" + url;
+  } else if (/MSIE \d |Trident.*rv:/.test(navigator.userAgent)) {
+    alert(
+      `해당 페이지는 Microsoft Edge, Chrome 브라우저에 최적화 되어있습니다. 확인 버튼을 누르면 Edge브라우저로 자동으로 이동됩니다.`
+    );
+    window.location = "microsoft-edge:http:" + url;
+  }
+});
+
 window.onload = () => {
   showPage(rootPageId);
 
