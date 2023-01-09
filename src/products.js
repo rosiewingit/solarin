@@ -6,6 +6,7 @@ const clickDevelopment = () => {
   const content = new PPTContent(developmentPageId, "products-page-1");
   content.init();
   content.setPath("Home > Products > <b>Development</b>");
+  addProductsNavEvents();
 
   const articles = $("#products-page-1").find("article");
 
@@ -43,6 +44,28 @@ const clickPrototype = () => {
       prototype.init();
     }
   });
+};
+
+const addProductsNavEvents = () => {
+  $("#productsNavHandle").click((e) => {
+    if ($("#productsNavHandle").attr("name") == "closed") {
+      openProductsNav();
+    } else {
+      closeProductsNav();
+    }
+  });
+};
+
+const openProductsNav = () => {
+  $("#productsNavHandle").attr("name", "opened");
+  $("#productsNavHandle").css("right", "15em");
+  $("#productsNav").css("right", "0em");
+};
+
+const closeProductsNav = () => {
+  $("#productsNavHandle").attr("name", "closed");
+  $("#productsNavHandle").css("right", "0em");
+  $("#productsNav").css("right", "-15em");
 };
 
 const changeMainImage = (id, url) => {

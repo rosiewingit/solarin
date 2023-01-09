@@ -290,7 +290,7 @@ class PPTContent {
     <section id="${this.id}" class="body-content">
       <div id="productsNav" class="products-nav">
       <div class="products-nav-body">
-          <div class="products-nav-tag"></div>
+          <div id="productsNavHandle" class="products-nav-tag" name="closed"></div>
           <p class="products-nav-title">압축 공기식 어망 절단기</p>
           <p class="products-nav-title">전동식 어망 절단기</p>
           <p class="products-nav-title">태양광 경광등</p>
