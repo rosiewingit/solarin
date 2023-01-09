@@ -1,3 +1,4 @@
+let developmentCount = 0;
 const clickDevelopment = () => {
   showPage(developmentPageId);
   setHeaderOpacity(1);
@@ -6,7 +7,10 @@ const clickDevelopment = () => {
   const content = new PPTContent(developmentPageId, "products-page-1");
   content.init();
   content.setPath("Home > Products > <b>Development</b>");
-  addProductsNavEvents();
+  closeProductsNav();
+  if (developmentCount === 0) {
+    addProductsNavEvents();
+  }
 
   const articles = $("#products-page-1").find("article");
 
@@ -19,6 +23,7 @@ const clickDevelopment = () => {
       product.init();
     }
   });
+  developmentCount++;
 };
 
 const clickPrototype = () => {
@@ -53,6 +58,7 @@ const addProductsNavEvents = () => {
     } else {
       closeProductsNav();
     }
+    return false;
   });
 };
 
