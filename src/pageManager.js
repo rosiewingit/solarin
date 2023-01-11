@@ -291,14 +291,14 @@ class PPTContent {
       <div id="productsNav" class="products-nav">
       <div class="products-nav-body">
           <div id="productsNavHandle" class="products-nav-tag" name="closed"></div>
-          <p class="products-nav-title">압축 공기식 어망 절단기</p>
-          <p class="products-nav-title">전동식 어망 절단기</p>
-          <p class="products-nav-title">태양광 경광등</p>
-          <p class="products-nav-title">자동사다리</p>
-          <p class="products-nav-title">페달형 손 소독기</p>
-          <p class="products-nav-title">해경 배수 펌프</p>
-          <p class="products-nav-title">익수자 인양 장치</p>
-          <p class="products-nav-title">포터블식 소화 장치</p>
+          <p id="productsNavItem-1" class="products-nav-title">압축 공기식 어망 절단기</p>
+          <p id="productsNavItem-2" class="products-nav-title">전동식 어망 절단기</p>
+          <p id="productsNavItem-3" class="products-nav-title">태양광 경광등</p>
+          <p id="productsNavItem-4" class="products-nav-title">자동사다리</p>
+          <p id="productsNavItem-5" class="products-nav-title">페달형 손 소독기</p>
+          <p id="productsNavItem-6" class="products-nav-title">해경 배수 펌프</p>
+          <p id="productsNavItem-7" class="products-nav-title">익수자 인양 장치</p>
+          <p id="productsNavItem-8" class="products-nav-title">포터블식 소화 장치</p>
         </div>
       </div>
       <div class="ppt-path">Home > Products > <b>Development</b></div>

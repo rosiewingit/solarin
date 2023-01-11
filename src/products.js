@@ -1,4 +1,5 @@
 let developmentCount = 0;
+let navIndex = 0;
 const clickDevelopment = () => {
   showPage(developmentPageId);
   setHeaderOpacity(1);
@@ -22,8 +23,21 @@ const clickDevelopment = () => {
       const product = new Product(item, data[item]);
       product.init();
     }
+    mappingProductsNav();
+    developmentCount++;
   });
-  developmentCount++;
+};
+
+const mappingProductsNav = () => {
+  let cardHeight = $(".product-article").innerHeight();
+
+  $(".products-nav-title").click((e) => {
+    const id = e.currentTarget.id;
+    let index = parseInt(id.split("productsNavItem-")[1]) - 1;
+
+    const posTop = cardHeight * index;
+    $("html").animate({ scrollTop: posTop }, 5, "linear");
+  });
 };
 
 const clickPrototype = () => {
@@ -106,6 +120,8 @@ class Product {
       openImageViewer(imageUrl);
     });
   }
+
+  addNavigation() {}
 
   createProductArticle() {
     if (!this.info) {

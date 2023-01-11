@@ -39,7 +39,8 @@ $(document).ready(() => {
 });
 
 window.onload = () => {
-  showPage(rootPageId);
+  // showPage(rootPageId);
+  clickDevelopment();
 
   mainPageItems.forEach((page) => {
     const content = new MainContent(page.id);
