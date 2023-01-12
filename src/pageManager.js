@@ -307,20 +307,35 @@ class PPTContent {
       `;
   }
 
-  createNewsSection() {
-    return `
-    <section id="${this.id}" class="body-content">
-      <div class="ppt-path">Home > PR Center > <b>News</b></div>
-      <hr class="ppt-hr" />
-      <article id="${this.id}-article" class="page-article">
-        <img loading="lazy" class="dummy-img" src="./resources/news-dummy-0.png" />
-        <img loading="lazy" class="dummy-img" src="./resources/news-dummy-1.png" />
-        <img loading="lazy" class="dummy-img" src="./resources/news-dummy-2.png" />
-        <img loading="lazy" class="dummy-img" src="./resources/news-dummy-3.png" />
-      </article>
-    </section>
-      `;
-  }
+  // createNewsSection() {
+  //   return `
+  //   <section id="${this.id}" class="body-content">
+  //     <div class="ppt-path">Home > PR Center > <b>News</b></div>
+  //     <hr class="ppt-hr" />
+  //     <article id="${this.id}-article" class="page-article">
+  //       <img loading="lazy" class="dummy-img" src="./resources/news-dummy-0.png" />
+  //       <img loading="lazy" class="dummy-img" src="./resources/news-dummy-1.png" />
+  //       <img loading="lazy" class="dummy-img" src="./resources/news-dummy-2.png" />
+  //       <img loading="lazy" class="dummy-img" src="./resources/news-dummy-3.png" />
+  //     </article>
+  //   </section>
+  //     `;
+  // }
+
+  // createNewsSection() {
+  //   return `
+  //   <section id="${this.id}" class="body-content">
+  //     <div class="ppt-path">Home > PR Center > <b>News</b></div>
+  //     <hr class="ppt-hr" />
+  //     <article id="${this.id}-article" class="page-article">
+  //       <img loading="lazy" class="dummy-img" src="./resources/news-dummy-0.png" />
+  //       <img loading="lazy" class="dummy-img" src="./resources/news-dummy-1.png" />
+  //       <img loading="lazy" class="dummy-img" src="./resources/news-dummy-2.png" />
+  //       <img loading="lazy" class="dummy-img" src="./resources/news-dummy-3.png" />
+  //     </article>
+  //   </section>
+  //     `;
+  // }
 
   createCertificationSection() {
     return `<section id="${this.id}" class="body-content">
