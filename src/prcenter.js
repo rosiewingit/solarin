@@ -21,6 +21,7 @@ const clickCertification = () => {
 };
 
 const clickNews = () => {
+  //https://newsapi.org/docs/get-started
   showPage(newsPageId);
   setHeaderOpacity(1);
   setNavDropdownOpacity(0.7);
