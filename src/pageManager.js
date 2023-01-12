@@ -307,35 +307,163 @@ class PPTContent {
       `;
   }
 
-  // createNewsSection() {
-  //   return `
-  //   <section id="${this.id}" class="body-content">
-  //     <div class="ppt-path">Home > PR Center > <b>News</b></div>
-  //     <hr class="ppt-hr" />
-  //     <article id="${this.id}-article" class="page-article">
-  //       <img loading="lazy" class="dummy-img" src="./resources/news-dummy-0.png" />
-  //       <img loading="lazy" class="dummy-img" src="./resources/news-dummy-1.png" />
-  //       <img loading="lazy" class="dummy-img" src="./resources/news-dummy-2.png" />
-  //       <img loading="lazy" class="dummy-img" src="./resources/news-dummy-3.png" />
-  //     </article>
-  //   </section>
-  //     `;
-  // }
-
-  // createNewsSection() {
-  //   return `
-  //   <section id="${this.id}" class="body-content">
-  //     <div class="ppt-path">Home > PR Center > <b>News</b></div>
-  //     <hr class="ppt-hr" />
-  //     <article id="${this.id}-article" class="page-article">
-  //       <img loading="lazy" class="dummy-img" src="./resources/news-dummy-0.png" />
-  //       <img loading="lazy" class="dummy-img" src="./resources/news-dummy-1.png" />
-  //       <img loading="lazy" class="dummy-img" src="./resources/news-dummy-2.png" />
-  //       <img loading="lazy" class="dummy-img" src="./resources/news-dummy-3.png" />
-  //     </article>
-  //   </section>
-  //     `;
-  // }
+  createNewsSection() {
+    return `
+    <section id="${this.id}" class="body-content">
+        <div class="ppt-path">Home > PR Center > <b>News</b></div>
+        <hr class="ppt-hr" />
+        <article id="${this.id}-article" class="page-article">
+          <div class="news-headline">
+            <div class="news-headline-image"></div>
+            <div class="news-headline-body">
+              <p class="news-headline-title">
+                유원대, 한국발명진흥회, ㈜넥스웜, 솔라인과 업무협약
+              </p>
+              <p class="news-headline-date">2022.05.12 14:49</p>
+              <p class="news-headline-contents">
+                [중부매일 윤여군 기자] 유원대학교(총장 채훈관)가 11일
+                한국발명진흥회(회장 권오현), ㈜넥스웜(대표이사 주진혁),
+                솔라인(대표 김재술) 등 벤처기업과 산학협력 업무협약을
+                체결했다.<br /><br />
+                아산캠퍼스 심우관 대회의실에서 진행된 협약식에는 채훈관 총장을
+                비롯해 김원진, 배재우, 김병주, 황재효 등 반도체디스플레이학과
+                교수들과 강민철 지식거래재산소 특허거래전문관, ㈜넥스웜의 주진혁
+                대표, 솔라인의 김재술 대표가 참석했다. <br /><br />협약에 따라
+                각 기관은 대학이 보유한 기술의 국내외 기술이전 및 거래활성화,
+                유원대 반도체디스플레이학과 졸업생의 취업, 교육·연구·기술
+                정보교류, 디스플레이 교육과정 개발 등에 공동 협력하기로
+                했다...<br /><br />
+              </p>
+            </div>
+          </div>
+          <hr class="ppt-hr" />
+          <div class="news-container">
+            <div class="news-search">
+              <div class="news-search-left">
+                <input class="news-search-left-input" value="제목" readonly></input>
+              </div>
+              <div class="news-search-right">
+                <input class="news-search-right-input"  placeholder="검색어를 입력하세요"></input>
+                <div class="news-search-right-button"></div>
+              </div>
+            </div>
+            <div class="news-body">
+              <div class="news-card">
+                <div class="news-card-image"></div>
+                <div class="news-card-summary">
+                  <p class="news-card-date">November 28, 2015</p>
+                  <p class="news-card-title">
+                    솔라인, 2020 대한민국 중소·중견기업 혁신대상 수상
+                  </p>
+                  <button
+                    type="button"
+                    class="btn main-footer-button news-button"
+                  >
+                    <span class="button-text"> Learn more </span>
+                    <div>
+                      <img
+                        loading="lazy"
+                        class="button-logo"
+                        src="./resources/button-arrow.svg"
+                      />
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <div class="news-card">
+                <div class="news-card-image"></div>
+                <div class="news-card-summary">
+                  <p class="news-card-date">November 28, 2015</p>
+                  <p class="news-card-title">
+                    솔라인, 2020 대한민국 중소·중견기업 혁신대상 수상
+                  </p>
+                  <button
+                    type="button"
+                    class="btn main-footer-button news-button"
+                  >
+                    <span class="button-text"> Learn more </span>
+                    <div>
+                      <img
+                        loading="lazy"
+                        class="button-logo"
+                        src="./resources/button-arrow.svg"
+                      />
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <div class="news-card">
+                <div class="news-card-image"></div>
+                <div class="news-card-summary">
+                  <p class="news-card-date">November 28, 2015</p>
+                  <p class="news-card-title">
+                    솔라인, 2020 대한민국 중소·중견기업 혁신대상 수상
+                  </p>
+                  <button
+                    type="button"
+                    class="btn main-footer-button news-button"
+                  >
+                    <span class="button-text"> Learn more </span>
+                    <div>
+                      <img
+                        loading="lazy"
+                        class="button-logo"
+                        src="./resources/button-arrow.svg"
+                      />
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <div class="news-card">
+                <div class="news-card-image"></div>
+                <div class="news-card-summary">
+                  <p class="news-card-date">November 28, 2015</p>
+                  <p class="news-card-title">
+                    솔라인, 2020 대한민국 중소·중견기업 혁신대상 수상
+                  </p>
+                  <button
+                    type="button"
+                    class="btn main-footer-button news-button"
+                  >
+                    <span class="button-text"> Learn more </span>
+                    <div>
+                      <img
+                        loading="lazy"
+                        class="button-logo"
+                        src="./resources/button-arrow.svg"
+                      />
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <div class="news-card">
+                <div class="news-card-image"></div>
+                <div class="news-card-summary">
+                  <p class="news-card-date">November 28, 2015</p>
+                  <p class="news-card-title">
+                    솔라인, 2020 대한민국 중소·중견기업 혁신대상 수상
+                  </p>
+                  <button
+                    type="button"
+                    class="btn main-footer-button news-button"
+                  >
+                    <span class="button-text"> Learn more </span>
+                    <div>
+                      <img
+                        loading="lazy"
+                        class="button-logo"
+                        src="./resources/button-arrow.svg"
+                      />
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      `;
+  }
 
   createCertificationSection() {
     return `<section id="${this.id}" class="body-content">

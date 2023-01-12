@@ -39,7 +39,7 @@ $(document).ready(() => {
 });
 
 window.onload = () => {
-  // showPage(rootPageId);
+  showPage(rootPageId);
 
   mainPageItems.forEach((page) => {
     const content = new MainContent(page.id);
