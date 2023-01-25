@@ -53,7 +53,6 @@ class NewsCard {
 
     this.updateHeadline(cards[0]);
     for (let card of cards) {
-      console.log(card);
       $(`#newsBody`).append(this.createCard(card));
     }
   }
