@@ -313,14 +313,14 @@ class PPTContent {
         <div class="ppt-path">Home > PR Center > <b>News</b></div>
         <hr class="ppt-hr" />
         <article id="${this.id}-article" class="page-article">
-          <div class="news-headline">
-            <div class="news-headline-image"></div>
+          <div id="newsHeadline" class="news-headline">
+            <div id="newsHeadlineImage" class="news-headline-image"></div>
             <div class="news-headline-body">
-              <p class="news-headline-title">
+              <p id="newsHeadlineTitle" class="news-headline-title">
                 유원대, 한국발명진흥회, ㈜넥스웜, 솔라인과 업무협약
               </p>
-              <p class="news-headline-date">2022.05.12 14:49</p>
-              <p class="news-headline-contents">
+              <p id="newsHeadlineDate" class="news-headline-date">2022.05.12 14:49</p>
+              <p id="newsHeadlineDescription" class="news-headline-contents">
                 [중부매일 윤여군 기자] 유원대학교(총장 채훈관)가 11일
                 한국발명진흥회(회장 권오현), ㈜넥스웜(대표이사 주진혁),
                 솔라인(대표 김재술) 등 벤처기업과 산학협력 업무협약을
@@ -347,118 +347,7 @@ class PPTContent {
                 <div class="news-search-right-button"></div>
               </div>
             </div>
-            <div class="news-body">
-              <div class="news-card">
-                <div class="news-card-image"></div>
-                <div class="news-card-summary">
-                  <p class="news-card-date">November 28, 2015</p>
-                  <p class="news-card-title">
-                    솔라인, 2020 대한민국 중소·중견기업 혁신대상 수상
-                  </p>
-                  <button
-                    type="button"
-                    class="btn main-footer-button news-button"
-                  >
-                    <span class="button-text"> Learn more </span>
-                    <div>
-                      <img
-                        loading="lazy"
-                        class="button-logo"
-                        src="./resources/button-arrow.svg"
-                      />
-                    </div>
-                  </button>
-                </div>
-              </div>
-              <div class="news-card">
-                <div class="news-card-image"></div>
-                <div class="news-card-summary">
-                  <p class="news-card-date">November 28, 2015</p>
-                  <p class="news-card-title">
-                    솔라인, 2020 대한민국 중소·중견기업 혁신대상 수상
-                  </p>
-                  <button
-                    type="button"
-                    class="btn main-footer-button news-button"
-                  >
-                    <span class="button-text"> Learn more </span>
-                    <div>
-                      <img
-                        loading="lazy"
-                        class="button-logo"
-                        src="./resources/button-arrow.svg"
-                      />
-                    </div>
-                  </button>
-                </div>
-              </div>
-              <div class="news-card">
-                <div class="news-card-image"></div>
-                <div class="news-card-summary">
-                  <p class="news-card-date">November 28, 2015</p>
-                  <p class="news-card-title">
-                    솔라인, 2020 대한민국 중소·중견기업 혁신대상 수상
-                  </p>
-                  <button
-                    type="button"
-                    class="btn main-footer-button news-button"
-                  >
-                    <span class="button-text"> Learn more </span>
-                    <div>
-                      <img
-                        loading="lazy"
-                        class="button-logo"
-                        src="./resources/button-arrow.svg"
-                      />
-                    </div>
-                  </button>
-                </div>
-              </div>
-              <div class="news-card">
-                <div class="news-card-image"></div>
-                <div class="news-card-summary">
-                  <p class="news-card-date">November 28, 2015</p>
-                  <p class="news-card-title">
-                    솔라인, 2020 대한민국 중소·중견기업 혁신대상 수상
-                  </p>
-                  <button
-                    type="button"
-                    class="btn main-footer-button news-button"
-                  >
-                    <span class="button-text"> Learn more </span>
-                    <div>
-                      <img
-                        loading="lazy"
-                        class="button-logo"
-                        src="./resources/button-arrow.svg"
-                      />
-                    </div>
-                  </button>
-                </div>
-              </div>
-              <div class="news-card">
-                <div class="news-card-image"></div>
-                <div class="news-card-summary">
-                  <p class="news-card-date">November 28, 2015</p>
-                  <p class="news-card-title">
-                    솔라인, 2020 대한민국 중소·중견기업 혁신대상 수상
-                  </p>
-                  <button
-                    type="button"
-                    class="btn main-footer-button news-button"
-                  >
-                    <span class="button-text"> Learn more </span>
-                    <div>
-                      <img
-                        loading="lazy"
-                        class="button-logo"
-                        src="./resources/button-arrow.svg"
-                      />
-                    </div>
-                  </button>
-                </div>
-              </div>
-            </div>
+            <div id="newsBody" class="news-body"></div>
           </div>
         </article>
       </section>
