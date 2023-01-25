@@ -86,7 +86,7 @@ class NewsCard {
       'url("../resources/news-main-pic.png")'
     );
     $("#newsHeadlineTitle").html(data.title);
-    $("#newsHeadlineDate").text(data.pubDate);
+    $("#newsHeadlineDate").text(formatDate(data.pubDate));
     $("#newsHeadlineDescription").html(data.description);
   }
 
@@ -94,7 +94,7 @@ class NewsCard {
     return `<div class="news-card">
     <div class="news-card-image"></div>
     <div class="news-card-summary">
-      <p class="news-card-date">${card.pubDate}</p>
+      <p class="news-card-date">${formatDate(card.pubDate)}</p>
       <p class="news-card-title">${card.title}</p>
       <button
         type="button"
@@ -115,3 +115,11 @@ class NewsCard {
     `;
   }
 }
+
+const formatDate = (date) => {
+  const data = date.split(" ");
+  if (data.length == 0) {
+    return date;
+  }
+  return `${data[2]} ${data[1]}, ${data[3]}`;
+};
