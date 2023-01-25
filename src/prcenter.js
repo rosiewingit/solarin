@@ -32,11 +32,22 @@ const clickNews = () => {
   $.getJSON(
     "https://rosiewingit.github.io/solarin-news/data/newsResult.json",
     (data) => {
+      if (typeof data === "object") {
+        const items = data.items;
+        const news = new NewsCard(items);
+        news.init();
+      } else {
+        throw "Error";
+      }
+    }
+  ).fail((err) => {
+    console.error("Failed to get news: ", err);
+    $.getJSON("./data/newsResult.json", (data) => {
       const items = data.items;
       const news = new NewsCard(items);
       news.init();
-    }
-  );
+    });
+  });
 };
 
 class NewsCard {
