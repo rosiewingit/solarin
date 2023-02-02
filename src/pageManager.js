@@ -747,7 +747,7 @@ class PPTContent {
       <article id="${this.id}-article" class="page-article">
         <h1 class="ppt-title">위치 안내</h1>
         <div class="access-map-container">
-          <img loading="lazy" class="map-image" src="./resources/access-map.png" />
+          <div id="mainMap" class="map-image"></div>
           <div class="access-map-overlay">
             <div class="overlay-top">
               <img loading="lazy" class="brand-logo-color" src="./resources/logo-color.png" />
@@ -767,6 +767,7 @@ class PPTContent {
               type="button"
               id="accessContactBtn"
               class="btn access-button"
+              onclick="goToContact()"
             >
               Contact us
             </button>

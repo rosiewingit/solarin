@@ -346,8 +346,9 @@
 }
 
 .map-image {
-  width: 100%;
-  height: auto;
+  width: 1350px;
+  height: 630px;
+  outline: 1px #545454 solid;
 }
 
 .access-map-overlay {
@@ -383,7 +384,8 @@
 }
 
 .overlay-text {
-  font-size: 0.8vmax;
+  width: 85%;
+  font-size: 13.5px;
   line-height: 120%;
 }
 
