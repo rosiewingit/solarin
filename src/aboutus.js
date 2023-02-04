@@ -59,13 +59,3 @@ const clickAccess = () => {
 
   drawMap("mainMap", { lat: 37.4363913419989, lng: 127.17004436645088 });
 };
-
-const drawMap = (id, geo) => {
-  const container = document.getElementById(id);
-  const options = {
-    center: new naver.maps.LatLng(geo.lat, geo.lng),
-    zoom: 16,
-  };
-
-  const map = new naver.maps.Map(container, options);
-};

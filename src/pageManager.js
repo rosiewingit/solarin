@@ -748,30 +748,6 @@ class PPTContent {
         <h1 class="ppt-title">위치 안내</h1>
         <div class="access-map-container">
           <div id="mainMap" class="map-image"></div>
-          <div class="access-map-overlay">
-            <div class="overlay-top">
-              <img loading="lazy" class="brand-logo-color" src="./resources/logo-color.png" />
-            </div>
-            <div class="overlay-bottom">
-              <div class="overlay-bottom-top">
-                <p class="overlay-text">
-                  14, Sagimakgol-ro 45beon-gil, Jungwon-gu, Seongnam-si,
-                  Gyeonggi-do, Republic of Korea
-                </p>
-              </div>
-              <div class="overlay-bottom-bottom">
-                <p class="overlay-text">+82)0507-1395-0771</p>
-              </div>
-            </div>
-            <button
-              type="button"
-              id="accessContactBtn"
-              class="btn access-button"
-              onclick="goToContact()"
-            >
-              Contact us
-            </button>
-          </div>
         </div>
       </article>
     </section>
