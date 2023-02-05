@@ -753,15 +753,55 @@ class PPTContent {
     </section>
     <section class="body-content">
       <article class="page-article">
-        <img loading="lazy" src="./resources/access-dummy-2.png" class="dummy-img" />
+        <h1 class="ppt-title">오시는 길</h1>
+        <nav>
+          <div class="nav nav-tabs" id="access-nav-tab" role="tablist">
+            <button
+              class="nav-link access-nav-link active"
+              id="access-nav-tab-1"
+              data-bs-toggle="tab"
+              data-bs-target="#access-tab-1"
+              type="button"
+              role="tab"
+              aria-controls="access-tab-1"
+              aria-selected="true"
+            >
+              대중교통
+            </button>
+            <button
+              class="nav-link access-nav-link"
+              id="access-nav-tab-2"
+              data-bs-toggle="tab"
+              data-bs-target="#access-tab-2"
+              type="button"
+              role="tab"
+              aria-controls="access-tab-2"
+              aria-selected="false"
+            >
+              자차이동
+            </button>
+          </div>
+        </nav>
+        <div class="tab-content" id="access-tab">
+          <div
+            class="tab-pane fade show active"
+            id="access-tab-1"
+            role="tabpanel"
+            aria-labelledby="access-nav-tab-1"
+            tabindex="0"
+          >
+          </div>
+          <div
+            class="tab-pane fade"
+            id="access-tab-2"
+            role="tabpanel"
+            aria-labelledby="access-nav-tab-2"
+            tabindex="0"
+          >
+        </div>
       </article>
     </section>
-    <section class="body-content">
-      <article class="page-article">
-        <img loading="lazy" src="./resources/access-dummy-3.png" class="dummy-img" />
-      </article>
-    </section>
-      `;
+    `;
   }
 
   // createAccessSection_history() {
