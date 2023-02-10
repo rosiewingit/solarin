@@ -136,10 +136,10 @@ class PPTContent {
               />
             </div>
             <div class="core-tech-bottom">
-              <p class="core-tech-subtitle">High Voltage Motor Drive System</p>
-              <h4 class="core-tech-title">고출력 모터 드라이브 시스템</h4>
+              <p class="core-tech-subtitle">Waste Plastic Combustion Engine</p>
+              <h4 class="core-tech-title">폐플라스틱 연소기</h4>
               <p class="core-tech-description hidden">
-              고출력 모터 드라이브 시스템은 솔라인에서 자체 개발한 모터 시스템으로서, 국가 연구 과제로 수행 중인 배수 펌프와 더불어 다양한 제품의 주 동력원으로 사용되고 있습니다.
+              폐플라스틱 감량화 장치는 폐플라스틱을 연소하여 대체 연료로 만드는 장치입니다. 폐플라스틱을 새로운 에너지원으로 만드는 솔라인의 주요 미래 연구과제입니다.
               </p>
             </div>
           </div>
@@ -157,10 +157,10 @@ class PPTContent {
               />
             </div>
             <div class="core-tech-bottom">
-              <p class="core-tech-subtitle">High Voltage Battery System</p>
-              <h4 class="core-tech-title">고출력 배터리 시스템</h4>
+              <p class="core-tech-subtitle">Waterproof Motor & Controller System</p>
+              <h4 class="core-tech-title">방수 모터 및 제어 장치</h4>
               <p class="core-tech-description hidden">
-               고출력 배터리 시스템은 고압 전력을 사용한 배터리를 완전 방수 패키징 하여 다양한 해양 구조 제품에 사용되고 있는 솔라인의 독자적인 배터리 시스템입니다.
+              고출력 모터 드라이브 시스템은 솔라인에서 자체 개발한 모터 시스템으로서, 국가 연구 과제로 수행 중인 배수 펌프와 더불어 다양한 제품의 주 동력원으로 사용되고 있습니다.
               </p>
             </div>
           </div>
@@ -200,10 +200,10 @@ class PPTContent {
               />
             </div>
             <div class="core-tech-bottom">
-              <p class="core-tech-subtitle">Waste Plastic Reducing Machine</p>
-              <h4 class="core-tech-title">폐플라스틱 감량화 장치</h4>
+              <p class="core-tech-subtitle">Solar System</p>
+              <h4 class="core-tech-title">태양광 시스템</h4>
               <p class="core-tech-description hidden">
-              폐플라스틱 감량화 장치는 폐플라스틱을 연소하여 대체 연료로 만드는 장치입니다. 폐플라스틱을 새로운 에너지원으로 만드는 솔라인의 주요 미래 연구과제입니다.
+              태양광 경광등은 12V의 LED를 사용하여, 야간 시야 확보가 어려운 곳에서 안내 표시등 역할을 합니다. 설치 후 별도의 전원 관리가 필요 없으며, 반영구적으로 사용 가능합니다.
               </p>
             </div>
           </div>
