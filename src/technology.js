@@ -42,6 +42,21 @@ const clickPatent = () => {
 };
 
 const clickTechCoreCard = () => {
+  showPage(coretechnologyDetailBlurredPageId);
+  setHeaderOpacity(1);
+  setNavDropdownOpacity(0.7);
+
+  const content = new PPTContent(
+    coretechnologyDetailBlurredPageId,
+    "core-detail-page-1"
+  );
+  content.init();
+  content.setPath(
+    "Home > Technology > Core Technology > <b>용존산소증폭기</b>"
+  );
+};
+
+const clickTechCoreCard1 = () => {
   showPage(coretechnologyDetailPageId);
   setHeaderOpacity(1);
   setNavDropdownOpacity(0.7);
@@ -52,7 +67,7 @@ const clickTechCoreCard = () => {
   );
   content.init();
   content.setPath(
-    "Home > Technology > Core Technology > <b>용존산소증폭기</b>"
+    "Home > Technology > Core Technology > <b>폐플라스틱 연소기</b>"
   );
 };
 

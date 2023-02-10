@@ -14,6 +14,7 @@ const esgPageId = "#esgPage";
 const accessPageId = "#accessPage";
 
 // core-technology detail
+const coretechnologyDetailBlurredPageId = "#coretechnologyDetailBlurredPage";
 const coretechnologyDetailPageId = "#coretechnologyDetailPage";
 
 const pages = [
@@ -31,6 +32,7 @@ const pages = [
   csrPageId,
   esgPageId,
   accessPageId,
+  coretechnologyDetailBlurredPageId,
   coretechnologyDetailPageId,
 ];
 
@@ -101,6 +103,9 @@ class PPTContent {
       case accessPageId:
         $(this.page).append(this.createAccessSection());
         break;
+      case coretechnologyDetailBlurredPageId:
+        $(this.page).append(this.createCoreTechnologyDetailBlurredSection());
+        break;
       case coretechnologyDetailPageId:
         $(this.page).append(this.createCoreTechnologyDetailSection());
       default:
@@ -125,7 +130,7 @@ class PPTContent {
           <div
             id="techCoreCard1"
             class="core-tech-card"
-            onclick="clickTechCoreCard()"
+            onclick="clickTechCoreCard1()"
           >
             <div class="core-tech-top"></div>
             <div class="core-tech-mid">
@@ -851,6 +856,23 @@ class PPTContent {
   // }
 
   createCoreTechnologyDetailSection() {
+    return `
+    <section id="${this.id}" class="body-content">
+      <div class="ppt-path">
+        Home > Technology > Core Technology > <b>폐플라스틱 연소기</b>
+      </div>
+      <hr class="ppt-hr" />
+      <article id="${this.id}-article">
+        <h1 class="core-detail-title">
+        폐플라스틱 연소기, Waste Plastic Combustion Engine
+        </h1>
+        <img class="core-detail-blurred" loading="lazy" src="./resources/technology/core-technology-detail1.png"/>
+      </article>
+    </section>
+      `;
+  }
+
+  createCoreTechnologyDetailBlurredSection() {
     return `
     <section id="${this.id}" class="body-content">
       <div class="ppt-path">
