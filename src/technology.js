@@ -42,18 +42,24 @@ const clickPatent = () => {
 };
 
 const clickTechCoreCard = () => {
-  showPage(coretechnologyDetailBlurredPageId);
+  showPage(coretechnologyDetailPageId);
   setHeaderOpacity(1);
   setNavDropdownOpacity(0.7);
 
   const content = new PPTContent(
-    coretechnologyDetailBlurredPageId,
+    coretechnologyDetailPageId,
     "core-detail-page-1"
   );
   content.init();
   content.setPath(
     "Home > Technology > Core Technology > <b>용존산소증폭기</b>"
   );
+
+  const title = "용존산소증폭기, Dissolved Oxygen Amplifier";
+  const image = "./resources/technology/core-technology-dummy.png";
+
+  const detail = new TechnologyDetail(title, image);
+  detail.init();
 };
 
 const clickTechCoreCard1 = () => {
@@ -69,6 +75,12 @@ const clickTechCoreCard1 = () => {
   content.setPath(
     "Home > Technology > Core Technology > <b>폐플라스틱 연소기</b>"
   );
+
+  const title = "폐플라스틱 연소기, Waste Plastic Combustion Engine";
+  const image = "./resources/technology/core-technology-detail1.png";
+
+  const detail = new TechnologyDetail(title, image);
+  detail.init();
 };
 
 const addCoreTechCardHover = (element) => {
@@ -97,6 +109,26 @@ const addCoreTechCardHover = (element) => {
     }
   );
 };
+
+class TechnologyDetail {
+  constructor(title, image) {
+    this.title = title;
+    this.image = image;
+  }
+
+  init() {
+    this.setTitle();
+    this.setImage();
+  }
+
+  setTitle() {
+    $("#coreDetailTitle").text(this.title);
+  }
+
+  setImage() {
+    $("#coreDetailImage").attr("src", this.image);
+  }
+}
 
 class Certification {
   constructor(type, hostUrl, items) {

@@ -14,7 +14,6 @@ const esgPageId = "#esgPage";
 const accessPageId = "#accessPage";
 
 // core-technology detail
-const coretechnologyDetailBlurredPageId = "#coretechnologyDetailBlurredPage";
 const coretechnologyDetailPageId = "#coretechnologyDetailPage";
 
 const pages = [
@@ -32,7 +31,6 @@ const pages = [
   csrPageId,
   esgPageId,
   accessPageId,
-  coretechnologyDetailBlurredPageId,
   coretechnologyDetailPageId,
 ];
 
@@ -102,9 +100,6 @@ class PPTContent {
         break;
       case accessPageId:
         $(this.page).append(this.createAccessSection());
-        break;
-      case coretechnologyDetailBlurredPageId:
-        $(this.page).append(this.createCoreTechnologyDetailBlurredSection());
         break;
       case coretechnologyDetailPageId:
         $(this.page).append(this.createCoreTechnologyDetailSection());
@@ -863,27 +858,10 @@ class PPTContent {
       </div>
       <hr class="ppt-hr" />
       <article id="${this.id}-article">
-        <h1 class="core-detail-title">
+        <h1 id="coreDetailTitle" class="core-detail-title">
         폐플라스틱 연소기, Waste Plastic Combustion Engine
         </h1>
-        <img class="core-detail-blurred" loading="lazy" src="./resources/technology/core-technology-detail1.png"/>
-      </article>
-    </section>
-      `;
-  }
-
-  createCoreTechnologyDetailBlurredSection() {
-    return `
-    <section id="${this.id}" class="body-content">
-      <div class="ppt-path">
-        Home > Technology > Core Technology > <b>용존산소증폭기</b>
-      </div>
-      <hr class="ppt-hr" />
-      <article id="${this.id}-article">
-        <h1 class="core-detail-title">
-          용존산소증폭기, Dissolved Oxygen Amplifier
-        </h1>
-        <img class="core-detail-blurred" loading="lazy" src="./resources/technology/blurred-core-technology.png"/>
+        <img id="coreDetailImage" class="core-detail" loading="lazy" src="./resources/technology/core-technology-detail1.png"/>
       </article>
     </section>
       `;
