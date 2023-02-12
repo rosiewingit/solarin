@@ -35,6 +35,7 @@ const pages = [
 ];
 
 const showPage = (pageId) => {
+  history.pushState(pageId, pageId);
   if (pageId === rootPageId) {
     $(".inner-body").addClass("hidden");
   } else {

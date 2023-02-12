@@ -7,6 +7,8 @@ const clickCoreTechnology = () => {
   content.init();
   content.setPath("Home > Technology > <b>Core Technology</b>");
 
+  addPopstateEvent();
+
   const cards = $(".core-tech-card");
   for (let card of cards) {
     addCoreTechCardHover($(card));
@@ -81,6 +83,14 @@ const clickTechCoreCard1 = () => {
 
   const detail = new TechnologyDetail(title, image);
   detail.init();
+};
+
+const addPopstateEvent = () => {
+  window.addEventListener("popstate", (event) => {
+    if (event.state === coretechnologyPageId) {
+      clickCoreTechnology();
+    }
+  });
 };
 
 const addCoreTechCardHover = (element) => {
