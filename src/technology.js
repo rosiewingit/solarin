@@ -43,27 +43,6 @@ const clickPatent = () => {
   });
 };
 
-const clickTechCoreCard = () => {
-  showPage(coretechnologyDetailPageId);
-  setHeaderOpacity(1);
-  setNavDropdownOpacity(0.7);
-
-  const content = new PPTContent(
-    coretechnologyDetailPageId,
-    "core-detail-page-1"
-  );
-  content.init();
-  content.setPath(
-    "Home > Technology > Core Technology > <b>용존산소증폭기</b>"
-  );
-
-  const title = "용존산소증폭기, Dissolved Oxygen Amplifier";
-  const image = "./resources/technology/core-technology-dummy.png";
-
-  const detail = new TechnologyDetail(title, image);
-  detail.init();
-};
-
 const clickTechCoreCard1 = () => {
   showPage(coretechnologyDetailPageId);
   setHeaderOpacity(1);
@@ -80,6 +59,65 @@ const clickTechCoreCard1 = () => {
 
   const title = "폐플라스틱 연소기, Waste Plastic Combustion Engine";
   const image = "./resources/technology/core-technology-detail1.png";
+
+  const detail = new TechnologyDetail(title, image);
+  detail.init();
+};
+
+const clickTechCoreCard2 = () => {
+  showPage(coretechnologyDetailPageId);
+  setHeaderOpacity(1);
+  setNavDropdownOpacity(0.7);
+
+  const content = new PPTContent(
+    coretechnologyDetailPageId,
+    "core-detail-page-1"
+  );
+  content.init();
+  content.setPath(
+    "Home > Technology > Core Technology > <b>방수 모터 및 배터리 시스템</b>"
+  );
+
+  const title = "방수 모터 및 배터리 시스템, Waterproof Motor & Battery System";
+  const image = "./resources/technology/core-technology-dummy.png";
+
+  const detail = new TechnologyDetail(title, image);
+  detail.init();
+};
+
+const clickTechCoreCard3 = () => {
+  showPage(coretechnologyDetailPageId);
+  setHeaderOpacity(1);
+  setNavDropdownOpacity(0.7);
+
+  const content = new PPTContent(
+    coretechnologyDetailPageId,
+    "core-detail-page-1"
+  );
+  content.init();
+  content.setPath("Home > Technology > Core Technology > <b>산소용해장치</b>");
+
+  const title = "산소용해장치, Dissolved Oxygen Device";
+  const image = "./resources/technology/core-technology-dummy.png";
+
+  const detail = new TechnologyDetail(title, image);
+  detail.init();
+};
+
+const clickTechCoreCard4 = () => {
+  showPage(coretechnologyDetailPageId);
+  setHeaderOpacity(1);
+  setNavDropdownOpacity(0.7);
+
+  const content = new PPTContent(
+    coretechnologyDetailPageId,
+    "core-detail-page-1"
+  );
+  content.init();
+  content.setPath("Home > Technology > Core Technology > <b>태양광 시스템</b>");
+
+  const title = "태양광 시스템, Solar System";
+  const image = "./resources/technology/core-technology-dummy.png";
 
   const detail = new TechnologyDetail(title, image);
   detail.init();

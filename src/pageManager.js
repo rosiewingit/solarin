@@ -147,7 +147,7 @@ class PPTContent {
           <div
             id="techCoreCard2"
             class="core-tech-card"
-            onclick="clickTechCoreCard()"
+            onclick="clickTechCoreCard2()"
           >
             <div class="core-tech-top"></div>
             <div class="core-tech-mid">
@@ -158,8 +158,8 @@ class PPTContent {
               />
             </div>
             <div class="core-tech-bottom">
-              <p class="core-tech-subtitle">Waterproof Motor & Controller System</p>
-              <h4 class="core-tech-title">방수 모터 및 제어 장치</h4>
+              <p class="core-tech-subtitle">Waterproof Motor & Battery System</p>
+              <h4 class="core-tech-title">방수 모터 및 배터리 시스템</h4>
               <p class="core-tech-description hidden">
               고출력 모터 드라이브 시스템은 솔라인에서 자체 개발한 모터 시스템으로서, 국가 연구 과제로 수행 중인 배수 펌프와 더불어 다양한 제품의 주 동력원으로 사용되고 있습니다.
               </p>
@@ -168,7 +168,7 @@ class PPTContent {
           <div
             id="techCoreCard3"
             class="core-tech-card"
-            onclick="clickTechCoreCard()"
+            onclick="clickTechCoreCard3()"
           >
             <div class="core-tech-top"></div>
             <div class="core-tech-mid">
@@ -179,8 +179,8 @@ class PPTContent {
               />
             </div>
             <div class="core-tech-bottom">
-              <p class="core-tech-subtitle">Dissolved Oxygen Amplifier</p>
-              <h4 class="core-tech-title">용존산소 증폭기</h4>
+              <p class="core-tech-subtitle">Dissolved Oxygen Device</p>
+              <h4 class="core-tech-title">산소용해장치</h4>
               <p class="core-tech-description hidden">
               용존 산소 증폭기는 물속의 산소 농도를 증폭시켜 수온 상승 시 녹조를 예방하고, 수중 생태계를 보존하는 장치입니다. 
               </p>
@@ -190,7 +190,7 @@ class PPTContent {
           <div
             id="techCoreCard4"
             class="core-tech-card"
-            onclick="clickTechCoreCard()"
+            onclick="clickTechCoreCard4()"
           >
             <div class="core-tech-top"></div>
             <div class="core-tech-mid">
