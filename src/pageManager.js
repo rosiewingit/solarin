@@ -752,104 +752,60 @@ class PPTContent {
         </div>
       </article>
     </section>
-    <section class="body-content">
-      <article class="page-article">
-        <h1 class="ppt-title">오시는 길</h1>
-        <nav>
-          <div class="nav nav-tabs" id="access-nav-tab" role="tablist">
-            <button
-              class="nav-link access-nav-link active"
-              id="access-nav-tab-1"
-              data-bs-toggle="tab"
-              data-bs-target="#access-tab-1"
-              type="button"
-              role="tab"
-              aria-controls="access-tab-1"
-              aria-selected="true"
-            >
-              대중교통
-            </button>
-            <button
-              class="nav-link access-nav-link"
-              id="access-nav-tab-2"
-              data-bs-toggle="tab"
-              data-bs-target="#access-tab-2"
-              type="button"
-              role="tab"
-              aria-controls="access-tab-2"
-              aria-selected="false"
-            >
-              자차이동
-            </button>
-          </div>
-        </nav>
-        <div class="tab-content" id="access-tab">
-          <div
-            class="tab-pane fade show active"
-            id="access-tab-1"
-            role="tabpanel"
-            aria-labelledby="access-nav-tab-1"
-            tabindex="0"
-          >
-          </div>
-          <div
-            class="tab-pane fade"
-            id="access-tab-2"
-            role="tabpanel"
-            aria-labelledby="access-nav-tab-2"
-            tabindex="0"
-          >
-        </div>
-      </article>
-    </section>
     `;
   }
 
-  // createAccessSection_history() {
-  //   return `
-  //   <section id="${this.id}" class="body-content">
-  //   <div class="ppt-path">Home > About Us > <b>Access</b></div>
-  //   <hr class="ppt-hr" />
-  //   <article id="${this.id}-article" class="page-article">
-  //     <h1 class="ppt-title">위치 안내</h1>
-  //     <div class="access-map-container">
-  //       <img loading="lazy" class="map-image" src="./resources/access-map.png" />
-  //       <div class="access-map-overlay">
-  //         <div class="overlay-top">
-  //           <img loading="lazy" class="brand-logo-color" src="./resources/logo-color.png" />
+  // 오시는길 임시 삭제
+  // <section class="body-content">
+  //     <article class="page-article">
+  //       <h1 class="ppt-title">오시는 길</h1>
+  //       <nav>
+  //         <div class="nav nav-tabs" id="access-nav-tab" role="tablist">
+  //           <button
+  //             class="nav-link access-nav-link active"
+  //             id="access-nav-tab-1"
+  //             data-bs-toggle="tab"
+  //             data-bs-target="#access-tab-1"
+  //             type="button"
+  //             role="tab"
+  //             aria-controls="access-tab-1"
+  //             aria-selected="true"
+  //           >
+  //             대중교통
+  //           </button>
+  //           <button
+  //             class="nav-link access-nav-link"
+  //             id="access-nav-tab-2"
+  //             data-bs-toggle="tab"
+  //             data-bs-target="#access-tab-2"
+  //             type="button"
+  //             role="tab"
+  //             aria-controls="access-tab-2"
+  //             aria-selected="false"
+  //           >
+  //             자차이동
+  //           </button>
   //         </div>
-  //         <div class="overlay-bottom">
-  //           <div class="overlay-bottom-top">
-  //             <p class="overlay-text">
-  //               14, Sagimakgol-ro 45beon-gil, Jungwon-gu, Seongnam-si,
-  //               Gyeonggi-do, Republic of Korea
-  //             </p>
-  //           </div>
-  //           <div class="overlay-bottom-bottom">
-  //             <p class="overlay-text">+82)0507-1395-0771</p>
-  //           </div>
-  //         </div>
-  //         <button
-  //           type="button"
-  //           id="accessContactBtn"
-  //           class="btn access-button"
+  //       </nav>
+  //       <div class="tab-content" id="access-tab">
+  //         <div
+  //           class="tab-pane fade show active"
+  //           id="access-tab-1"
+  //           role="tabpanel"
+  //           aria-labelledby="access-nav-tab-1"
+  //           tabindex="0"
   //         >
-  //           Contact us
-  //         </button>
+  //         </div>
+  //         <div
+  //           class="tab-pane fade"
+  //           id="access-tab-2"
+  //           role="tabpanel"
+  //           aria-labelledby="access-nav-tab-2"
+  //           tabindex="0"
+  //         >
   //       </div>
-  //     </div>
-  //   </article>
-  // </section>
-  // <section class="body-content">
-  //   <article class="page-article">
-  //     <h1 class="ppt-title">오시는 길</h1>
-  //   </article>
-  // </section>
-  // <section class="body-content">
-  //   <article class="page-article"></article>
-  // </section>
-  //     `;
-  // }
+  //     </article>
+  //   </section>
 
   createCoreTechnologyDetailSection() {
     return `
@@ -867,80 +823,6 @@ class PPTContent {
     </section>
       `;
   }
-
-  // [22.12.31] hidden
-  // createCoreTechnologyDetailSection() {
-  //   return `
-  //   <section id="${this.id}" class="body-content">
-  //     <div class="ppt-path">
-  //       Home > Technology > Core Technology > <b>용존산소증폭기</b>
-  //     </div>
-  //     <hr class="ppt-hr" />
-  //     <article id="${this.id}-article">
-  //       <h1 class="core-detail-title">
-  //         용존산소증폭기, Dissolved Oxygen Amplifier
-  //       </h1>
-  //       <p class="core-detail-text">
-  //         솔라인은 2019년 설립된 국내 유일의 아이디어 제작 업체로서, 국무총리
-  //         또는 행정각부의 장은 소관사무에 관하여 법률이나 대통령령의 위임 또는
-  //         직권으로 총리령 또는 부령을 발할 수 있다.<br /><br />
-  //         국가는 재해를 예방하고 그 위험으로부터 국민을 보호하기 위하여
-  //         노력하여야 한다.<br />모든 국민은 신속한 재판을 받을 권리를 가진다.
-  //         형사피고인은 상당한 이유가 없는 한 지체없이 공개재판을 받을 권리를
-  //         가진다. 국가는 균형있는 국민경제의 성장 및 안정과 적정한 소득의 분배를
-  //         유지하고, 시장의 지배와 경제력의 남용을 방지하며, 경제주체간의 조화를
-  //         통한 경제의 민주화를 위하여 경제에 관한 규제와 조정을 할 수 있다.<br /><br />모든
-  //         국민은 신속한 재판을 받을 권리를 가진다. 형사피고인은 상당한 이유가
-  //         없는 한 지체없이 공개재판을 받을 권리를 가진다. 국가는 균형있는
-  //         국민경제의 성장 및 안정과 적정한 소득의 분배를 유지하고, 시장의 지배와
-  //         경제력의 남용을 방지하며, 경제주체간의 조화를 통한 경제의 민주화를
-  //         위하여 경제에 관한 규제와 조정을 할 수 있다.
-  //       </p>
-  //       <div class="core-detail-feature">
-  //         <div class="core-detail-feature-card">
-  //           <img loading="lazy" src="./resources/core-detail-icon-1.png" />
-  //           <p>
-  //             솔라인은 2019년 설립된 국내 유일의 아이디어 제작 업체로서,
-  //             국무총리 또는 행정각부의 장은 소관사무에 관하여 법률이나
-  //             대통령령의 위임 또는 직권으로 총리령 또는 부령을 발할 수 있다.
-  //           </p>
-  //         </div>
-  //         <div class="core-detail-feature-card">
-  //           <img loading="lazy" src="./resources/core-detail-icon-2.png" />
-  //           <p>
-  //             솔라인은 2019년 설립된 국내 유일의 아이디어 제작 업체로서,
-  //             국무총리 또는 행정각부의 장은 소관사무에 관하여 법률이나
-  //             대통령령의 위임 또는 직권으로 총리령 또는 부령을 발할 수 있다.
-  //           </p>
-  //         </div>
-  //         <div class="core-detail-feature-card">
-  //           <img loading="lazy" src="./resources/core-detail-icon-3.png" />
-  //           <p>
-  //             솔라인은 2019년 설립된 국내 유일의 아이디어 제작 업체로서,
-  //             국무총리 또는 행정각부의 장은 소관사무에 관하여 법률이나
-  //             대통령령의 위임 또는 직권으로 총리령 또는 부령을 발할 수 있다.
-  //           </p>
-  //         </div>
-  //       </div>
-  //       <div class="core-detail-graph-wrapper">
-  //         <p>용존 산조 증가폭 비교 그래프</p>
-  //         <div class="core-detail-graph">
-  //           <div class="core-detail-graph-image core-detail-graph-card-1"></div>
-  //           <div class="core-detail-graph-image core-detail-graph-card-2"></div>
-  //         </div>
-  //       </div>
-  //       <div class="rnd-body">
-  //         <div class="rnd-body-top">
-  //           <div class="core-detail-image core-detail-card-1"></div>
-  //         </div>
-  //         <div class="rnd-body-mid">
-  //           <div class="core-detail-image core-detail-card-2"></div>
-  //         </div>
-  //       </div>
-  //     </article>
-  //   </section>
-  //     `;
-  // }
 
   setPath(path) {
     $(`#${this.id}`).find(".ppt-path").html(path);
