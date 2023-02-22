@@ -58,7 +58,7 @@ const clickTechCoreCard1 = () => {
   );
 
   const title = "폐플라스틱 연소기, Waste Plastic Combustion Engine";
-  const image = "./resources/technology/core-technology-detail1.png";
+  const image = "./resources/technology/core-technology-detail-1.png";
 
   const detail = new TechnologyDetail(title, image);
   detail.init();
