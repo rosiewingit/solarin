@@ -232,7 +232,7 @@ class PPTContent {
             <div class="rnd-image rnd-center-1">
               <div class="rnd-text">
                 <p class="rnd-subtitle">연구개발 전담부서</p>
-                <p class="rnd-title">A-1103 연구소</p>
+                <p class="rnd-title">A-1110 연구소</p>
               </div>
             </div>
           </div>
