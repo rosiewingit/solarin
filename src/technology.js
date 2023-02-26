@@ -1,3 +1,10 @@
+const DETAIL_ID = {
+  card1: "card1",
+  card2: "card2",
+  card3: "card3",
+  card4: "card4",
+};
+
 const clickCoreTechnology = () => {
   showPage(coretechnologyPageId);
   setHeaderOpacity(1);
@@ -57,10 +64,13 @@ const clickTechCoreCard1 = () => {
     "Home > Technology > Core Technology > <b>폐플라스틱 연소기</b>"
   );
 
-  const title = "폐플라스틱 연소기, Waste Plastic Combustion Engine";
-  const image = "./resources/technology/core-technology-detail-1.png";
+  const option = {
+    titleKr: "폐플라스틱 연소기",
+    titleEng: "Waste Plastic Combustion Engine",
+    image: "",
+  };
 
-  const detail = new TechnologyDetail(title, image);
+  const detail = new TechnologyDetail(DETAIL_ID.card1, option);
   detail.init();
 };
 
@@ -78,10 +88,13 @@ const clickTechCoreCard2 = () => {
     "Home > Technology > Core Technology > <b>방수 모터 및 배터리 시스템</b>"
   );
 
-  const title = "방수 모터 및 배터리 시스템, Waterproof Motor & Battery System";
-  const image = "./resources/technology/core-technology-dummy.png";
+  const option = {
+    titleKr: "방수 모터 및 배터리 시스템",
+    titleEng: "Waterproof Motor & Battery System",
+    image: "./resources/technology/core-technology-dummy.png",
+  };
 
-  const detail = new TechnologyDetail(title, image);
+  const detail = new TechnologyDetail(DETAIL_ID.card2, option);
   detail.init();
 };
 
@@ -97,10 +110,13 @@ const clickTechCoreCard3 = () => {
   content.init();
   content.setPath("Home > Technology > Core Technology > <b>산소용해장치</b>");
 
-  const title = "산소용해장치, Dissolved Oxygen Device";
-  const image = "./resources/technology/core-technology-dummy.png";
+  const option = {
+    titleKr: "산소용해장치",
+    titleEng: "Dissolved Oxygen Device",
+    image: "./resources/technology/core-technology-dummy.png",
+  };
 
-  const detail = new TechnologyDetail(title, image);
+  const detail = new TechnologyDetail(DETAIL_ID.card3, option);
   detail.init();
 };
 
@@ -116,10 +132,13 @@ const clickTechCoreCard4 = () => {
   content.init();
   content.setPath("Home > Technology > Core Technology > <b>태양광 시스템</b>");
 
-  const title = "태양광 시스템, Solar System";
-  const image = "./resources/technology/core-technology-dummy.png";
+  const option = {
+    titleKr: "태양광 시스템",
+    titleEng: "Solar System",
+    image: "./resources/technology/core-technology-dummy.png",
+  };
 
-  const detail = new TechnologyDetail(title, image);
+  const detail = new TechnologyDetail(DETAIL_ID.card3, option);
   detail.init();
 };
 
@@ -159,22 +178,20 @@ const addCoreTechCardHover = (element) => {
 };
 
 class TechnologyDetail {
-  constructor(title, image) {
-    this.title = title;
-    this.image = image;
+  constructor(id, option) {
+    this.id = id;
+    this.option = option;
   }
 
   init() {
     this.setTitle();
-    this.setImage();
   }
 
   setTitle() {
-    $("#coreDetailTitle").text(this.title);
-  }
-
-  setImage() {
-    $("#coreDetailImage").attr("src", this.image);
+    const titleKr = this.option.titleKr;
+    const titleEng = this.option.titleEng;
+    $("#detailHeaderTitleKr").text(titleKr);
+    $("#detailHeaderTitleEng").text(titleEng);
   }
 }
 
