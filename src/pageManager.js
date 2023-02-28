@@ -201,9 +201,9 @@ class PPTContent {
               />
             </div>
             <div class="core-tech-bottom">
-              <p class="core-tech-subtitle">Solar System</p>
-              <h4 class="core-tech-title">태양광 시스템</h4>
-              <p class="core-tech-description hidden">
+              <p class="core-tech-subtitle">Solar Collector System</p>
+              <h4 class="core-tech-title">태양열 집열 시스템</h4>
+              <p class="core-tech-description hidden"> 
               태양광 경광등은 12V의 LED를 사용하여, 야간 시야 확보가 어려운 곳에서 안내 표시등 역할을 합니다. 설치 후 별도의 전원 관리가 필요 없으며, 반영구적으로 사용 가능합니다.
               </p>
             </div>
@@ -843,6 +843,7 @@ class PPTContent {
           <div class="datail-spec">
             <div class="detail-spec-left">
               <img
+                id="detailSpecImage"
                 src="./resources/technology/detail/detail-card1-main.png"
                 class="detail-spec-image"
                 loading="lazy"
@@ -852,12 +853,7 @@ class PPTContent {
               <div class="detail-spec-feature">
                 <p class="detail-spec-subtitle">특징</p>
                 <hr class="detail-hr" />
-                <ul class="detail-spec-feature-text">
-                  <li>모듈 구조로 탈부착이 용이하며 운송 및 확장성에 최적화</li>
-                  <li>
-                    700°C의 고온 연소로 시간당 3 kg의 폐플라스틱 연소 가능
-                  </li>
-                  <li>PE, PP, ABS, PS, LDPE, HDPE의 폐플라스틱이 연소 가능</li>
+                <ul id="detailSpecFeatures" class="detail-spec-feature-text">
                 </ul>
               </div>
               <div class="detail-spec-size">
@@ -903,7 +899,9 @@ class PPTContent {
             </div>
             <div class="detail-video-main">
               <video
-                src="./resources/technology/detail/detail-card1-video.mp4"
+                id="detailVideo"
+                class="detail-video-portrait"
+                src="./resources/technology/detail/detail-card1-video-portrait.mp4"
                 controls
                 muted
               ></video>

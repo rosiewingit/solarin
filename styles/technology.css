@@ -418,6 +418,7 @@
   width: 38%;
   height: 100%;
   outline: solid 1px #d9d9d9;
+  display: flex;
 }
 
 .detail-spec-right {
@@ -428,8 +429,10 @@
 }
 
 .detail-spec-image {
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: 90%;
+  display: flex;
+  margin: auto;
 }
 
 .detail-spec-feature {
@@ -484,8 +487,13 @@
   text-align: center;
 }
 
-.detail-video-main video {
+.detail-video-portrait {
   width: 50%;
+  height: auto;
+}
+
+.detail-video-landscape {
+  width: 100%;
   height: auto;
 }
 
