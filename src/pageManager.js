@@ -807,23 +807,6 @@ class PPTContent {
   //     </article>
   //   </section>
 
-  // createCoreTechnologyDetailSection() {
-  //   return `
-  //   <section id="${this.id}" class="body-content">
-  //     <div class="ppt-path">
-  //       Home > Technology > Core Technology > <b>폐플라스틱 연소기</b>
-  //     </div>
-  //     <hr class="ppt-hr" />
-  //     <article id="${this.id}-article">
-  //       <h1 id="coreDetailTitle" class="core-detail-title">
-  //       폐플라스틱 연소기, Waste Plastic Combustion Engine
-  //       </h1>
-  //       <img id="coreDetailImage" class="core-detail" loading="lazy" src=""/>
-  //     </article>
-  //   </section>
-  //     `;
-  // }
-
   createCoreTechnologyDetailSection() {
     return `
     <section id="${this.id}" class="body-content">
@@ -831,119 +814,131 @@ class PPTContent {
           Home > Technology > Core Technology > <b>폐플라스틱 연소기</b>
         </div>
         <hr class="ppt-hr" />
-        <article id="${this.id}-article">
-          <div class="detail-header">
-            <div class="detail-header-text">
-              <h2 id="detailHeaderTitleKr" class="detail-header-titleKr">폐플라스틱 연소기</h2>
-              <p id="detailHeaderTitleEng" class="detail-header-titleEng">
-                Waste Plastic Combution Device
-              </p>
-            </div>
-          </div>
-          <div class="datail-spec">
-            <div class="detail-spec-left">
-              <img
-                id="detailSpecImage"
-                src="./resources/technology/detail/detail-card1-main.png"
-                class="detail-spec-image"
-                loading="lazy"
-              />
-            </div>
-            <div class="detail-spec-right">
-              <div class="detail-spec-feature">
-                <p class="detail-spec-subtitle">특징</p>
-                <hr class="detail-hr" />
-                <ul id="detailSpecFeatures" class="detail-spec-feature-text">
-                </ul>
-              </div>
-              <div class="detail-spec-size">
-                <p class="detail-spec-subtitle">제원</p>
-                <hr class="detail-hr" />
-                <table class="detail-spec-size-text">
-                  <tr>
-                    <th>재질</th>
-                    <td>SUS 304(외부 파이프) / SUS 316(내부 연소실)</td>
-                  </tr>
-                  <tr>
-                    <th>배관 연결 직경</th>
-                    <td>∅120</td>
-                  </tr>
-                  <tr>
-                    <th>연료 투입구 직경</th>
-                    <td>∅105</td>
-                  </tr>
-                  <tr>
-                    <th>시간당 연소량</th>
-                    <td>3 kg</td>
-                  </tr>
-                  <tr>
-                    <th>총 높이</th>
-                    <td>310 mm</td>
-                  </tr>
-                </table>
-              </div>
-            </div>
-          </div>
-          <div class="detail-video">
-            <div class="detail-video-header">
-              <div class="detail-video-header-text">
-                <h2 class="detail-video-header-title">연소 엔진</h2>
-                <p class="detail-video-header-subtitle">
-                  연소기의 핵심 부품인 엔진을 소개합니다.
-                </p>
-                <p class="detail-video-header-description">
-                  폐플라스틱 연소 엔진은 폐플라스틱 연소기의 핵심 부품으로서,<br />
-                  700°C 고온에서 시간당 3kg의 폐플라스틱을 연소합니다.
-                </p>
-              </div>
-            </div>
-            <div class="detail-video-main">
-              <video
-                id="detailVideo"
-                class="detail-video-portrait"
-                src="./resources/technology/detail/detail-card1-video-portrait.mp4"
-                controls
-                muted
-              ></video>
-            </div>
-          </div>
-          <div class="detail-test">
-            <p class="detail-spec-subtitle">성능 테스트</p>
-            <hr class="detail-hr" />
-            <div class="detail-test-graphs">
-              <img
-                src="./resources/technology/detail/detail-card1-test-graph1.png"
-              />
-              <img
-                src="./resources/technology/detail/detail-card1-test-graph2.png"
-              />
-            </div>
-          </div>
-          <div class="detail-related">
-            <p class="detail-spec-subtitle">관련 제품</p>
-            <hr class="detail-hr" />
-            <div class="detail-related-images">
-              <img
-                src="./resources/technology/detail/detail-card1-related-image1.png"
-              />
-              <img
-                src="./resources/technology/detail/detail-card1-related-image2.png"
-              />
-              <img
-                src="./resources/technology/detail/detail-card1-related-image3.png"
-              />
-              <img
-                src="./resources/technology/detail/detail-card1-related-image4.png"
-              />
-              <img
-                src="./resources/technology/detail/detail-card1-related-image5.png"
-              />
-            </div>
-          </div>
-        </article>
+        <article id="${this.id}-article"></article>
       </section>
     `;
   }
+
+  // createCoreTechnologyDetailSection() {
+  //   return `
+  //   <section id="${this.id}" class="body-content">
+  //       <div class="ppt-path">
+  //         Home > Technology > Core Technology > <b>폐플라스틱 연소기</b>
+  //       </div>
+  //       <hr class="ppt-hr" />
+  //       <article id="${this.id}-article">
+  //         <div class="detail-header">
+  //           <div class="detail-header-text">
+  //             <h2 id="detailHeaderTitleKr" class="detail-header-titleKr">폐플라스틱 연소기</h2>
+  //             <p id="detailHeaderTitleEng" class="detail-header-titleEng">
+  //               Waste Plastic Combution Device
+  //             </p>
+  //           </div>
+  //         </div>
+  //         <div class="datail-spec">
+  //           <div class="detail-spec-left">
+  //             <img
+  //               id="detailSpecImage"
+  //               src="./resources/technology/detail/detail-card1-main.png"
+  //               class="detail-spec-image"
+  //               loading="lazy"
+  //             />
+  //           </div>
+  //           <div class="detail-spec-right">
+  //             <div class="detail-spec-feature">
+  //               <p class="detail-spec-subtitle">특징</p>
+  //               <hr class="detail-hr" />
+  //               <ul id="detailSpecFeatures" class="detail-spec-feature-text">
+  //               </ul>
+  //             </div>
+  //             <div id="detailSpecSize" class="detail-spec-size">
+  //               <p class="detail-spec-subtitle">제원</p>
+  //               <hr class="detail-hr" />
+  //               <table id="detailSpecSizeTable" class="detail-spec-size-text">
+  //                 <tr>
+  //                   <th>재질</th>
+  //                   <td>SUS 304(외부 파이프) / SUS 316(내부 연소실)</td>
+  //                 </tr>
+  //                 <tr>
+  //                   <th>배관 연결 직경</th>
+  //                   <td>∅120</td>
+  //                 </tr>
+  //                 <tr>
+  //                   <th>연료 투입구 직경</th>
+  //                   <td>∅105</td>
+  //                 </tr>
+  //                 <tr>
+  //                   <th>시간당 연소량</th>
+  //                   <td>3 kg</td>
+  //                 </tr>
+  //                 <tr>
+  //                   <th>총 높이</th>
+  //                   <td>310 mm</td>
+  //                 </tr>
+  //               </table>
+  //             </div>
+  //           </div>
+  //         </div>
+  //         <div class="detail-video">
+  //           <div class="detail-video-header">
+  //             <div class="detail-video-header-text">
+  //               <h2 class="detail-video-header-title">연소 엔진</h2>
+  //               <p class="detail-video-header-subtitle">
+  //                 연소기의 핵심 부품인 엔진을 소개합니다.
+  //               </p>
+  //               <p class="detail-video-header-description">
+  //                 폐플라스틱 연소 엔진은 폐플라스틱 연소기의 핵심 부품으로서,<br />
+  //                 700°C 고온에서 시간당 3kg의 폐플라스틱을 연소합니다.
+  //               </p>
+  //             </div>
+  //           </div>
+  //           <div class="detail-video-main">
+  //             <video
+  //               id="detailVideo"
+  //               class="detail-video-portrait"
+  //               src="./resources/technology/detail/detail-card1-video-portrait.mp4"
+  //               controls
+  //               muted
+  //             ></video>
+  //           </div>
+  //         </div>
+  //         <div class="detail-test">
+  //           <p class="detail-spec-subtitle">성능 테스트</p>
+  //           <hr class="detail-hr" />
+  //           <div class="detail-test-graphs">
+  //             <img
+  //               src="./resources/technology/detail/detail-card1-test-graph1.png"
+  //             />
+  //             <img
+  //               src="./resources/technology/detail/detail-card1-test-graph2.png"
+  //             />
+  //           </div>
+  //         </div>
+  //         <div class="detail-related">
+  //           <p class="detail-spec-subtitle">관련 제품</p>
+  //           <hr class="detail-hr" />
+  //           <div class="detail-related-images">
+  //             <img
+  //               src="./resources/technology/detail/detail-card1-related-image1.png"
+  //             />
+  //             <img
+  //               src="./resources/technology/detail/detail-card1-related-image2.png"
+  //             />
+  //             <img
+  //               src="./resources/technology/detail/detail-card1-related-image3.png"
+  //             />
+  //             <img
+  //               src="./resources/technology/detail/detail-card1-related-image4.png"
+  //             />
+  //             <img
+  //               src="./resources/technology/detail/detail-card1-related-image5.png"
+  //             />
+  //           </div>
+  //         </div>
+  //       </article>
+  //     </section>
+  //   `;
+  // }
 
   setPath(path) {
     $(`#${this.id}`).find(".ppt-path").html(path);
